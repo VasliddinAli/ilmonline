@@ -77,6 +77,7 @@
   padding: 20px;
   border: 1px solid #c6ced1;
   transition: 0.4s;
+  cursor: pointer;
 }
 .home-card-direction-cards img {
   width: 70px;
