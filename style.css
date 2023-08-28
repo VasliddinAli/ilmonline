@@ -42,6 +42,7 @@ body {
     display: grid;
     place-items: center;
     transition: 400ms;
+    cursor: pointer;
 }
 
 .selectSection nav ul li:hover {
