@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Sans+3:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body {
+    /* height: 100vh; */
+    color: #12322e;
+    background-color: #ece9fb;
+}
+
+.selectSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.selectSection nav {
+    /* width: 100%; */
+    display: grid;
+    place-items: center;
+    padding: 50px;
+}
+
+.selectSection nav ul {
+    display: flex;
+}
+
+.selectSection nav ul li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px 16px;
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    transition: 400ms;
+}
+
+.selectSection nav ul li:hover {
+    opacity: 0.4;
+}
+
+.selectSection nav ul li:first-child::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 80%;
+    background-color: #12322e;
+}
+
+.selectSection nav ul li:nth-child(2) {
+    opacity: 0.4;
+}
+
+.selectSection nav ul li:last-child::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 80%;
+    background-color: #12322e;
+}
+
+.container {
+    width: 800px;
+    height: 530px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container .box {
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 90%;
+    display: grid;
+    place-items: center;
+
+}
+
+.container .box .raditation {
+    /* border: 1px solid blue; */
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .box .raditation h2 {
+    margin-top: 1em;
+}
+
+.container .box .raditation #selectDirectionTitle2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container .box .rowBox {
+    width: 480px;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .box .rowBox .selectDirection {
+    width: 200px;
+    height: 190px;
+    border: 1px solid #c6ced1;
+    padding: 5px;
+    display: grid;
+    place-items: center;
+    transition: 300ms;
+}
+
+.container .box .rowBox .schoolEducation:hover {
+    border: 1px solid #ec5239;
+}
+
+.container .box .rowBox .professionalEducation:hover {
+    border: 1px solid #055dff;
+}
+
+.container .box .rowBox .schoolEducation2:hover {
+    border: 1px solid #ec5239;
+}
+
+.container .box .rowBox .professionalEducation2:hover {
+    border: 1px solid #055dff;
+}
+
+.container .box .rowBox .schoolEducation3:hover {
+    border: 1px solid #ec5239;
+}
+
+.container .box .rowBox .professionalEducation3:hover {
+    border: 1px solid #055dff;
+}
+
+.container .box .rowBox .selectDirection img {
+    width: 100px;
+    height: 100px;
+}
+
+.container .box .rowBox .selectDirection p {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 19px;
+    text-align: center;
+    margin-top: -3em;
+    width: 80%;
+}
+
+.container .box button {
+    background-color: #6951ff;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 230px;
+    color: white;
+    border: none;
+    outline: none;
+    opacity: 0.6;
+    transition: 500ms;
+}
+
+.container .box button:hover {
+    opacity: 1;
+}
+
+.selectedDirectionToggle {
+    transform: translate(10px, -10px);
+}
+
+.rus,
+.kirel {
+    display: none;
+}
+
+/* -------------------------------------------------------------------------------- NEXT STEP -------------------------------------------------------------------------------- */
+
+.schoolDirectionUzb {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #faf2ee;
+    display: none;
+}
+
+.schoolDirectionUzb header {
+    height: 100vh;
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.schoolDirectionUzb header nav {
+    width: 100%;
+    height: 10%;
+    /* border: 2px solid blue; */
+    display: grid;
+    place-items: center;
+    padding: 15px 0;
+}
+
+.schoolDirectionUzb header nav .raditation {
+    width: 87%;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schoolDirectionUzb header nav .raditation .leftBox {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 43%;
+    height: 100%;
+}
+
+.schoolDirectionUzb header nav .raditation .leftBox h1 {
+    color: orange;
+}
+
+.schoolDirectionUzb header nav .raditation .leftBox ul {
+    all: unset;
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+    /* border: 1px solid red; */
+}
+
+.schoolDirectionUzb header nav .raditation .leftBox ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 25px;
+    border: 1px solid black;
+}
+
+.schoolDirectionUzb header nav .raditation .leftBox ul li:last-child {
+    border: none;
+}
+
+.schoolDirectionUzb header nav .raditation .rightBox {
+    width: 25%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.schoolDirectionUzb header nav .raditation .rightBox p {
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schoolDirectionUzb header nav .raditation .rightBox p i {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.schoolDirectionUzb header nav .raditation .rightBox .selectLanguage {
+    background-color: white;
+    font-size: 14px;
+    font-weight: 700;
+    width: 43px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.schoolDirectionUzb header nav .raditation .rightBox .selectLanguage i {
+    font-size: 8px;
+}
+
+.schoolDirectionUzb header nav .raditation .rightBox .fa-bars {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.schoolDirectionUzb header section {
+    width: 100%;
+    height: 90%;
+    /* border: 2px solid yellow; */
+}
