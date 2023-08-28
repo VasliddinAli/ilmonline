@@ -78,6 +78,7 @@ body {
     display: grid;
     place-items: center;
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .container .box {
@@ -97,7 +98,6 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    cursor: pointer;
 }
 
 .container .box .raditation h2 {
