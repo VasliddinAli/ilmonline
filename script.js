@@ -14,6 +14,7 @@ function schoolOrProfessional() {
     schoolEducation.addEventListener('click', function () {
         schoolEducation.style.border = "1px solid #ec5239"
         professionalEducation.style.border = "1px solid #c6ced1"
+        professionalEducation.style.background = "#c6ced1"
         selectedDirection.style.opacity = "1"
 
         if (selectedDirection.style.opacity === "1") {
@@ -29,6 +30,7 @@ function schoolOrProfessional() {
 
     professionalEducation.addEventListener('click', function () {
         professionalEducation.style.border = "1px solid #055dff"
+        professionalEducation.style.background = "#055dff"
         schoolEducation.style.border = "1px solid #c6ced1"
         selectedDirection.style.opacity = "1"
         if (selectedDirection.style.opacity === "1") {
@@ -44,6 +46,7 @@ function schoolOrProfessional() {
 
     schoolEducation2.addEventListener('click', function () {
         schoolEducation2.style.border = "1px solid #ec5239"
+        professionalEducation.style.background = "#ec5239"
         professionalEducation2.style.border = "1px solid #c6ced1"
         selectedDirection2.style.opacity = "1"
 
@@ -60,6 +63,7 @@ function schoolOrProfessional() {
 
     professionalEducation2.addEventListener('click', function () {
         professionalEducation2.style.border = "1px solid #055dff"
+        professionalEducation.style.background = "#055dff"
         schoolEducation2.style.border = "1px solid #c6ced1"
         selectedDirection2.style.opacity = "1"
 
@@ -76,6 +80,7 @@ function schoolOrProfessional() {
 
     schoolEducation3.addEventListener('click', function () {
         schoolEducation3.style.border = "1px solid #ec5239"
+        professionalEducation.style.background = "#ec5239"
         professionalEducation3.style.border = "1px solid #c6ced1"
         selectedDirection3.style.opacity = "1"
 
@@ -92,6 +97,7 @@ function schoolOrProfessional() {
 
     professionalEducation3.addEventListener('click', function () {
         professionalEducation3.style.border = "1px solid #055dff"
+        professionalEducation.style.background = "#055dff"
         schoolEducation3.style.border = "1px solid #c6ced1"
         selectedDirection3.style.opacity = "1"
         if (selectedDirection3.style.opacity === "1") {
