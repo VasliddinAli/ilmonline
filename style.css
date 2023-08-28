@@ -86,6 +86,7 @@ body {
     height: 90%;
     display: grid;
     place-items: center;
+    cursor: pointer;
 
 }
 
