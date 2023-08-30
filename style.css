@@ -1,18 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Sans+3:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Sans+3:wght@100&display=swap'); */
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans 3', sans-serif;
+@font-face {
+    font-family: 'sourseSansPro';
+    src: url('assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf');
 }
 
-body {
-    /* height: 100vh; */
+@font-face {
+    font-family: 'sourseSansPro';
+    src: url('assets/fonts/SourceSansPro/SourceSansPro-SemiBold.ttf');
+    font-weight: 600;
+}
+
+/* @font-face {
+    font-family: 'sourseSansPro';
+    src: url('assets/fonts/SourceSansPro/SourceSansPro-Bold.ttf');
+    font-weight: 700;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'sourseSansPro';
+}
+
+body{
+    height: 100vh;;
     color: #12322e;
     background-color: #ece9fb;
 }
 
-.selectSection {
+.selectSection{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,35 +38,33 @@ body {
     height: 100%;
 }
 
-.selectSection nav {
-    /* width: 100%; */
+.selectSection nav{
+    width: 100%;
     display: grid;
     place-items: center;
-    padding: 50px;
 }
 
-.selectSection nav ul {
+.selectSection nav ul{
     display: flex;
 }
 
-.selectSection nav ul li {
+.selectSection nav ul li{
     list-style: none;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     padding: 0px 16px;
     position: relative;
     box-sizing: border-box;
     display: grid;
     place-items: center;
     transition: 400ms;
-    cursor: pointer;
 }
 
-.selectSection nav ul li:hover {
+.selectSection nav ul li:hover{
     opacity: 0.4;
 }
 
-.selectSection nav ul li:first-child::after {
+.selectSection nav ul li:first-child::after{
     content: '';
     position: absolute;
     right: 0;
@@ -58,11 +73,11 @@ body {
     background-color: #12322e;
 }
 
-.selectSection nav ul li:nth-child(2) {
+.selectSection nav ul li:nth-child(2){
     opacity: 0.4;
 }
 
-.selectSection nav ul li:last-child::before {
+.selectSection nav ul li:last-child::before{
     content: '';
     position: absolute;
     left: 0;
@@ -71,7 +86,7 @@ body {
     background-color: #12322e;
 }
 
-.container {
+.container{
     width: 800px;
     height: 530px;
     background-color: white;
@@ -80,16 +95,16 @@ body {
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-.container .box {
+.container .box{
     /* border: 1px solid red; */
     width: 90%;
     height: 90%;
     display: grid;
     place-items: center;
-
+    
 }
 
-.container .box .raditation {
+.container .box .raditation{
     /* border: 1px solid blue; */
     width: 90%;
     height: 90%;
@@ -99,18 +114,19 @@ body {
     flex-direction: column;
 }
 
-.container .box .raditation h2 {
+.container .box .raditation h2{
     margin-top: 1em;
+    font-weight: 600;
+    font-family: 'sourseSansPro';
 }
 
-.container .box .raditation #selectDirectionTitle2 {
+.container .box .raditation #selectDirectionTitle2{
     font-size: 18px;
-    font-weight: 400;
     margin-top: -1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container .box .rowBox {
+.container .box .rowBox{
     width: 480px;
     /* border: 2px solid blue; */
     display: flex;
@@ -118,7 +134,7 @@ body {
     align-items: center;
 }
 
-.container .box .rowBox .selectDirection {
+.container .box .rowBox .selectDirection{
     width: 200px;
     height: 190px;
     border: 1px solid #c6ced1;
@@ -126,53 +142,51 @@ body {
     display: grid;
     place-items: center;
     transition: 300ms;
-    cursor: pointer;
 }
 
-.container .box .rowBox .schoolEducation:hover {
+.container .box .rowBox .schoolEducation:hover{
     border: 1px solid #ec5239;
 }
 
-.container .box .rowBox .professionalEducation:hover {
+.container .box .rowBox .professionalEducation:hover{
     border: 1px solid #055dff;
 }
 
-.container .box .rowBox .schoolEducation2:hover {
+.container .box .rowBox .schoolEducation2:hover{
     border: 1px solid #ec5239;
 }
 
-.container .box .rowBox .professionalEducation2:hover {
+.container .box .rowBox .professionalEducation2:hover{
     border: 1px solid #055dff;
 }
 
-.container .box .rowBox .schoolEducation3:hover {
+.container .box .rowBox .schoolEducation3:hover{
     border: 1px solid #ec5239;
 }
 
-.container .box .rowBox .professionalEducation3:hover {
+.container .box .rowBox .professionalEducation3:hover{
     border: 1px solid #055dff;
 }
 
-.container .box .rowBox .selectDirection img {
+.container .box .rowBox .selectDirection img{
     width: 100px;
     height: 100px;
 }
 
-.container .box .rowBox .selectDirection p {
+.container .box .rowBox .selectDirection p{
     font-size: 13px;
     font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 19px;
     text-align: center;
     margin-top: -3em;
     width: 80%;
 }
 
-.container .box button {
+.container .box button{
     background-color: #6951ff;
     padding: 15px 30px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 700;
     width: 230px;
     color: white;
     border: none;
@@ -180,138 +194,254 @@ body {
     opacity: 0.6;
     transition: 500ms;
 }
-
-.container .box button:hover {
+.container .box button:hover{
     opacity: 1;
 }
 
-.selectedDirectionToggle {
+.selectedDirectionToggle{
     transform: translate(10px, -10px);
 }
 
-.rus,
-.kirel {
+.rus, .kirel{
     display: none;
 }
 
-/* -------------------------------------------------------------------------------- NEXT STEP -------------------------------------------------------------------------------- */
+        /* -------------------------------------------------------------------------------- NEXT STEP -------------------------------------------------------------------------------- */
 
-.schoolDirectionUzb {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #faf2ee;
-    display: none;
-}
+    .schoolDirectionUzb{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #faf2ee;
+        display: none;
+    }
 
-.schoolDirectionUzb header {
-    height: 100vh;
-    /* border: 3px solid green; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+    .schoolDirectionUzb header{
+        height: 100vh;
+        /* border: 3px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
-.schoolDirectionUzb header nav {
-    width: 100%;
-    height: 10%;
-    /* border: 2px solid blue; */
-    display: grid;
-    place-items: center;
-    padding: 15px 0;
-}
+    .schoolDirectionUzb header nav{
+        width: 100%;
+        height: 10%;
+        /* border: 2px solid blue; */
+        display: grid;
+        place-items: center;
+        padding: 15px 0;
+    }
 
-.schoolDirectionUzb header nav .raditation {
-    width: 87%;
-    height: 100%;
-    /* background-color: orange; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .schoolDirectionUzb header nav .raditation{
+        width: 87%;
+        height: 100%;
+        /* background-color: orange; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.schoolDirectionUzb header nav .raditation .leftBox {
-    /* background-color: blue; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 43%;
-    height: 100%;
-}
+    .schoolDirectionUzb header nav .raditation .leftBox{
+        /* background-color: blue; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 43%;
+        height: 100%;
+    }
 
-.schoolDirectionUzb header nav .raditation .leftBox h1 {
-    color: orange;
-}
+    .schoolDirectionUzb header nav .raditation .leftBox img{
+        width: 100px;
+        height: 50px;
+    }
 
-.schoolDirectionUzb header nav .raditation .leftBox ul {
-    all: unset;
-    display: flex;
-    justify-content: space-between;
-    width: 42%;
-    /* border: 1px solid red; */
-}
+    .schoolDirectionUzb header nav .raditation .leftBox ul{
+        all: unset;
+        display: flex;
+        justify-content: space-between;
+        width: 42%;
+        /* border: 1px solid red; */
+    }
 
-.schoolDirectionUzb header nav .raditation .leftBox ul li {
-    list-style: none;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 8px 25px;
-    border: 1px solid black;
-}
+    .schoolDirectionUzb header nav .raditation .leftBox ul li{
+        list-style: none;
+        font-size: 16px;
+        font-weight: 700;
+        width: 80px;
+        padding: 8px 10px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: 300ms;
+    }
 
-.schoolDirectionUzb header nav .raditation .leftBox ul li:last-child {
-    border: none;
-}
+    .schoolDirectionUzb header nav .raditation .leftBox ul li:last-child{
+        border: none;
+    }
 
-.schoolDirectionUzb header nav .raditation .rightBox {
-    width: 25%;
-    height: 100%;
-    /* background-color: red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .schoolDirectionUzb header nav .raditation .leftBox ul li i{
+        font-size: 8px;
+    }    
 
-}
+    .schoolDirectionUzb header nav .raditation .rightBox{
+        width: 25%;
+        height: 100%;
+        /* background-color: red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
 
-.schoolDirectionUzb header nav .raditation .rightBox p {
-    font-size: 14px;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .schoolDirectionUzb header nav .raditation .leftBox ul li:hover{
+        border: 1px solid #ec5239;
+    }
 
-.schoolDirectionUzb header nav .raditation .rightBox p i {
-    font-size: 20px;
-    margin-left: 10px;
-}
+    .schoolDirectionUzb header nav .raditation .leftBox ul li:last-child:hover{
+        border: none;
+        color: #ec5239;
+    }
 
-.schoolDirectionUzb header nav .raditation .rightBox .selectLanguage {
-    background-color: white;
-    font-size: 14px;
-    font-weight: 700;
-    width: 43px;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-}
+    .schoolDirectionUzb header nav .raditation .rightBox p{
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 300ms;
+    }
 
-.schoolDirectionUzb header nav .raditation .rightBox .selectLanguage i {
-    font-size: 8px;
-}
+    .schoolDirectionUzb header nav .raditation .rightBox p i{
+        font-size: 20px;
+        margin-left: 10px;
+    }
 
-.schoolDirectionUzb header nav .raditation .rightBox .fa-bars {
-    font-size: 30px;
-    font-weight: 900;
-}
+    .schoolDirectionUzb header nav .raditation .rightBox p:hover{
+        color: #ec5239;
+    }
 
-.schoolDirectionUzb header section {
-    width: 100%;
-    height: 90%;
-    /* border: 2px solid yellow; */
-}
+    .schoolDirectionUzb header nav .raditation .rightBox .selectLanguage{
+        background-color: white;
+        font-size: 16px;
+        font-weight: 700;
+        width: 43px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .schoolDirectionUzb header nav .raditation .rightBox .selectLanguage i{
+        font-size: 8px;
+    }
+
+    .schoolDirectionUzb header nav .raditation .rightBox .selectLanguage:hover{
+        border: 1px solid #ec5239;
+    }
+
+    .schoolDirectionUzb header nav .raditation .rightBox .fa-bars{
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .schoolDirectionUzb header nav .raditation .rightBox .fa-bars:hover{
+        color: #ec5239;
+    }
+
+    .schoolDirectionUzb header section{
+        width: 100%;
+        height: 90%;
+        /* border: 2px solid yellow; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .schoolDirectionUzb header section .leftBox{
+        width: 50%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .schoolDirectionUzb header section .leftBox .raditation{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column; 
+    }
+
+    .schoolDirectionUzb header section .leftBox .raditation h1{
+        font-size: 67px;
+        margin-bottom: 0.5em;
+    }
+
+    .schoolDirectionUzb header section .leftBox .raditation h1 span{
+        color: #ec5239;
+    }
+
+    .schoolDirectionUzb header section .leftBox .raditation button{
+        background-color: #ec5239;
+        width: 230px;
+        padding: 16px 0;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        transition: 500ms;
+    }
+
+    .schoolDirectionUzb header section .leftBox .raditation button:hover{
+        transform: translate(5px, -5px);
+    }
+
+    .schoolDirectionUzb header section .rightBox{
+        width: 50%;
+        height: 100%;
+        /* background-color: yellow; */
+        display: grid;
+        place-items: center;
+    }
+
+    .schoolDirectionUzb header section .rightBox .circleAnimate{
+        width: 500px;
+        height: 500px;
+        display: grid;
+        place-items: center;
+        /* background-color: red; */
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .schoolDirectionUzb header section .rightBox .circleAnimate .largeSize{
+        width: 500px;
+        height: 500px;
+        border: 1px solid #ec5239;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .schoolDirectionUzb header section .rightBox .circleAnimate .mediumSize{
+        width: 380px;
+        height: 380px;
+        border: 1px solid #ec5239;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .schoolDirectionUzb header section .rightBox .circleAnimate .smallSize{
+        width: 250px;
+        height: 250px;
+        border: 1px solid #ec5239;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    /* Bazibir commentdagi narsalar aynan ishlanayotgan jarayonda boshqa qisamga chalgimaslik, chegarasi qayergacha borganligni aniqlash va.hkzlarda ishlash uchun ishlatilgan! */

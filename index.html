@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/styles/anim.css">
+    <link rel="stylesheet" href="./assets/styles/main.sass">
+    <link rel="stylesheet" href="./assets/styles/config/_pagination.sass">
+    <link rel="stylesheet" href="./assets/styles/config/_sidebar_filters.sass">
+    <link rel="stylesheet" href="./assets/styles/config/fonts.css">
+    <link rel="stylesheet" href="./assets/styles/config/fonts.css.map">
+    <link rel="stylesheet" href="./assets/styles/config/fonts.sass">
+    <link rel="stylesheet" href="./assets/styles/config/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/config/normalize.sass">
+    <link rel="stylesheet" href="./assets/styles/config/normalize.css.map">
+    <link rel="stylesheet" href="./assets/styles/config/global.sass">
+    <link rel="stylesheet" href="./assets/styles/config/varriables.sass">
+    <link rel="stylesheet" href="./assets/styles/helpers/_agreement_policy.sass">
+    <link rel="stylesheet" href="./assets/styles/helpers/_basic-modals.sass">
+    <link rel="stylesheet" href="./assets/styles/helpers/_course-tests.sass">
+    <link rel="stylesheet" href="./assets/styles/helpers/_directions.sass">
+    <link rel="stylesheet" href="./assets/styles/helpers/_profile.sass">
+    <link rel="stylesheet" href="./assets/styles/helpers/_v-carousel.sass">
+    <link rel="stylesheet" href="./assets/styles/mixins/_media.sass">
     <title>Uyga | ILM Online</title>
 </head>
 <body>
@@ -16,25 +36,6 @@
                 <li id="kirelLi" onclick="kirelSection()">УЗБ</li>
             </ul>
         </nav>
-        <div class="container rus">
-            <div class="box">
-                <div class="raditation">
-                    <h2>Привет! Добро пожаловать в <span translate="no">ILM onlayn</span>.</h2>
-                    <p id="selectDirectionTitle2">В каком направлении вы хотите учиться?</p>
-                    <div class="rowBox">
-                        <div class="selectDirection schoolEducation" title="Школьное образование">
-                            <img src="img/go-to-school.png">
-                            <p>Уроки для школьников</p>
-                        </div>
-                        <div class="selectDirection professionalEducation" title="Профессиональное образование">
-                            <img src="img/presentation.png">
-                            <p>Профессиональные курсы (для студентов и выпускников вузов)</p>
-                        </div>
-                    </div>
-                    <button id="selectedDirection">ПЕРЕХОД</button>
-                </div>
-            </div>
-        </div>
         <div class="container uzb">
             <div class="box">
                 <div class="raditation">
@@ -50,27 +51,7 @@
                             <p>Professional kurslar (talabalar va oliy o'quv yurti bitiruvchilari uchun)</p>
                         </div>
                     </div>
-                    <button id="selectedDirection2">O`TISH</button>
-                </div>
-            </div>
-        </div>
-        <div class="container kirel">
-            <div class="box">
-                <div class="raditation">
-                    <h2>Салом! ILM online га хуш келибсиз.</h2>
-                    <p id="selectDirectionTitle2">Қайси йўналишда ўқишни хоҳлайсиз?</p>
-                    <div class="rowBox">
-                        <div class="selectDirection schoolEducation3" title="Maktab ta'limi">
-                            <img src="img/go-to-school.png">
-                            <p>Мактаб ўқувчилари учун дарслар</p>
-                        </div>
-                        <div class="selectDirection professionalEducation3" title="Professional ta'lim">
-                            <img src="img/presentation.png">
-                            <p>Профессионал курслар
-                                (талабалар ва олий ўқув юрти битирувчилари учун)</p>
-                        </div>
-                    </div>
-                    <button id="selectedDirection3">ЎТИШ</button>
+                    <button id="selectedDirection2">O'TISH</button>
                 </div>
             </div>
         </div>
@@ -83,9 +64,9 @@
             <nav>
                 <div class="raditation">
                     <div class="leftBox">
-                        <h1>ILM ONLINE</h1>
+                        <img src="./images/images/logo/logo_header.png" alt="Logo offical">
                         <ul>
-                            <li>Darslar</li>
+                            <li>Darslar <i class="fa-solid fa-chevron-down"></i></li>
                             <li>Testlar</li>
                         </ul>
                     </div>
@@ -94,12 +75,24 @@
                         <div class="selectLanguage">
                             UZB <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <i class="fa-sharp fa-solid fa-bars" style="color: #000000;"></i> 
+                        <i class="fa-sharp fa-solid fa-bars"></i> 
                     </div>
                 </div>
             </nav>
             <section>
-
+                <div class="leftBox">
+                    <div class="raditation">
+                        <h1>Ilm sari <span>biz bilan!</span></h1>
+                        <button>QO`SHILING</button>
+                    </div>
+                </div>
+                <div class="rightBox">
+                    <div class="circleAnimate">
+                        <div class="largeSize"></div>
+                        <div class="mediumSize"></div>
+                        <div class="smallSize"></div>
+                    </div>
+                </div>
             </section>
         </header>
     </div>
