@@ -1,48 +1,44 @@
-let schoolEducation = document.querySelector(".schoolEducation"), professionalEducation = document.querySelector(".professionalEducation"), selectedDirection = document.querySelector("#selectedDirection");
-let schoolEducation2 = document.querySelector(".schoolEducation2"), professionalEducation2 = document.querySelector(".professionalEducation2"), selectedDirection2 = document.querySelector("#selectedDirection2");
-let schoolEducation3 = document.querySelector(".schoolEducation3"), professionalEducation3 = document.querySelector(".professionalEducation3"), selectedDirection3 = document.querySelector("#selectedDirection3");
-let schoolDirectionUzb = document.querySelector(".schoolDirectionUzb")
+let lessons_btn = document.querySelector('.lessons_btn');
+let user_cabinet = document.querySelector('.user_cabinet');
+let nav_burger__wrapper = document.querySelector('.nav_burger__wrapper');
+let mainResMenu = document.querySelector('.mainResMenu');
+let mainMenu = document.querySelector('.mainMenu');
 
+lessons_btn.addEventListener('click', () => {
+    if (document.querySelector('.lessonsMenu').style.display != 'grid') {
+        document.querySelector('.lessonsMenu').style.display = 'grid'
+        document.querySelector('.lessons_btn img').style.transform = 'rotate(180deg)'
+        document.querySelector('.mainMenu').style.display = 'none'
+        document.querySelector('.header__wrapper').classList.add('active')
+        document.querySelector('.header__inner').classList.add('burger_categories')
+        document.querySelector('.user_cabinet').classList.remove('hover')
+    } else {
+        document.querySelector('.lessonsMenu').style.display = 'none'
+        document.querySelector('.lessons_btn img').style.transform = 'rotate(0)'
+        document.querySelector('.header__wrapper').classList.remove('active')
+        document.querySelector('.header__inner').classList.remove('burger_categories')
+    }
+})
 
-function schoolOrProfessional(){
-    schoolEducation2.addEventListener('click', function(){
-        schoolEducation2.style.border = "1px solid #ec5239"
-        professionalEducation2.style.border = "1px solid #c6ced1"
-        selectedDirection2.style.opacity = "1"
-        
-        if(selectedDirection2.style.opacity === "1"){
-            selectedDirection2.addEventListener('mousemove', function(){
-                selectedDirection2.style.transform = "translate(10px, -10px)"
-            })
+nav_burger__wrapper.addEventListener('click', () => {
+    if (document.querySelector('.mainMenu').style.display != 'grid') {
+        document.querySelector('.mainMenu').style.display = 'grid'
+        document.querySelector('.lessonsMenu').style.display = 'none'
+        document.querySelector('.user_cabinet').classList.remove('hover')
+        document.querySelector('.lessons_btn img').style.transform = 'rotate(0)'
+        document.querySelector('.header__wrapper').classList.add('active')
+        document.querySelector('.header__inner').classList.add('burger_categories')
+    } else {
+        document.querySelector('.mainMenu').style.display = 'none'
+        document.querySelector('.header__wrapper').classList.remove('active')
+        document.querySelector('.header__inner').classList.remove('burger_categories')
+    }
+})
 
-            selectedDirection2.addEventListener('mouseout', function(){
-                selectedDirection2.style.transform = "translate(0, 0)"
-            })
-        }
-    })
-
-    professionalEducation2.addEventListener('click', function(){
-        professionalEducation2.style.border = "1px solid #055dff"
-        schoolEducation2.style.border = "1px solid #c6ced1"
-        selectedDirection2.style.opacity = "1"
-
-        if(selectedDirection2.style.opacity === "1"){
-            selectedDirection2.addEventListener('mousemove', function(){
-                selectedDirection2.style.transform = "translate(10px, -10px)"
-            })
-
-            selectedDirection2.addEventListener('mouseout', function(){
-                selectedDirection2.style.transform = "translate(0, 0)"
-            })
-        }
-    })
-} schoolOrProfessional()
-
-    /* -------------------------------------------------------------------------------- NEXT STEP -------------------------------------------------------------------------------- */
-
-    /* -------------------------------------------------------------------------------- NEXT STEP -------------------------------------------------------------------------------- */
-
-selectedDirection2.addEventListener('click', function(){
-    schoolDirectionUzb.style.display = "block"
-    document.querySelector(".rus, .uzb, .kirel").style.display = "none"
-})  
+user_cabinet.addEventListener('click', () => {
+    document.querySelector('.user_cabinet').classList.toggle('hover')
+    document.querySelector('.header__wrapper').classList.remove('active')
+    document.querySelector('.header__inner').classList.remove('burger_categories')
+    document.querySelector('.mainMenu').style.display = 'none'
+    document.querySelector('.lessonsMenu').style.display = 'none'
+})
