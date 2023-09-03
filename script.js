@@ -42,3 +42,15 @@ user_cabinet.addEventListener('click', () => {
     document.querySelector('.mainMenu').style.display = 'none'
     document.querySelector('.lessonsMenu').style.display = 'none'
 })
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY >= 10) {
+        document.querySelector('.header').classList.add('shadow')
+    } else {
+        document.querySelector('.header').classList.remove('shadow')
+    }
+});
+document.querySelector('.scroll_arrow_down').addEventListener('click', () => {
+    const scrollY = window.innerHeight; // Scroll to 100vh
+    window.scrollTo(0, scrollY);
+})
