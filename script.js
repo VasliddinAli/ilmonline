@@ -78,3 +78,23 @@ checkboxes.forEach(checkbox => {
         }
     })
 });
+
+let polisyTitle = document.querySelectorAll('.agreement_policy__content_title');
+
+polisyTitle.forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('opened')
+        let element = document.querySelector('item .agreement_policy__content_text');
+        let haveElement = window.getComputedStyle(element).display
+
+        if (haveElement === 'none') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    })
+});
+
+document.querySelector('.sorting_select__title').addEventListener('click', () => {
+    document.querySelector('.sorting_select__title').classList.toggle('hover')
+})

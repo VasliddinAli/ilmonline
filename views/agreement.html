@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app" class="school-courses">
+        <div>
+            <div role="dialog" class="v-dialog__container"></div>
+            <main class="main">
+                <header id="header" class="header">
+                    <div class="header__wrapper">
+                        <div class="container">
+                            <nav class="header__inner">
+                                <div class="header__nav">
+                                    <a href="../index.html"><img src="../images/imgs/logo/logo_header.png" alt=""></a>
+                                </div>
+                                <div class="lessons_btn"><span class="lessons_btn__text">Darslar</span>
+                                    <img src="../assets/icons/icon_filter_arrow.svg" alt="">
+                                </div>
+                                <div class="tests_btn"> Testlar </div>
+                                <div class="header__center_input"></div>
+                                <div class="user_cabinet not_touch_device"><span class="user_cabinet__text"
+                                        style="font-weight: bold;"> Shaxsiy kabinet</span>
+                                    <div class="nav_right__link user_profile active">
+                                        <img src="../assets/icons/icon_profile.svg" alt="">
+                                        <div class="user_profile__list_wrapper">
+                                            <div class="user_profile__list">
+                                                <a href="#" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_link_profile_school.svg" alt="">
+                                                    <span>Profil</span>
+                                                </a>
+                                                <a href="#" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_my_lessons_school.svg" alt="">
+                                                    <span>Mening darslarim</span>
+                                                </a>
+                                                <a href="#" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_tests_school.svg" alt="">
+                                                    <span>Mening testlarim</span>
+                                                </a>
+                                                <a href="#" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_chat_with_mentor_school.svg" alt="">
+                                                    <span>O'qituvchilar bilan suhbat</span>
+                                                </a>
+                                                <a href="#" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_payment_school.svg" alt="">
+                                                    <span>To'lov tafsilotlari</span>
+                                                </a>
+                                                <a href="#" class="user_profile__link">
+                                                    <img src="../assets/icons/smart_subscribe_school.svg" alt="">
+                                                    <span>Smart obuna</span>
+                                                </a>
+                                                <a href="#" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_referal_school.svg">
+                                                    <span>Referal tizimi</span>
+                                                </a>
+                                                <a href="#" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_parent_control.svg">
+                                                    <span>Ota-ona nazorati</span>
+                                                </a>
+                                                <a href="#" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_logout_school.svg" alt="">
+                                                    <span>Сhiqish</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_right__link language"><span>UZB</span>
+                                    <div class="language__list_wrapper">
+                                        <div class="language__list">
+                                            <span class="language__link"> РУС</span><span
+                                                class="language__link selected"></span>
+                                            UZB</span><span class="language__link">
+                                                УЗБ</span>
+                                        </div>
+                                    </div>
+                                    <img src="../assets/icons/icon_filter_arrow.svg" alt="">
+                                </div>
+                                <div class="nav_burger__wrapper">
+                                    <div class="nav_burger"></div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="drop_header">
+                            <div class="container mainMenu" style="display: none;">
+                                <div class="drop_header_main small_screen">
+                                    <div class="drop_header__wrapper active">
+                                        <div class="drop__item navigation">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: block;">
+                                                    <span>Navigatsiya</span>
+                                                </div>
+                                                <a href="../index.html" class="drop__link">
+                                                    <span>Uy</span>
+                                                </a>
+                                                <a href="./about.html" class="drop__link">
+                                                    <span>Biz haqimizda</span>
+                                                </a>
+                                                <a href="./vacancies.html" class="drop__link">
+                                                    <span>Bo'sh ish
+                                                        o'rinlari</span>
+                                                </a>
+                                                <a href="./news.html" class="drop__link">
+                                                    <span>Yangiliklar</span>
+                                                </a>
+                                                <a href="./courses.html" class="drop__link">
+                                                    <span>Darslar</span>
+                                                </a>
+                                                <a href="./tests.html" class="drop__link">
+                                                    <span>Testlar</span>
+                                                </a>
+                                                <a href="./education.html" class="drop__link">
+                                                    <span>Ta'lim</span>
+                                                </a>
+                                                <div class="mode_switcher">
+                                                    <span class="mode_switcher__title">Maktab o'quvchilari uchun
+                                                        darslar</span>
+                                                    <div class="mode_switcher__box">
+                                                        <input id="mode-switcher" type="checkbox"
+                                                            class="mode_switcher__input">
+                                                        <label for="mode-switcher" class="mode_switcher__label"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item categories burger_categories">
+                                            <div class="drop__content">
+                                                <a href="./courses.html" class="drop__title burger_title"
+                                                    style="display: block;">
+                                                    <span>Yo'nalish</span>
+                                                </a>
+                                                <a href="./courses.html" class="drop__link">
+                                                    <span> Dasturlash kurslari</span>
+                                                </a>
+                                                <a href="./courses.html" class="drop__link">
+                                                    <span> Chet tillari </span>
+                                                </a>
+                                                <a href="./courses.html" class="drop__link">
+                                                    <span> Abituriyentlar uchun</span>
+                                                </a>
+                                                <a href="./courses.html" class="drop__link">
+                                                    <span> Bonus darslar </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item ilm">
+                                            <div class="drop__content">
+                                                <a href="#" class="drop__title burger_title" style="display: block;">
+                                                    <span>ILM</span>
+                                                </a>
+                                                <a href="./policy.html" class="drop__link">
+                                                    <span>Maxfiylik siyosati</span>
+                                                </a>
+                                                <a href="./agreement.html" class="drop__link">
+                                                    <span>Shartnoma taklifi</span>
+                                                </a>
+                                                <a href="../index.html#feedback" class="drop__link">
+                                                    <span>Qayta aloqa</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item cabinet_login">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title"><span>Shaxsiy kabinet</span></div>
+                                                <a href="#" class="drop__link"> Profil </a>
+                                                <a href="#" class="drop__link"> Mening darslarim </a>
+                                                <a href="#" class="drop__link"> Mening testlarim </a>
+                                                <a href="#" class="drop__link"> O'qituvchilar bilan suhbat </a>
+                                                <a href="#" class="drop__link"> To'lov tafsilotlari </a>
+                                                <a href="#" class="drop__link"> Smart obuna </a>
+                                                <a href="#" class="drop__link"> Referal tizimi </a>
+                                                <a href="#" class="drop__link"> Ota-ona nazorati </a>
+                                                <a href="#" class="drop__link log_line">
+                                                    <img src="../assets/icons/icon_logout_school.svg" alt=""> Сhiqish
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main responsive -->
+                            <div class="container mainResMenu" style="display: none;">
+                                <div class="drop_header_main small_screen">
+                                    <div class="drop_header__wrapper active">
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_link_profile_school.svg"
+                                                        alt=""><span>Profil</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_my_lessons_school.svg"
+                                                        alt=""><span>Mening
+                                                        darslarim</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_tests_school.svg" alt=""><span>Mening
+                                                        testlarim</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_chat_with_mentor_school.svg"
+                                                        alt=""><span>O'qituvchilar bilan suhbat</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_payment_school.svg"
+                                                        alt=""><span>To'lov
+                                                        tafsilotlari</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/smart_subscribe_school.svg"
+                                                        alt=""><span>Smart
+                                                        obuna</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_referal_school.svg"
+                                                        alt=""><span>Referal
+                                                        tizimi</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_parent_control.svg"
+                                                        alt=""><span>Ota-ona
+                                                        nazorati</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list last_drop_item">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_logout_school.svg"
+                                                        alt=""><span>Сhiqish</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item cabinet_login" style="display: none;">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title"><span>Shaxsiy kabinet</span></div>
+                                                <div class="drop__link"> Profil </div>
+                                                <div class="drop__link"> Mening darslarim
+                                                </div>
+                                                <div class="drop__link"> Mening testlarim
+                                                </div>
+                                                <div class="drop__link"> O'qituvchilar bilan
+                                                    suhbat </div>
+                                                <div class="drop__link"> To'lov tafsilotlari
+                                                </div>
+                                                <div class="drop__link"> Smart obuna </div>
+                                                <div class="drop__link"> Referal tizimi </div>
+                                                <div class="drop__link"> Ota-ona nazorati
+                                                </div>
+                                                <div class="drop__link log_line">
+                                                    <img src="../assets/icons/icon_logout_school.svg" alt=""> Сhiqish
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- darslar -->
+                            <div class="container lessonsMenu" style="display: none;">
+                                <div class="drop_header_main small_screen">
+                                    <div class="drop_header__wrapper active opened_сourses">
+                                        <div class="drop__item levels">
+                                            <div class="drop__content">
+                                                <div class="drop__title level" style="display: block;">
+                                                    <span>Daraja</span>
+                                                </div>
+                                                <a href="#" class="drop__link"><span>Boshlangʻich daraja</span></a>
+                                                <a href="#" class="drop__link"><span>O'rta daraja</span></a>
+                                                <a href="#" class="drop__link"><span>Yuqori daraja</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item categories courses_categories">
+                                            <div class="drop__content">
+                                                <div class="drop__title categories" style="display: block;">
+                                                    <span>Yo'nalish</span>
+                                                </div>
+                                                <a href="#" class="drop__link">
+                                                    <span> Dasturlash kurslari </span>
+                                                </a>
+                                                <a href="#" class="drop__link">
+                                                    <span> Chet tillari </span>
+                                                </a>
+                                                <a href="#" class="drop__link">
+                                                    <span> Abituriyentlar uchun </span>
+                                                </a>
+                                                <a href="#" class="drop__link">
+                                                    <span> Bonus darslar </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item prices">
+                                            <div class="drop__content">
+                                                <div class="drop__title price" style="display: block;">
+                                                    <span>Narxi</span>
+                                                </div>
+                                                <a href="#" class="drop__link"><span>Bepul</span></a>
+                                                <a href="#" class="drop__link"><span>Pullik</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item languages">
+                                            <div class="drop__content">
+                                                <div class="drop__title lang" style="display: block;">
+                                                    <span>Tillar</span>
+                                                </div>
+                                                <a href="#" class="drop__link"><span>Rus</span></a>
+                                                <a href="#" class="drop__link"><span>O'zbek</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="drop_btn__wrapper">
+                                            <div class="button_wrapper popular">
+                                                <button type="button" icon-name=""
+                                                    class="primary-btn primary-btn--orange primary-btn--popular">
+                                                    Hamma darslar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+
+                <div class="content">
+                    <div class="breadcrumbs_color">
+                        <div class="container">
+                            <div id="bread" class="breadcrumbs">
+                                <div class="breadcrmubs_link">
+                                    <div class="item"> Uyga </div>
+                                    <img src="../assets/icons/next_arrow_bread.svg" alt="">
+                                </div>
+                                <div class="breadcrmubs_link">
+                                    <div class="item"> Shartnoma taklifi </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_conditions">
+                        <div class="agreement_policy">
+                            <div class="agreement_policy__head">
+                                <div class="container">
+                                    <div class="agreement_policy__title"> Shartnoma taklifi </div>
+                                </div>
+                            </div>
+                            <div class="agreement_policy__content">
+                                <div class="container">
+                                    <div class="title_agreement">Ushbu Shartnoma <strong>“INNOVATION ILM
+                                            PLATFORM”</strong>ChJning (keyingi o‘rinlarda “Kompaniya” deb yuritiladi)
+                                        rasmiy taklifi (ommaviy oferta) bo‘lib, u cheklanmagan miqdordagi shaxslarga
+                                        quyidagi shartlarda Veb-saytdan foydalanish bo‘yicha shartnoma tuzishni taklif
+                                        qiladi:</div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 1. </p>
+                                            <h1 class="agreement_policy__content_title "> SHARTLARNING TA'RIFI
+                                            </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">1.1. Ushbu
+                                                Shartnomada
+                                                foydalaniladigan terminologiya quyidagilarni anglatadi: <br> 1.1.1.
+                                                Avtorizatsiya - foydalanuvchi yoki Tashkilotchi tomonidan kiritilgan
+                                                autentifikatsiya ma'lumotlarini veb-saytning dasturiy qismi tomonidan
+                                                tahlil qilish jarayoni, uning natijalari shaxsiy sahifa va veb-sayt
+                                                xizmatlariga kirish huquqining mavjudligini aniqlaydi; <br> 1.1.2.
+                                                Aksept - Saytda ro'yxatdan o'tish amallarini bajarish orqali Ofertani
+                                                to'liq va so'zsiz qabul qilish; <br> 1.1.3. Autentifikatsiya
+                                                ma'lumotlari - Shaxsiy sahifaga kirish uchun foydalaniladigan noyob
+                                                foydalanuvchi identifikatori. Autentifikatsiya ma'lumotlari
+                                                foydalanuvchining logini, paroli, elektron pochta manzillarini o'z
+                                                ichiga oladi; <br> 1.1.4. Veb-sayt – jamiyat ixtiyorida boʻlgan hamda
+                                                yuridik va jismoniy shaxslarga maʼlum matn, grafik yoki tovush
+                                                koʻrinishidagi axborot resurslari bilan birgalikda ilm domen zonasida
+                                                Internet tarmogʻida yagona manzilga ega boʻlgan dasturiy-texnik
+                                                vositalar majmui. ushbu axborot resurslariga va boshqa axborot
+                                                xizmatlariga internet tarmog‘i orqali kirish; <br> 1.1.5. Tadbirga
+                                                kirish - kompaniya tomonidan yaratilgan elektron pochta, shu jumladan,
+                                                lekin faqat Tashkilotchining ko'rsatmasi bo'yicha, foydalanuvchiga
+                                                ishtirok etish huquqini beruvchi ma'lum bir Tadbirga (URL, kirish kodi)
+                                                kirish tafsilotlarini o'z ichiga olgan. u tanlagan voqea. Tadbirga
+                                                kirish foydalanuvchining shaxsiy sahifasidan foydalanish orqali ham
+                                                mumkin; <br> 1.1.6. Internet-sahifa (HTML sahifasi) - Veb-saytning
+                                                ajralmas qismi sifatida Internet tarmog'ida ma'lumotlarni e'lon qilish
+                                                uchun mo'ljallangan, dasturiy va texnik vositalar bilan birlashtirilgan,
+                                                shu jumladan matn, grafikalarni o'z ichiga olgan axborot materiallari
+                                                to'plami, Sayt sahifasi; <br> 1.1.7. Qonun hujjatlari – O‘zbekistonning
+                                                amaldagi qonunchiligining mazkur Bitimga nisbatan qo‘llaniladigan
+                                                qoidalarini anglatadi; <br> 1.1.8. Tadbir - Tashkilotchi tomonidan
+                                                Veb-sayt xizmatlaridan foydalangan holda tashkil etiladigan mavzuli
+                                                treninglar, seminarlar, konferentsiyalar, vebinar yoki onlayn
+                                                maslahatlar formatidagi mahorat darslari va boshqa masofaviy tadbirlar;
+                                                <br> 1.1.9. Ilova - Ofertada belgilangan tartibda veb-sayt yordamida
+                                                amalga oshirilgan foydalanuvchining muayyan Tadbirda ishtirok etish
+                                                istagi; <br> 1.1.10. Veb-sayt tarkibi - intellektual faoliyat natijalari
+                                                va tenglashtirilgan individuallashtirish vositalari, shu jumladan:
+                                                adabiy asarlar, matnlar, ma'ruzalar, nutqlar, nutqlar, kompyuter
+                                                dasturlari, mobil telefonlar uchun dasturlar va ilovalar, audiovizual
+                                                asarlar (video kurslar, infografika, fonogrammalar , tasvirlar, savdo
+                                                belgilari). va xizmat ko'rsatish belgilari, savdo nomlari va savdo
+                                                nomlari, logotiplar, gipermatnli havolalar, ularning bo'laklari,
+                                                ma'lumotlar, vidjetlar va veb-saytda joylashtirilgan boshqa
+                                                ob'ektlar;<br> 1.1.11 Tadbir va dars mazmuni - sessiya mazmunini tashkil
+                                                etuvchi barcha ma'lumotlar Muayyan hodisa, shu jumladan jonli
+                                                translyatsiyalar, ma'lumotlar fayllari, matnlar, kompyuter dasturlari,
+                                                ovozli fayllar, fotosuratlar, videolar va boshqa tasvirlar, shu jumladan
+                                                veb-saytdan foydalangan holda yangi tashkil etilganlar; <br>
+                                                1.1.12.Foydalanuvchi - qabul qilgan shaxs Ushbu ommaviy oferta
+                                                shartnomasida mavjud bo'lgan taklif va ma'lumotlarga kirish huquqiga
+                                                ega, veb-saytida joylashtirilgan. Foydalanuvchi o'z akkauntidan
+                                                foydalanish huquqiga ega bo'lmagan har qanday shaxs tomonidan
+                                                foydalanish bilan bog'liq barcha xavflarni va bunday foydalanish
+                                                oqibatlarini o'z zimmasiga oladi; <br> 1.1.13. Ruxsatsiz kirish -
+                                                uchinchi shaxs tomonidan foydalanuvchi autentifikatsiya ma'lumotlaridan
+                                                foydalanish; <br> 1.1.14. Hisob qaydnomasi - Veb-sayt serverlarida
+                                                saqlanadigan foydalanuvchi autentifikatsiya ma'lumotlari va shaxsiy
+                                                ma'lumotlar; <br> 1.1.15. Tashkilotchi - Kompaniyaning agenti va/yoki
+                                                litsenziati bo'lgan va foydalanuvchilarni Tadbirda ishtirok etishga jalb
+                                                qilish bo'yicha faoliyatni amalga oshiruvchi jismoniy shaxs, yakka
+                                                tartibdagi tadbirkor yoki yuridik shaxs, shu jumladan. Tadbirda ishtirok
+                                                etish uchun to'lovlarni qabul qilish huquqi bilan; <br> 1.1.16. Shaxsiy
+                                                sahifa - Foydalanuvchining Shaxsiy ma'lumotlarni o'z ichiga olgan
+                                                akkauntni olishi natijasida Veb-saytning dasturiy imkoniyatlaridan
+                                                foydalangan holda yaratilgan Internet sahifasi; <br> 1.1.17. Shaxsiy
+                                                ma'lumotlar - Kompaniyaga foydalanuvchini avtorizatsiya qilish
+                                                tartib-qoidalarini amalga oshirish imkonini beruvchi ishonchli, to'liq
+                                                va dolzarb ma'lumotlar, Foydalanuvchi tomonidan Shaxsiy sahifada
+                                                ixtiyoriy ravishda va bepul joylashtiriladi. Ushbu ma'lumot
+                                                foydalanuvchi tomonidan Saytda ro'yxatdan o'tish jarayonida taqdim
+                                                etiladi, unda ism, login, elektron pochta manzili va Foydalanuvchi o'zi
+                                                haqida taqdim etishi kerak bo'lgan boshqa ma'lumotlar bo'lishi mumkin.
+                                                Shaxsiy ma'lumotlarni saqlash veb-saytda avtorizatsiya qilish
+                                                imkoniyatini ta'minlash maqsadida amalga oshiriladi, ma'lumotlarni
+                                                saqlash tartibi Maxfiylik siyosatida va shaxsiy ma'lumotlarni qayta
+                                                ishlashda nazarda tutilgan; <br> 1.1.18. Oferta - bu ommaviy oferta
+                                                shartnomasi bo'lib, kompaniya va foydalanuvchi o'rtasida kompaniya
+                                                tomonidan taklif qilingan shartnomaga foydalanuvchi qo'shilish orqali
+                                                tuziladi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 2. </p>
+                                            <h1 class="agreement_policy__content_title "> SHARTNOMA MAVZUSI </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">2.1. Ushbu
+                                                Shartnoma rasmiy
+                                                ommaviy oferta (oferta) bo'lib, Kompaniyaning barcha manfaatdor
+                                                tomonlarga Veb-sayt xizmatlaridan foydalanishni ta'minlash bo'yicha
+                                                xizmatlarni taqdim etishi uchun barcha muhim shartlarni o'z ichiga
+                                                oladi. <br> 2.2. Kompaniya ushbu Ofertada nazarda tutilgan tartibda va
+                                                shartlarda Foydalanuvchiga Veb-saytdan foydalanish imkoniyatini beradi
+                                                va Foydalanuvchi Veb-saytdan ushbu Oferta shartlariga muvofiq
+                                                foydalanish majburiyatini oladi. <br> 2.3. Kompaniya veb-sayti
+                                                tadbirlarni o'tkazish uchun platforma hisoblanadi. Agar ushbu
+                                                Shartnomada yoki muayyan Tadbirda ishtirok etish shartlarida boshqacha
+                                                tartib nazarda tutilmagan bo'lsa, Kompaniya Tadbirlarni o'tkazish uchun
+                                                javobgar shaxs emas. Tadbirlarni o'tkazish, pullik xizmatlar ko'rsatish
+                                                bo'yicha barcha majburiyatlar Foydalanuvchi va O'qituvchi va/yoki
+                                                uchinchi shaxslar o'rtasida yuzaga keladi. Agar ushbu Shartnomada yoki
+                                                muayyan Tadbirda ishtirok etish shartlarida boshqacha qoida nazarda
+                                                tutilmagan bo'lsa, Kompaniya ushbu majburiyatlarning haqiqiyligi va
+                                                bajarilishi imkoniyati uchun javobgar emas. Tadbirlarni o'tkazish bilan
+                                                bog'liq majburiyatlarni bajarishning asosliligi va imkoniyati,
+                                                shuningdek, Tadbirlar mazmuni uchun javobgarlik faqat o'qituvchining
+                                                zimmasida. <br> 2.4. Foydalanuvchining Veb-saytda ro'yxatdan o'tish
+                                                fakti ushbu Oferta shartlarini to'liq va so'zsiz qabul qilish (qabul
+                                                qilish) hisoblanadi. <br> 2.5. Veb-saytda e'lon qilingan Tadbirlar
+                                                jadvali, soni va davomiyligi, shuningdek, Tadbirlarning narxi va
+                                                Tadbirlar uchun boshqa muhim holatlar veb-saytda real vaqt rejimida
+                                                e'lon qilinishi mumkin. <br> 2.6. Kompaniya va O'qituvchi o'rtasidagi
+                                                tegishli shartnomalarda nazarda tutilgan shartlarga ko'ra, Kompaniya
+                                                foydalanuvchilar bilan munosabatlarda o'z nomidan, lekin o'qituvchi
+                                                nomidan ish yuritadi va o'qituvchi tomonidan Tadbirlarga kirishni amalga
+                                                oshirishda texnik yordam ko'rsatadi. Foydalanuvchilar. <br> 2.7.
+                                                Foydalanuvchi ushbu Taklifning joriy versiyasini Veb-saytga
+                                                joylashtirish orqali kelajakda Kompaniya tomonidan ushbu Taklif
+                                                shartlari o'zgartirilishi mumkinligiga rozilik bildiradi. Agar
+                                                Foydalanuvchi Taklifning yangi (o'zgartirilgan) shartlariga rozi
+                                                bo'lmasa, Kompaniya Foydalanuvchining hisobini bloklash yoki bekor
+                                                qilish huquqini o'zida saqlab qoladi.</p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 3. </p>
+                                            <h1 class="agreement_policy__content_title "> WEB-SAYTDA FOYDALANUVCHI
+                                                RO'YXATDAN OTISHI </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">3.1.
+                                                Foydalanuvchiga Xizmatni
+                                                taqdim etish, agar Foydalanuvchi Veb-saytda ro'yxatdan o'tish jarayonini
+                                                tugatsa (foydalanuvchi tegishli akkauntni (ro'yxatdan o'tish hisobini)
+                                                yaratadi). Hisob qaydnomasida (ro'yxatdan o'tish akkaunti)
+                                                foydalanuvchining logini (taxallus (taxallus) yoki Foydalanuvchi nomi),
+                                                uning elektron pochta manzili va paroli.<br> 3.2 Foydalanuvchining
+                                                Veb-saytda ro'yxatdan o'tishlari bepul va ixtiyoriydir.<br> 3.3
+                                                Foydalanuvchi ro'yxatdan o'tishdan oldin ushbu Shartnoma shartlari bilan
+                                                to'liq tanishishi shart. Veb-sayt. va Foydalanuvchi tomonidan ushbu
+                                                Shartnoma shartlarini so'zsiz qabul qilishi.<br> 3.4.Akkauntni
+                                                ro'yxatdan o'tkazish ro'yxatdan o'tish formasini to'ldirish orqali
+                                                amalga oshiriladi.Ro'yxatdan o'tish formasida Foydalanuvchi taxallus
+                                                yoki haqiqiy ismini ko'rsatishi, to'g'ri elektron pochta manzili, parol
+                                                Ushbu shaklni to'ldirgandan so'ng, kompaniya ko'rsatilgan elektron
+                                                pochta manziliga yuboradi havolani o'z ichiga olgan elektron pochta
+                                                xabarini yubordi, uni bosish orqali Foydalanuvchi ro'yxatdan o'tishni
+                                                tasdiqlaydi. Ushbu qadamlar ro'yxatdan o'tish uchun majburiydir.
+                                                Shuningdek, Kompaniya ro'yxatdan o'tish jarayonida Veb-saytda
+                                                ko'rsatilgan tartibda ijtimoiy tarmoqlardan biridagi joriy hisob
+                                                qaydnomasidan (profilidan) foydalangan holda foydalanuvchini ro'yxatdan
+                                                o'tkazishning texnik imkoniyatini ta'minlashi mumkin. <br> 3.5.
+                                                Foydalanuvchi Veb-saytda muvaffaqiyatli ro'yxatdan o'tgandan so'ng,
+                                                Kompaniya ushbu Shartnomada ko'rsatilgan Foydalanuvchi oldidagi huquq va
+                                                majburiyatlarni o'z zimmasiga oladi. Foydalanuvchi tomonidan
+                                                ko'rsatilgan login (ism, taxallus) va parol foydalanuvchining
+                                                Veb-saytdagi shaxsiy sahifasiga kirishi uchun zarur va etarli
+                                                ma'lumotdir. <br> 3.6. Foydalanuvchi o'z login va parolini uchinchi
+                                                shaxslarga o'tkazish huquqiga ega emas va saqlash usulini mustaqil
+                                                tanlagan holda, ularning xavfsizligi uchun to'liq javobgardir. Agar
+                                                Foydalanuvchi aksini isbotlamasa, uning login va parolidan foydalangan
+                                                holda amalga oshirilgan har qanday harakatlar Foydalanuvchi tomonidan
+                                                sodir etilgan deb hisoblanadi va undan keyingi barcha oqibatlarga olib
+                                                keladi. <br> 3.7. Foydalanuvchi o'z parolining maxfiyligini saqlash
+                                                uchun javobgardir. Agar Foydalanuvchi o'z akkauntiga ruxsatsiz kirish
+                                                faktlarini aniqlasa, u ushbu holat haqida imkon qadar tezroq Kompaniyani
+                                                xabardor qilishga majburdir. <br> 3.8. Kompaniya hech qachon
+                                                Foydalanuvchidan bank kartasi raqami yoki pin kodini taqdim etishni
+                                                talab qilmaydi. Bunday so'rovlar (veb-saytda yoki elektron xabarlar
+                                                ko'rinishida) yuzaga kelgan taqdirda, Foydalanuvchi veb-saytdan
+                                                foydalanishni darhol to'xtatishi va bu haqda Kompaniyani xabardor
+                                                qilishi kerak. <br> 3.9. Kompaniya hech qachon Foydalanuvchiga
+                                                ro'yxatdan o'tish paytida ko'rsatilgan parolni Kompaniya yoki
+                                                Tashkilotchiga ko'rsatish, tasdiqlash yoki boshqa yo'l bilan xabardor
+                                                qilish so'rovi bilan elektron so'rovlarni yubormaydi. Parol veb-saytda
+                                                shifrlangan shaklda saqlanadi. <br> 3.10. Foydalanuvchi veb-saytga
+                                                kirish uchun autentifikatsiya ma'lumotlarini yo'qotgan taqdirda yoki
+                                                ro'yxatdan o'tish paytida foydalanuvchi tomonidan ko'rsatilgan taxallus
+                                                yoki elektron pochta manzilini o'zgartirish zarur bo'lsa,
+                                                foydalanuvchini yo'qolgan ma'lumotlar to'g'risida qayta xabardor qilish
+                                                va/yoki o'zgartirish taxallus yoki elektron pochta manzili Foydalanuvchi
+                                                tomonidan shaxsan Veb-sayt xizmatlaridan foydalangan holda amalga
+                                                oshirilishi mumkin, shuningdek, Foydalanuvchining yozma iltimosiga
+                                                binoan Kompaniya, bunday so'rovda Foydalanuvchining familiyasi, ismi va
+                                                otasining ismini ko'rsatgan holda. , Foydalanuvchining taxallusi va/yoki
+                                                identifikatsiya raqami, shuningdek, Kompaniyaning iltimosiga binoan,
+                                                Foydalanuvchi Tadbirda ishtirok etish uchun to'lovni amalga
+                                                oshirganligini tasdiqlovchi to'lov hujjatining nusxasini taqdim etadi
+                                                (to'lov yo'riqnomalari, kvitansiyalar va boshqalar). Yo'qotilgan
+                                                ma'lumotlar foydalanuvchiga ro'yxatdan o'tish paytida yoki foydalanuvchi
+                                                so'rovida ko'rsatilgan elektron pochta manziliga xabar qilinadi va
+                                                Kompaniya so'rov bo'yicha foydalanuvchiga shaxsiy ma'lumotlariga kirish,
+                                                ularni tuzatish imkoniyatini (agar bo'lsa) ta'minlash uchun barcha
+                                                imkoniyatlarni ishga soladi. ular noto'g'ri) va agar kerak bo'lsa,
+                                                ularni o'chirib tashlash. </p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 4. </p>
+                                            <h1 class="agreement_policy__content_title "> FOYDALANUVCHINING HUQUQ
+                                                VA MAJBORATLARI </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">4.1.
+                                                Foydalanuvchi huquqlari: <br>
+                                                4.1.1. Foydalanuvchi Veb-saytdan foydalanish huquqiga ega, xususan,
+                                                Saytda joylashtirilgan Tadbir haqida ma'lumot olish, shuningdek,
+                                                Anketani to'ldirish, Kompaniya tomonidan taqdim etilgan harakatlarni
+                                                bajarish va Tadbirlarda ishtirok etish imkoniyatini qo'lga kiritish
+                                                orqali. / yoki Tashkilotchi va Tadbirga kirish huquqiga ega. <br> 4.1.2.
+                                                Foydalanuvchi veb-saytdan Kompaniya tomonidan taqdim etilgan boshqa
+                                                usullarda foydalanish huquqiga ega. <br> 4.1.3. Foydalanuvchi Arizani
+                                                ro'yxatdan o'tkazgandan va to'lovni amalga oshirgandan so'ng, faqat
+                                                bunday rad etish uchun asosli (uzrli) sabab bo'lgan taqdirda, uchinchi
+                                                dars boshlanishidan kechiktirmay Tadbirlarda ishtirok etishni rad
+                                                etishga haqli. Bunday holda, Foydalanuvchi tomonidan to'langan
+                                                mablag'larni qaytarish Kompaniya/Tashkilotchi tomonidan amalga
+                                                oshiriladi. <br> 4.1.4. Yakka tartibdagi foydalanuvchi bunday
+                                                munosabatlarni tartibga soluvchi amaldagi qonun hujjatlariga muvofiq
+                                                iste'molchining barcha huquqlaridan foydalanadi. <br> 4.2.
+                                                Foydalanuvchining majburiyatlari: <br> 4.2.1. Foydalanuvchi Veb-saytda
+                                                akkaunt yaratish (ro'yxatdan o'tish) jarayonida o'zi haqida ishonchli
+                                                ma'lumotlarni taqdim etishi shart. <br> 4.2.2. Foydalanuvchi Veb-saytda
+                                                o'zi uchun mavjud bo'lgan ma'lumotlar va materiallarni ko'paytirmaslik,
+                                                takrorlamaslik, nusxa ko'chirmaslik, sotmaslik yoki biron bir maqsadda
+                                                foydalanmaslik majburiyatini oladi, shaxsiy foydalanishdan tashqari.
+                                                <br> 4.2.3. Foydalanuvchi o'zining veb-saytga kirishini ta'minlaydigan
+                                                o'z jihozlari va aloqa kanallarini yaxshi texnik holatda saqlashi, bir
+                                                vaqtning o'zida faqat bitta qurilmadan (shaxsiy kompyuter, planshet va
+                                                boshqalar) veb-saytga o'z akkaunti ostida kirishi shart. Kompaniyaga
+                                                bog'liq bo'lmagan sabablarga ko'ra veb-saytga va/yoki veb-saytning ayrim
+                                                xizmatlariga kirishni ta'minlamaslik uchun kompaniya javobgar emas. <br>
+                                                4.2.4. Foydalanuvchi veb-sayt xizmatlaridan foydalanishni boshlagunga
+                                                qadar har safar veb-saytga tashrif buyurganida ushbu Shartnomaning joriy
+                                                versiyasi bilan tanishish majburiyatini oladi. <br> 4.2.5. Tadbirda
+                                                ishtirok etish uchun to'lov usullari va shartlariga oid savollar
+                                                tug'ilganda, Foydalanuvchi Arizani topshirishdan oldin
+                                                Kompaniya/Tashkilotchi xodimlari bilan bog'lanish orqali bunday to'lov
+                                                usullari va shartlari bilan tanishib chiqish majburiyatini oladi. <br>
+                                                4.2.6. Foydalanuvchi Tadbirlar mazmuni, roʻyxatdan oʻtish shartlari va
+                                                oʻtkazish tartibi, shuningdek, Kompaniya/Tashkilotchi/Oʻqituvchi
+                                                tomonidan Arizani toʻldirish uchun qoʻyiladigan qoʻshimcha talablar
+                                                bilan tanishish majburiyatini oladi. Agar Foydalanuvchi Tadbirlarni
+                                                o‘tkazish uchun biron-bir shartni, shu jumladan to‘lov tartibini to‘liq
+                                                tushunmasa, Foydalanuvchi ushbu shartlarga aniqlik kiritish
+                                                majburiyatini oladi, agar tushuntirishning iloji bo‘lmasa, Arizani
+                                                to‘ldirish va Tadbirlarda ishtirok etishni rad etadi. <br> 4.2.7.
+                                                Foydalanuvchi Tadbirda ishtirok etish narxini mustaqil ravishda yoki
+                                                uchinchi shaxslar orqali to‘liq to‘lash majburiyatini oladi. Bunday
+                                                to'lovdan so'ng Foydalanuvchi tadbirlarda qatnashish yoki O'qituvchi
+                                                tomonidan taqdim etilgan boshqa xizmatdan foydalanish huquqiga ega. <br>
+                                                4.2.8. Agar Foydalanuvchi ushbu Shartnomaga yoki unga Kompaniya
+                                                tomonidan kiritilgan o'zgartirishlarga rozi bo'lmasa, Foydalanuvchi bu
+                                                haqda Kompaniyani xabardor qilgan holda Veb-saytdan foydalanishni rad
+                                                etishga majburdir. <br> 4.3. Veb-saytdan foydalanganda Foydalanuvchi
+                                                quyidagi huquqlarga ega emas: <br> 4.3.1. Veb-saytga joylashtirish
+                                                va/yoki veb-sayt orqali/foydalanib istalgan joyga yuborish (yuklash,
+                                                saqlash, nashr qilish, tarqatish, har qanday ma'lumotga kirishni
+                                                ta'minlash yoki boshqa yo'l bilan foydalanish, shu jumladan unga
+                                                havolalar) quyidagi xarakterdagi har qanday materiallar: (I) joriy
+                                                qoidalarni buzgan holda Qonun hujjatlari, xalqaro huquq normalari yoki
+                                                xorijiy davlatlar qonunlari; tahdidlar, tuhmat yoki haqoratlarni o'z
+                                                ichiga olgan; boshqa shaxslarni obro'sizlantirish, fuqarolarning shaxsiy
+                                                hayotga bo'lgan huquqlarini yoki jamoat tartibini buzish; odobsiz yoki
+                                                odobsiz so'z, pornografik tasvirlar va matnlar yoki shahvoniy
+                                                xarakterdagi sahnalar, zo'ravonlik, ham voyaga etmaganlar ishtirokida,
+                                                ham ishtirok etmasdan; hayvonlarga nisbatan shafqatsizlik sahnalarini
+                                                o'z ichiga olgan; o'z joniga qasd qilish vositalari va usullari, uni
+                                                sodir etishga yoki hayoti va (yoki) sog'lig'iga tahdid soladigan, shu
+                                                jumladan sog'lig'iga zarar etkazuvchi harakatlarni sodir etishga
+                                                undashning tavsifini o'z ichiga olgan; II) boshqa shaxslarning sha’ni va
+                                                qadr-qimmati hamda ishchanlik obro‘sini, huquqlari va qonun bilan
+                                                qo‘riqlanadigan manfaatlarini, shu jumladan voyaga etmaganlarning
+                                                huquqlarini ma’lum darajada buzish; (III) diniy, irqiy yoki millatlararo
+                                                (millatlararo) adovatni qo'zg'atishga qaratilgan, nafratni qo'zg'atishga
+                                                urinishlar yoki zo'ravonlikka da'vatlarni o'z ichiga olgan, fashizm yoki
+                                                irqiy ustunlik mafkurasini, boshqa ijtimoiy patologiyalarni targ'ib
+                                                qilish yoki tarqatish; (IV) jinoiy faoliyatni targ'ib qiluvchi yoki
+                                                jinoiy harakatlarni sodir etish bo'yicha maslahatlar, ko'rsatmalar yoki
+                                                ko'rsatmalarni o'z ichiga olgan ekstremistik materiallar; (V) cheklangan
+                                                kirish ma'lumotlarini o'z ichiga olgan, shu jumladan, lekin ular bilan
+                                                cheklanmagan holda, davlat va tijorat sirlari, shaxsiy ma'lumotlar',
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 5. </p>
+                                            <h1 class="agreement_policy__content_title "> KOMPANIYANING HUQUQ VA
+                                                MAJBORATLARI </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">5.1.
+                                                Kompaniya quyidagi huquqlarga
+                                                ega: <br> 5.1.1. Veb-saytning har qanday dasturiy ta'minotiga
+                                                o'zgartirishlar kiritish, muhim nosozliklar, xatolar va nosozliklar
+                                                aniqlanganda va veb-saytga ruxsatsiz kirishni saqlab qolish va oldini
+                                                olish uchun veb-saytni tugatish. <br> 5.1.2. Foydalanuvchi tomonidan
+                                                taqdim etilgan shaxsiy ma'lumotlardan qonunga zid bo'lmagan har qanday
+                                                usulda foydalanish. <br> 5.1.3. Roʻyxatdan oʻtish/tasdiqlash/Tadbirda
+                                                ishtirok etish narxini toʻlash, shu jumladan Saytda roʻyxatdan oʻtish
+                                                vaqtida Foydalanuvchi tomonidan koʻrsatilgan elektron pochta manzili
+                                                yoki telefon raqami boʻyicha Foydalanuvchi bilan mustaqil bogʻlanish
+                                                vaqtida foydalanuvchiga maslahat berish. <br> 5.1.4. istalgan vaqtda
+                                                ushbu Oferta shartlarini bir tomonlama tartibda, Foydalanuvchini
+                                                oldindan ogohlantirmasdan, o'zgartirishlarni veb-saytda e'lon qilish
+                                                orqali, u qabul qilingan / joriy etilgan kundan boshlab 3 ish kunidan
+                                                kechiktirmay o'zgartiring. Kompaniya Foydalanuvchiga ushbu Taklif
+                                                shartlarini o'zgartirish va/yoki qo'shimchalar mavjudligini muntazam
+                                                tekshirib turishni tavsiya qiladi. Kompaniya Taklifga o'zgartirishlar
+                                                va/yoki qo'shimchalar kiritgandan so'ng Foydalanuvchi tomonidan
+                                                Veb-saytdan foydalanishda davom etishi Foydalanuvchining bunday
+                                                o'zgartirish va qo'shimchalarni so'zsiz va to'liq qabul qilishi va
+                                                roziligini bildiradi. <br> 5.1.5. Foydalanuvchi bilan munosabatlaridan
+                                                kelib chiqadigan huquq va majburiyatlarini qonun hujjatlarida nazarda
+                                                tutilgan Foydalanuvchining huquq va manfaatlarini hisobga olgan holda
+                                                uchinchi shaxslarga berish yoki boshqacha tarzda o‘tkazish. <br> 5.1.6.
+                                                Foydalanuvchi ushbu Oferta shartlarini buzgan taqdirda, Kompaniya
+                                                Foydalanuvchining akkauntini bloklash yoki elektron pochta orqali yoki
+                                                Shaxsiy sahifadan foydalangan holda veb-saytga kirishni boshqa yo'l
+                                                bilan cheklash huquqiga ega. <br> 5.2. Kompaniya Foydalanuvchini
+                                                Arizaning holati va Tadbirda qatnashish uchun to'lov muvaffaqiyatli
+                                                amalga oshirilganligi to'g'risida xabardor qilishi shart.
+                                                Foydalanuvchining xabardor qilinganligi - bu Saytda ro'yxatdan o'tishda
+                                                Foydalanuvchi tomonidan ko'rsatilgan elektron pochta manziliga tegishli
+                                                tasdiqlash ma'lumotlarini o'z ichiga olgan elektron xat yuborilganligi.
+                                                <br> 5.3. Kompaniya veb-sayt ishida yangilanishlar va/yoki
+                                                takomillashtirish va/yoki takomillashtirish va/yoki boshqa
+                                                o'zgarishlarni amalga oshirishga majbur emas. Kompaniya istalgan vaqtda
+                                                va har qanday sababga ko'ra veb-saytdan foydalanish imkoniyatlari va
+                                                cheklovlarini aniqlash, shuningdek, veb-saytdan foydalanishni joriy
+                                                etish va o'zgartirish uchun veb-saytni o'zgartirish yoki to'xtatish yoki
+                                                to'xtatib turish huquqini o'zida saqlab qoladi. <br> 5.4. Kompaniya
+                                                Foydalanuvchining shaxsiy ma'lumotlarini saqlash va qayta ishlash uchun
+                                                javobgardir, ushbu Shartnoma shartlariga, Kompaniyaning Maxfiylik va
+                                                Shaxsiy ma'lumotlarni himoya qilish siyosatiga muvofiq qayta ishlash
+                                                jarayonida ushbu ma'lumotlarning maxfiyligini ta'minlaydi. ushbu
+                                                Shartnoma, shuningdek, amaldagi qonun hujjatlariga muvofiq. <br> 5.5.
+                                                Kompaniya Foydalanuvchi tomonidan veb-sayt sahifalarida ochiq shaklda
+                                                taqdim etilgan ma'lumotlarning oshkor etilishi uchun javobgar emas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 6. </p>
+                                            <h1 class="agreement_policy__content_title "> DARS VA TADBIRLARGA
+                                                KIRISH SHARTLARI </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">6.1.
+                                                Foydalanuvchi ushbu ruxsatdan
+                                                foydalanishning texnik imkoniyatiga ega bo'lsa, Veb-sayt va Voqealar
+                                                xizmatlaridan foydalanish huquqiga ega bo'ladi. <br> 6.2. Kompaniya
+                                                ma'lumotlar almashinuvini (Tadbirning veb-interfeysi) va Tadbirning
+                                                dasturiy ta'minotini ta'minlovchi veb-ilovani o'zgartirishga,
+                                                shuningdek, xizmatlarni olish uchun Foydalanuvchi tomonidan
+                                                qo'llanilishi kerak bo'lgan texnik va dasturiy ta'minot talablarini
+                                                o'zgartirishga haqli. Ushbu o'zgarishlarning barchasi va har qanday
+                                                o'zgarishlar bilan, agar Kompaniya tomonidan boshqacha ko'rsatilmagan
+                                                bo'lsa, ushbu Shartnoma bunday o'zgarishlarga nisbatan qo'llaniladi.
+                                                <br> 6.3. Muayyan Voqealar to'g'risidagi ma'lumotlar va/yoki muayyan
+                                                Voqealar funktsional tarkibi, Tadbirlarga kirishni ta'minlash shartlari
+                                                va/yoki Tadbirlarning bepul tabiati to'g'risidagi ma'lumotlar,
+                                                Tadbirlarga kirishni texnik qo'llab-quvvatlash bo'yicha talablar va/yoki
+                                                tavsiyalar spetsifikatsiyasi, Ushbu Shartnoma yoki Qonun hujjatlari
+                                                talablariga muvofiq Foydalanuvchiga etkazilishi kerak bo'lgan va/yoki
+                                                etkazilishi mumkin bo'lgan boshqa ma'lumotlar yoki talablar, agar
+                                                ko'rsatilgan ma'lumotlar bo'lsa, Foydalanuvchiga to'g'ri berilgan deb
+                                                hisoblanadi: <br> 6.3.1. kompaniyaning veb-saytida e'lon qilingan; <br>
+                                                6.3.2. Shartnomani tuzishda Shartnoma matnida Foydalanuvchi e'tiboriga
+                                                havola qilingan; <br> 6.3.3. ro'yxatdan o'tish paytida ko'rsatilgan
+                                                foydalanuvchining elektron pochtasiga yuborilgan elektron xabarlar
+                                                orqali foydalanuvchi e'tiboriga etkazilgan; <br> 6.3.4. Kompaniyaning
+                                                reklama va axborot materiallarida chop etilgan; <br> 6.3.5.
+                                                Kompaniyaning aloqa manzillari va telefon raqamlariga murojaat qilganda
+                                                foydalanuvchi e'tiboriga havola qilingan; <br>6.3.6. Foydalanuvchi
+                                                e'tiboriga Kompaniyada mavjud bo'lgan boshqa vositalar, shu jumladan
+                                                ommaviy axborot vositalari (reklama) orqali yetkaziladi. <br> 6.4.
+                                                Foydalanuvchining Tadbirda ishtirok etishiga ruxsati, bu haqda ma'lumot
+                                                veb-saytda joylashtirilgan, ushbu Shartnomada, veb-saytda yoki ushbu
+                                                Shartnomada belgilangan tartibda va tartibda bunday Tadbirda ishtirok
+                                                etish narxini 100% oldindan to'lash sharti bilan taqdim etiladi. aks
+                                                holda Foydalanuvchiga xabar qilinadi. <br> 6.5. Tadbirda ishtirok etish
+                                                amallarning yakuniy ketma-ketligini bajarishdan iborat bo'lgan arizani
+                                                to'ldirish bilan tasdiqlanadi: (I) tanlangan tadbir haqidagi ma'lumot
+                                                oynasini bosish (bosish), (II) ko'rsatilgan sahifaga o'tish.
+                                                Veb-saytdagi tadbir, (III) "Ro'yxatdan o'tish" tugmasini bosish va (IV)
+                                                ma'lum bir Tadbir tashkilotchisi tomonidan belgilanadigan usullardan
+                                                birida ishtirok etish uchun to'lov. To'lov Ariza topshirilgan kundan
+                                                boshlab 30 (o'ttiz) kun ichida, lekin har qanday holatda, Tadbir
+                                                boshlanganidan kechiktirmay amalga oshiriladi. <br> 6.6. Tadbirga kirish
+                                                Foydalanuvchiga Veb-saytda ro'yxatdan o'tish paytida ko'rsatgan
+                                                foydalanuvchining elektron pochta manziliga tegishli elektron pochta
+                                                xabarini yuborish orqali taqdim etiladi. Shuningdek, rejalashtirilgan va
+                                                o'tkaziladigan Tadbir haqidagi ma'lumotlar Foydalanuvchining shaxsiy
+                                                sahifasida "Shaxsiy tadbirlar" bo'limida aks ettirilgan. Shaxsiy
+                                                sahifaga kirish Foydalanuvchi tomonidan elektron pochta manzili (yoki
+                                                Foydalanuvchi login) va parolni kiritish va “Login” so‘zini bosish
+                                                orqali amalga oshiriladi. <br> 6.7. Ilovaning veb-saytdan foydalangan
+                                                holda bajarilishi veb-saytning bir qismi sifatida ulanishni dasturiy
+                                                nazorat qilish va xarajatlarni hisobga olish (to'lov) bo'yicha ma'lumot
+                                                (hisob) yozuvlari bilan tasdiqlanadi. Foydalanuvchining Ilovaga obuna
+                                                bo'lish / rad etish bo'yicha har qanday harakatlari, agar tomonlar yozma
+                                                ravishda tegishli shartnoma tuzgan bo'lsa, ekvivalent yuridik kuchga
+                                                ega. <br> 6.8. Agar ushbu Shartnomada boshqacha qoida nazarda tutilmagan
+                                                bo'lsa, foydalanuvchi tomonidan bajarilgan xatti-harakatlarning etarli
+                                                dalili, ular amalga oshirilgan usul va/yoki texnik qurilmadan qat'i
+                                                nazar, Kompaniya veb-saytining ishlashini ta'minlaydigan serverlardagi
+                                                ma'lumotlar (hisob) yozuvlari bo'ladi. . <br> 6.9. Ushbu Shartnoma
+                                                bo'yicha har qanday harakatlarni (operatsiyalarni) amalga oshirish vaqti
+                                                Britaniya vaqti bo'lib, kompaniya veb-saytining ishlashini
+                                                ta'minlaydigan serverlardagi hisob ma'lumotlari asosida belgilanadi,
+                                                agar vaqtni aniqlashning boshqa tartibi o'rtasidagi kelishuvlarda
+                                                qo'shimcha ravishda kelishilmagan bo'lsa. Tomonlar. <br> 6.10. Agar
+                                                Tadbirda ishtirok etish uchun to'lovni to'lash tartibi tugagandan so'ng,
+                                                lekin har qanday holatda ham Tadbir boshlangan kundan kechiktirmay,
+                                                Foydalanuvchi u yoki bu sabablarga ko'ra Tadbirga kirish huquqini
+                                                olmagan bo'lsa, u Kompaniyaning aloqa telefon raqami yoki veb-saytda
+                                                ko'rsatilgan boshqa raqam bo'yicha Kompaniyaning qo'llab-quvvatlash
+                                                xizmatiga murojaat qilishi kerak. <br> 6.11. Kompaniya Foydalanuvchining
+                                                Tadbirda ishtirok etishini bekor qilish huquqini o'zida saqlab qoladi,
+                                                Kompaniya/Tashkilotchi/O'qituvchi esa Foydalanuvchi tomonidan Tadbirda
+                                                o'zini tutish qoidalarini buzgan taqdirda to'langan to'lovni qaytarishga
+                                                majbur emas. Ushbu qoidabuzarliklar Foydalanuvchi tomonidan ushbu
+                                                Shartnomaning 4.3.1-bandida taqiqlangan ma'lumotlarni, shu jumladan,
+                                                etnik nizolarni qo'zg'atuvchi, odobsiz so'zlarni o'z ichiga olgan yoki
+                                                Tadbirning boshqa ishtirokchilarini boshqa tarzda haqorat qilgan
+                                                ma'lumotlarni sharhlarda yoki boshqa usulda e'lon qilishdir.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 7. </p>
+                                            <h1 class="agreement_policy__content_title "> NARXI, TARTIBI VA TO‘LOV
+                                                SHAKLI </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">7.1.
+                                                Foydalanuvchiga Veb-saytga
+                                                pullik kirishda joylashtirilgan Tadbir mazmuniga kirishni ta'minlash
+                                                uchun to'lovlar Foydalanuvchi va Kompaniya/Tashkilotchi o'rtasida
+                                                bevosita amalga oshiriladi. <br> 7.2. Kompaniya intellektual mulk huquqi
+                                                yoki litsenziyasi Kompaniyaga tegishli bo'lgan individual Veb-sayt
+                                                Kontentidan foydalanish, shuningdek bevosita Kompaniya tomonidan tashkil
+                                                etilgan Tadbirlar uchun foydalanuvchilardan mablag'larni qabul qilish
+                                                huquqini o'zida saqlab qoladi. <br> 7.3. Tadbirda ishtirok etish
+                                                narxlari Veb-saytda har bir Tadbir uchun alohida tadbirda ishtirok etish
+                                                uchun arizalar to'plamini ochish vaqtida alohida ko'rsatilgan yoki
+                                                foydalanuvchiga elektron xabar yuborish orqali xabar qilinadi. <br> 7.4.
+                                                Foydalanuvchi 100% oldindan toʻlash tartibida Kompaniya/Tadbir
+                                                tashkilotchisiga Tadbirda ishtirok etish qiymati miqdorida mablagʻ
+                                                oʻtkazadi. <br> 7.5. Norezident foydalanuvchilar Kompaniya/Tashkilotchi
+                                                tomonidan berilgan hisob-fakturaga muvofiq valyutada to‘lovlarni amalga
+                                                oshiradilar. Foydalanuvchi banki yoki vakillik banklari tomonidan
+                                                undiriladigan har qanday bank to‘lovlari Foydalanuvchi tomonidan
+                                                to‘lanadi. <br> 7.6. To'lov usuli Kompaniya/Tashkilotchi tomonidan
+                                                belgilanadi va foydalanuvchi e'tiboriga elektron xabar yuborish orqali
+                                                yoki Tashkilotchi tanlagan boshqa usulda yetkaziladi. <br> 7.7.
+                                                Foydalanuvchi mumkin bo'lgan va to'lov vaqtida Veb-saytda mavjud bo'lgan
+                                                qulay to'lov usulini mustaqil ravishda tanlaydi. To'lovni amalga
+                                                oshirish va tasdiqlash uchun veb-saytda taqdim etilmagan va mavjud
+                                                bo'lmagan to'lov usullari va usullari qabul qilinmaydi. <br> 7.8.
+                                                Kompaniya to'lov usullarining bir va bir nechta variantlarini taqdim
+                                                etish huquqiga ega. Kompaniya istalgan vaqtda va o'z xohishiga ko'ra,
+                                                ushbu Shartnomaga hech qanday xabar va o'zgartirishlar kiritmasdan,
+                                                veb-saytdagi har qanday to'lov usullarini o'zgartirish / o'chirish
+                                                huquqiga ega. <br> 7.9. To‘lov kartasi bilan to‘lov usulini tanlashda
+                                                Foydalanuvchi to‘lov kartalari bilan bog‘liq ma’lumotlarni, xususan:
+                                                karta raqami, amal qilish muddati, CVC/CVV kodi va to‘lov kartasi
+                                                egasining nomini ko‘rsatadi va Kompaniya/Tashkilotchi/To‘lov tizimiga
+                                                ishlov berishga rozilik beradi. ularning shaxsiy va to'lov ma'lumotlari
+                                                , tanlangan Tadbir uchun pul o'tkazish uchun. <br> 7.10. Toʻlov usulini
+                                                tanlash va tasdiqlash orqali Foydalanuvchi Kompaniya/Tashkilotchi/Toʻlov
+                                                tizimiga oʻzi koʻrsatgan toʻlov kartasi/bank hisobvaragʻidan tanlangan
+                                                toʻlov usuli orqali Veb-saytda koʻrsatilgan Tadbirda ishtirok etishning
+                                                toʻliq qiymatini yechib olishga ruxsat beradi, shu jumladan
+                                                komissiyalar, pul mablag'larini o'tkazish uchun tegishli qo'shimcha
+                                                to'lov, mumkin bo'lgan konvertatsiya miqdori va to'lovni qayta ishlash
+                                                uchun qo'llaniladigan valyuta farqi, shuningdek, ushbu shaxslarga (i)
+                                                ishtirok etish narxini to'lash uchun to'lov va shaxsiy ma'lumotlardan
+                                                foydalanishga ruxsat beradi. Bunday holda, (ii) agar kerak bo'lsa,
+                                                to'lovlarni qaytarishni va (iii) ushbu Shartnoma shartlarini bajarish
+                                                uchun zarur bo'lgan boshqa maqsadlarni amalga oshiradi. Foydalanuvchi
+                                                to'liq xabardor va Kompaniyaga to'lovni amalga oshirish vaqtida to'lov
+                                                operatsiyalarini qayta ishlash uchun qo'shimcha xarajatlar miqdori
+                                                noma'lum ekanligiga rozi. <br> 7.11. Kompaniya Foydalanuvchidan so'rash
+                                                huquqiga ega va Foydalanuvchi Qonun hujjatlarida nazarda tutilgan
+                                                hollarda to'lovni qaytarish bilan bog'liq bahsli moliyaviy masalalarni
+                                                hal qilish uchun bank ko'chirmasini taqdim etish majburiyatini oladi.
+                                                shuningdek, boshqa bahsli moliyaviy masalalarni hal qilish. <br> 7.12.
+                                                Arizani yaratish/bajarishda to‘lov kartasidagi mablag‘lar keyinchalik
+                                                ularni hisobdan chiqarish bilan bloklanishi mumkin. To'lov kartasidan
+                                                pul mablag'larini hisobdan chiqarish Kompaniya yoki Tashkilotchi
+                                                tomonidan amalga oshirilishi mumkin. Foydalanuvchi to‘lov kartasidan pul
+                                                mablag‘larini yechib olish Kompaniya yoki Tashkilotchi tomonidan
+                                                istalgan vaqtda mumkin va mavjud bo‘lishini ta’minlash uchun barcha
+                                                choralarni ko‘rish majburiyatini oladi (masalan, bank-emitentning
+                                                to‘lovlarni amalga oshirish bo‘yicha barcha cheklovlari va cheklovlari
+                                                bekor qilinishi kerak). Hisobdan mablag'lar haqiqiy hisobdan
+                                                chiqarilgunga qadar foydalanuvchi). <br> 7.13. To'lov kuni pul
+                                                mablag'larini oluvchining bank hisobvarag'iga kelib tushgan kun
+                                                hisoblanadi. <br> 7.14. Agar Tadbir Kompaniyaning aybi bilan ro'y
+                                                bermasa, Kompaniya/Tashkilotchi tomonidan Foydalanuvchidan bunday
+                                                Tadbirda ishtirok etish uchun to'lov sifatida olingan mablag'lar
+                                                Foydalanuvchiga Tadbir bekor qilingan kundan boshlab 30 kun ichida
+                                                qaytariladi. yoki boshqa Voqeani to'lash uchun hisobga olinishi mumkin.
+                                                Bundan tashqari, cookie fayllari asosiy (ular to'g'ridan-to'g'ri tashrif
+                                                buyurilgan sayt tomonidan o'rnatiladi) va uchinchi tomon (boshqa saytlar
+                                                tomonidan o'rnatiladi) bo'linadi.</p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 8. </p>
+                                            <h1 class="agreement_policy__content_title "> SHAXSIY MA'LUMOTLAR
+                                            </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">Ushbu
+                                                Shartnomani tuzishda
+                                                Kompaniya Qonun hujjatlari qoidalariga rioya qilish maqsadida
+                                                Foydalanuvchining shaxsiy ma’lumotlaridan xabardor bo‘lishini hisobga
+                                                olib, Foydalanuvchi ushbu Shartnomaga qo‘shilish (taklifni qabul qilish)
+                                                orqali u Kompaniyaning Maxfiylik va shaxsiy ma'lumotlarni himoya qilish
+                                                siyosati bilan tanish bo'lib, uning matni Kompaniya veb-saytida
+                                                https://laba.com/privacy-policy manzilida joylashtirilgan, ushbu
+                                                Siyosatdan kelib chiqadigan huquq va majburiyatlarini to'liq biladi.
+                                                Qonun hujjatlari, Kompaniya tomonidan taqdim etilgan kafolatlar va
+                                                Kompaniya va Foydalanuvchining ushbu Siyosatdan kelib chiqadigan
+                                                javobgarligi va ushbu Siyosat shartlarini qabul qiladi.</p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 9. </p>
+                                            <h1 class="agreement_policy__content_title "> INTELLEKTUAL MULK
+                                                HUQUQLARI </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">9.1.
+                                                Veb-sayt mazmuni hamda
+                                                Darslar va tadbirlarning mazmuni Kompaniyaning intellektual mulki
+                                                hisoblanadi yoki u tomonidan uchinchi shaxslarning tegishli tarzda
+                                                rasmiylashtirilgan roziligi asosida foydalaniladi va qonun hujjatlariga
+                                                muvofiq himoya qilinishi kerak. Foydalanuvchi tomonidan Dars/Darslar
+                                                yoki Tadbirda olingan ma’lumotlarni tijorat maqsadlarida kompaniyaning
+                                                bunday harakatlarga bevosita roziligisiz har qanday usulda tarqatishi
+                                                taqiqlanadi. <br>9.2. Foydalanuvchiga Veb-sayt sahifalariga kirishni
+                                                taʼminlash Foydalanuvchiga Kompaniyaning intellektual mulkidan
+                                                foydalanish uchun har qanday litsenziya berilganligini anglatmaydi.
+                                                Ushbu Shartnoma boʻyicha Foydalanuvchiga aniq berilgan huquqlardan
+                                                tashqari barcha huquqlar Kompaniya tomonidan himoyalangan.<br> 9.3.
+                                                Veb-saytda yuklab olish mumkin boʻlgan har qanday dasturiy taʼminot
+                                                Kompaniya va/yoki uning hamkorlarining intellektual mulki hisoblanadi.
+                                                Dasturiy taʼminotdan foydalanish foydalanuvchiga bunday dasturiy
+                                                taʼminotni yuklab olishda uning shartlarini qabul qilish uchun taqdim
+                                                etilgan litsenziya shartnomasi shartlari bilan tartibga solinadi. Agar
+                                                foydalanuvchiga dasturiy taʼminotdan foydalanish uchun litsenziya
+                                                shartnomasi taqdim etilmagan boʻlsa, Kompaniya Foydalanuvchiga dasturiy
+                                                taʼminotdan faqat foydalanuvchining shaxsiy notijorat maqsadlarida
+                                                foydalanish huquqini beradi va bunday dasturiy taʼminotdan
+                                                foydalanganlik uchun toʻlov toʻlov narxiga kiritiladi. Dasturiy
+                                                taʼminotga boʻlgan barcha huquqlar, shu jumladan, bunday dasturiy
+                                                taʼminotga boʻlgan mualliflik huquqi va boshqa eksklyuziv huquqlar
+                                                Kompaniya va/yoki dasturiy taʼminot ishlab chiqaruvchisi tomonidan
+                                                himoyalangan.</p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 10. </p>
+                                            <h1 class="agreement_policy__content_title "> ОTOMONLARNING
+                                                MAS'uliyati </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">10.1.
+                                                Kompaniyaning ushbu
+                                                Shartnoma bo'yicha javobgarligi miqdori qoplanishi kerak bo'lgan
+                                                yo'qotishlarning maksimal miqdorini belgilash bilan cheklanadi. Zarar
+                                                uchun bunday cheklov har qanday holatda ham Veb-sayt yordamida
+                                                o'tkazilgan Tadbirda ishtirok etish narxidan oshmasligi kerak. Kompaniya
+                                                bilvosita yoki bilvosita yo'qotishlar, yo'qolgan foyda,
+                                                Foydalanuvchining ishbilarmonlik obro'sini yo'qotish va hokazolar uchun
+                                                javobgar emas. <br> 10.2. Muayyan Tadbir uchun veb-saytda
+                                                joylashtirilgan ma'lumotlar, shuningdek, Tadbirning mazmuni Kompaniya
+                                                tomonidan veb-saytga qo'shiladi.O'qituvchi tomonidan e'lon qilingan har
+                                                qanday ma'lumotlarning to'g'riligi, to'liqligi yoki sifati uchun
+                                                kompaniya javobgar emas. va/yoki veb-saytdagi uchinchi shaxslar.
+                                                Kompaniya o'qituvchi va/yoki uchinchi shaxslar tomonidan veb-saytda
+                                                joylashtirilgan har qanday ma'lumotni tasdiqlamaydi . Foydalanuvchi
+                                                veb-saytdan foydalangan holda sub'ektiv, baholovchi va bahsli
+                                                ma'lumotlarni olishi mumkinligini tushunadi va rozi bo'ladi. <br> 10.3.
+                                                Tadbirlarni o'tkazish uchun ma'ruzachi to'liq javobgar bo'lgani uchun
+                                                Kompaniya o'qituvchi tomonidan Tadbirlarni o'tkazish shartlariga rioya
+                                                qilmasligi uchun javobgar emas. <br> 10.4. Kompaniya o'qituvchi
+                                                tomonidan e'lon qilingan ma'lumotlarni tekshirmaydi va undagi
+                                                noaniqliklar to'liq yo'qligiga kafolat bera olmaydi, shuning uchun
+                                                Foydalanuvchi oldida Voqea haqida noto'g'ri va/yoki noto'g'ri
+                                                ma'lumotlar, shuningdek, etkazilgan zarar uchun javobgar emas.
+                                                Foydalanuvchi va/yoki yo'qotishlar - foydalanuvchi tomonidan olingan
+                                                ma'lumotlarda xatolik yoki noaniqliklar mavjudligi uchun. <br> 10.5.
+                                                Agar Foydalanuvchi Kompaniyaga bog'liq bo'lmagan sabablarga ko'ra
+                                                Tadbirlarda ishtirok etish huquqidan foydalanmagan bo'lsa, u holda
+                                                Kompaniyaning majburiyatlari belgilangan miqdorda va o'z vaqtida
+                                                bajarilgan deb hisoblanadi, shuningdek, kompaniya tomonidan to'langan
+                                                mablag'lar. Foydalanuvchiga qaytarib berilmaydi.</p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 11. </p>
+                                            <h1 class="agreement_policy__content_title "> FORCE-MAJOR </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">11.1.
+                                                Tomonlar ushbu Shartnoma
+                                                bo'yicha o'z majburiyatlarini qisman yoki to'liq bajarmaganliklari uchun
+                                                javobgarlikdan ozod qilinadilar, agar ularning bajarilishiga ushbu
+                                                shartlarda favqulodda va muqarrar holatlar (fors-major holatlari), shu
+                                                jumladan, lekin istisnosiz: harbiy harakatlar, tartibsizliklar yoki
+                                                sabotaj; tabiiy ofatlar; elektr, internet yoki telekommunikatsiyaning
+                                                uzilishi; yoki hukumat cheklovlari. Shu bilan birga, Shartnoma bo'yicha
+                                                majburiyatlarni bajarish muddati bunday holatlar mavjud bo'lgan vaqtga
+                                                mutanosib ravishda kechiktiriladi. <br> 11.2. Agar 11.1-bandda
+                                                ko'rsatilgan holatlar bo'lsa. ushbu Shartnomaning amal qilish muddati 30
+                                                (o'ttiz) kalendar kundan ortiq davom etadi, keyin Tomonlarning har biri
+                                                boshqa Tomonni bekor qilish sanasidan 10 kalendar kun oldin yozma
+                                                ravishda xabardor qilib, ushbu Shartnomani bekor qilish huquqiga ega.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 12. </p>
+                                            <h1 class="agreement_policy__content_title "> NIZOLARNI HAL QILISH
+                                            </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">12.1. Ushbu
+                                                Shartnoma bo'yicha
+                                                majburiyatlar bajarilmagan yoki lozim darajada bajarilmagan taqdirda,
+                                                huquqi buzilgan Tomon boshqa Tomonga yozma da'vo (talab) yuboradi.<br>
+                                                12.2. Barcha da'volar. Foydalanuvchining veb-saytdan foydalanish
+                                                bo'yicha Kompaniyaga nisbatan (shikoyatlari) foydalanuvchi tomonidan
+                                                ushbu Shartnomada ko'rsatilgan Kompaniyaning elektron pochta manziliga
+                                                skanerlangan nusxa ko'rinishida, keyinchalik da'voning asl nusxasi
+                                                yuborilgan holda yuborilishi kerak ( Shikoyat) ushbu Shartnomada
+                                                ko'rsatilgan Kompaniyaning pochta manziliga da'vo (shikoyat) Jamiyat
+                                                manziliga kelib tushgan kundan boshlab o'n besh) kalendar kun o'tgach,
+                                                Kompaniya quyidagi qarorlardan birini qabul qiladi: (i) kelishmovchilik
+                                                to'g'risida. da'vo (shikoyat) bilan va uni qanoatlantirishni rad etish
+                                                to'g'risida (ii) da'voga (shikoyat) to'liq yoki qisman rozilik berish va
+                                                Foydalanuvchining talablarini to'liq yoki qisman qondirish to'g'risida.
+                                                <br> 12.3. Huquqi buzilgan taraf amaldagi qonun hujjatlari talablarida
+                                                belgilangan yurisdiktsiya va yurisdiktsiyaga muvofiq sudga da'vo bilan
+                                                murojaat qilishga haqli.»
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 13. </p>
+                                            <h1 class="agreement_policy__content_title "> XABARLARNI YUBORISH
+                                                (Yuborish) TARTIBI </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">13.1.
+                                                Xabarlar, da'volar,
+                                                so'rovlar, arizalar va boshqa rasmiy materiallar Tomonlar tomonidan
+                                                bir-biriga quyidagicha uzatiladi: <br> 13.1.1. Kompaniyadan
+                                                Foydalanuvchiga - agar ushbu moddaning tegishli bandida boshqacha qoida
+                                                nazarda tutilgan bo'lmasa, foydalanuvchi tomonidan veb-saytda ro'yxatdan
+                                                o'tishda yoki foydalanuvchining veb-saytdagi shaxsiy sahifasida
+                                                joylashtirishda ko'rsatilgan elektron pochta manziliga yuborish orqali,
+                                                faqat foydalanuvchi foydalanishi mumkin. Shartnoma. <br> 13.1.2.
+                                                Foydalanuvchidan Kompaniyaga - uni ushbu Ofertada ko'rsatilgan elektron
+                                                pochta manziliga yuborish orqali. Foydalanuvchi tomonidan Kompaniyaga
+                                                yuborilgan yozma murojaatlar Foydalanuvchi tomonidan imzolanishi kerak.
+                                                Foydalanuvchi tomonidan imzolanmagan yozma so'rovlar Kompaniya tomonidan
+                                                ko'rib chiqilishi uchun qabul qilinmaydi.</p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 14. </p>
+                                            <h1 class="agreement_policy__content_title "> BOSHQA SHARTLAR VA
+                                                OGOHLANTIRISHLAR </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text" style="display: none;">14.1. Ushbu
+                                                Oferta shartlari
+                                                Kompaniya tomonidan Taklifni qaytarib olish/oʻzgartirish paytigacha amal
+                                                qiladi.<br>14.2. Ushbu Shartnoma foydalanuvchining Veb-saytda roʻyxatdan
+                                                oʻtganligida ifodalangan ushbu Oferta qabul qilingan paytdan boshlab
+                                                tuzilgan hisoblanadi va tomonlardan biri uni bekor qilgunga qadar amal
+                                                qiladi.<br>14.3. Ushbu Shartnoma istalgan vaqtda Tomonlarning kelishuvi
+                                                bilan bekor qilinishi mumkin.<br>14.4. Kompaniya oʻz xohishiga koʻra
+                                                istalgan vaqtda va har qanday sababga koʻra, shuningdek, Foydalanuvchi
+                                                tomonidan ushbu Shartnomada koʻrsatilgan shartlardan birini buzgan
+                                                taqdirda, ushbu Shartnomani bekor qilishga va Foydalanuvchining Veb-sayt
+                                                xizmatlaridan foydalanishini bir tomonlama ravishda toʻxtatishga
+                                                haqli.<br>14.5. Ushbu Shartnoma yozma ravishda tuzilgan taqdirda (ushbu
+                                                oferta qabul qilinganda), Tomonlardan biri tomonidan shartnomani bir
+                                                tomonlama bekor qilish boshqa Tomonning tegishli yozma arizasini
+                                                yuborish orqali amalga oshiriladi.<br>14.6. Ushbu Oferta shartlarini
+                                                qabul qilgan holda, Foydalanuvchi ushbu Shartnomaning amal qilish
+                                                muddatidan qatʼi nazar, boshqa barcha Voqealar toʻgʻrisida maʼlumot
+                                                olishga roziligini bildiradi, agar bunday rozilik Foydalanuvchi
+                                                tomonidan istalgan vaqtda bekor qilinishi mumkin boʻlsa, Kompaniya
+                                                taqdim etadi. Bu xohlagan vaqtda Kompaniya manziliga tegishli soʻrov
+                                                yuborish orqali amalga oshiriladi.<br>14.7. Ushbu Shartnoma bilan
+                                                tartibga solinmagan barcha masalalar amaldagi qonun hujjatlariga muvofiq
+                                                hal qilinadi.<br>14.8. Kompaniya dunyoning istalgan nuqtasida istalgan
+                                                odam uchun taʼlim kurslarini yaratish va nashr etish imkonini beradi.
+                                                Veb-sayt modeli Hodisalarni sinchkovlik bilan tekshirish yoki nazorat
+                                                qilishni nazarda tutmaydi va Kompaniya Tadbir materiallarining
+                                                qonuniyligini aniqlash vakolatiga ega emas. Kompaniya Veb-saytda mavjud
+                                                boʻlgan Voqealar ustidan tahririyat nazoratini amalga oshirmaydi va
+                                                shuning uchun Voqealar haqiqiyligi, dolzarbligi, aniqligi yoki
+                                                ishonchliligini hech qanday tarzda kafolatlamaydi. Agar siz Tadbirda
+                                                roʻyxatdan oʻtsangiz, oʻzingizning xavf-xataringiz boʻyicha Oʻqituvchi
+                                                tomonidan taqdim etilgan maʼlumotlarga tayanasiz. Xizmatlardan
+                                                foydalanish orqali siz haqoratomuz, odobsiz yoki nomaqbul deb topilishi
+                                                mumkin boʻlgan materiallarga duch kelishingiz mumkin. Kompaniya bunday
+                                                materiallarni sizdan yashirish uchun javobgar emas va amaldagi qonunlar
+                                                tomonidan ruxsat etilgan darajada har qanday Tadbirga kirish yoki
+                                                roʻyxatdan oʻtish uchun javobgar emas. Bu sogʻliq, farovonlik va
+                                                jismoniy mashqlar bilan bogʻliq har qanday faoliyatga ham tegishli. Siz
+                                                ushbu turdagi Hodisalarning tabiati bilan bogʻliq xavf va xavflarni tan
+                                                olasiz va bunday Voqealar uchun roʻyxatdan oʻtish orqali siz ixtiyoriy
+                                                ravishda bunday xavflarni, jumladan, kasallik, jarohatlar, nogironlik
+                                                yoki oʻlim xavfini oʻz zimmangizga olasiz. Tadbirda ro‘yxatdan o‘tishdan
+                                                oldin, ro‘yxatdan o‘tish paytida va keyin qabul qilgan qarorlaringiz
+                                                uchun barcha javobgarlikni o‘z zimmangizga olasiz. Agar siz oʻqituvchi
+                                                bilan bevosita muloqot qilsangiz, shaxsiy maʼlumotlarni uzatishda
+                                                ehtiyot boʻlishingiz kerak. Kompaniya oʻqituvchilarning veb-saytdagi
+                                                boshqa foydalanuvchilardan olgan maʼlumotlarga nisbatan harakatlarini
+                                                nazorat qila olmaydi. Oʻzingizni himoya qilish uchun elektron
+                                                pochtangizni yoki siz haqingizdagi boshqa shaxsiy maʼlumotlarni baham
+                                                koʻrmasligingiz kerak. Kompaniya oʻqituvchilarni yollamaydi yoki ishga
+                                                olmaydi va Kompaniya Oʻqituvchilar va Foydalanuvchilar oʻrtasidagi
+                                                oʻzaro munosabatlar uchun javobgar emas. Kompaniya Oʻqituvchilar yoki
+                                                Foydalanuvchilarning xatti-harakatlari tufayli yoki ular bilan bogʻliq
+                                                ravishda yuzaga kelishi mumkin boʻlgan nizolar, daʼvolar, yoʻqotishlar,
+                                                shikastlanishlar yoki zararlar uchun javobgar emas. Veb-sayt
+                                                rejalashtirilgan texnik xizmat koʻrsatish yoki veb-saytdagi har qanday
+                                                nosozliklar tufayli ishlamasligi mumkin. Maʼruzachilardan biri oʻzi
+                                                oʻtkazayotgan Tadbir haqida notoʻgʻri bayonotlar berishi mumkin.
+                                                Shuningdek, kompaniya xavfsizlik muammolariga duch kelishi mumkin. Bu
+                                                faqat misollar. Agar biror narsa notoʻgʻri boʻlsa, ushbu holatlarning
+                                                hech birida Kompaniyaga qarshi murojaat qilmasligingizga rozilik
+                                                bildirasiz. Yuridikroq, aniqroq til bilan aytganda, Xizmatlar va
+                                                materiallar mavjud va mavjud boʻlgan asosda taqdim etiladi.
+                                                Kompaniya/tashkilotchi taqdim etilayotgan xizmatlarning yaroqliligi,
+                                                ishonchliligi, mavjudligi, oʻz vaqtidaligi, xavfsizligi, xatosizligi
+                                                yoki toʻgʻriligi boʻyicha hech qanday bayonot yoki kafolat bermaydi yoki
+                                                ularning materiallari va har qanday kafolatlar yoki shartlarni, shu
+                                                jumladan, savdoga yaroqlilik, maʼlum bir maqsadga muvofiqlik, nom va
+                                                huquqbuzarliklarga oid koʻzda tutilgan kafolatlardan qatʼi nazar rad
+                                                etadi. Kompaniya/Tashkilotchi Tadbirda ishtirok etishingizdan aniq
+                                                natijalar olishingizga kafolat bermaydi. Tadbirda ishtirok etish (shu
+                                                jumladan har qanday materiallar) faqat sizning xavf-xataringiz ostida
+                                                amalga oshiriladi. Kompaniya istalgan vaqtda va har qanday sababga koʻra
+                                                Veb-saytning ayrim xususiyatlarini taqdim etishni toʻxtatishga qaror
+                                                qilishi mumkin. Hech qanday holatda Kompaniya / Tashkilotchi bunday
+                                                tugatish yoki bunday funksiyalardan foydalana olmaslik natijasida yuzaga
+                                                keladigan har qanday zarar uchun javobgar boʻlmaydi.</p>
+                                        </div>
+                                    </div>
+                                    <div class="agreement_policy__content_wrapper">
+                                        <div class="agreement_policy__content_content">
+                                            <p class="agreement_policy__content_title "> 15. </p>
+                                            <h1 class="agreement_policy__content_title "> KOMPANIYA HAQIDAGI
+                                                MAʼLUMOT </h1>
+                                        </div>
+                                        <div>
+                                            <p class="agreement_policy__content_text">ООО «INNOVATION ILM PLATFORM» <br>
+                                                Manzil: Toshkent sh., Mirobod tumani, koʻch. R. Pirmuhamedov, 86A uy
+                                                <br> TIN: 309151676 <br> e-mail: support@ilmonline.uz
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer__container">
+                            <div class="footer__content">
+                                <div class="footer__item">
+                                    <img src="../images/imgs/logo/logo_footer.png" alt="">
+                                </div>
+                                <div class="footer__item">
+                                    <div class="item__col">
+                                        <div class="item__title"><span>Foydalanuvchi maqomi</span></div>
+                                        <div class="item__link"><span>Boshlangʻich
+                                                daraja</span></div>
+                                        <div class="item__link"><span>O'rta
+                                                daraja</span></div>
+                                        <div class="item__link"><span>Yuqori
+                                                daraja</span></div>
+                                    </div>
+                                </div>
+                                <div class="footer__item">
+                                    <div class="item__col">
+                                        <div class="item__title"><span>ILM</span>
+                                        </div>
+                                        <div class="item__link"><span>Biz
+                                                haqimizda</span></div>
+                                        <div class="item__link"><span>Testlar</span></div>
+                                        <div class="item__link"><span>Bo'sh ish
+                                                o'rinlari</span></div>
+                                        <div class="item__link"><span>Yangiliklar</span></div>
+                                        <div class="item__link"><span>Ta'lim</span></div>
+                                        <div class="mode_switcher"><span class="mode_switcher__title">Maktab
+                                                o'quvchilari
+                                                uchun darslar</span>
+                                            <div class="mode_switcher__box"><input id="mode-switcher" type="checkbox"
+                                                    class="mode_switcher__input"><label for="mode-switcher"
+                                                    class="mode_switcher__label"></label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer__item">
+                                    <div class="item__col">
+                                        <div class="item__title">
+                                            Navigatsiya
+                                        </div>
+                                        <div class="item__link">
+                                            Maxfiylik siyosati
+                                        </div>
+                                        <div class="item__link">
+                                            Shartnoma taklifi
+                                        </div>
+                                        <div class="item__link">
+                                            Shaxsiy kabinet
+                                        </div>
+                                        <div class="item__link">
+                                            Qayta aloqa
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__company">
+                                <div class="footer__company_logos">
+                                    <a href="https://t.me/dasturchi4444">
+                                        <img src="../assets/icons/icon_telegram.svg" alt="">
+                                    </a>
+                                    <a href="https://www.facebook.com">
+                                        <img src="../assets/icons/facebook.svg" alt="">
+                                    </a>
+                                    <a href="https://www.instagram.com/dasturchi4444">
+                                        <img src="../assets/icons/icon_insta_footer.svg" alt="">
+                                    </a>
+                                    <a href="https://www.youtube.com">
+                                        <img src="../assets/icons/icon_youtube_footer.svg" alt="">
+                                    </a>
+                                    <a href="tiktok.com">
+                                        <img src="../assets/icons/icon_tiktok_footer.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
