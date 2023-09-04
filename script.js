@@ -35,6 +35,14 @@ nav_burger__wrapper.addEventListener('click', () => {
     }
 })
 
+// document.querySelector('#sorting_select__course_title').addEventListener('click', () => {
+//     document.querySelector('.sorting_select__title').classList.toggle('active');
+// })
+
+document.querySelector('.language').addEventListener('click', () => {
+    document.querySelector('.language').classList.toggle('active');
+})
+
 user_cabinet.addEventListener('click', () => {
     document.querySelector('.user_cabinet').classList.toggle('hover')
     document.querySelector('.header__wrapper').classList.remove('active')
@@ -50,7 +58,23 @@ window.addEventListener('scroll', function () {
         document.querySelector('.header').classList.remove('shadow')
     }
 });
-document.querySelector('.scroll_arrow_down').addEventListener('click', () => {
-    const scrollY = window.innerHeight; // Scroll to 100vh
+
+function scrollBottom() {
+    const scrollY = window.innerHeight;
     window.scrollTo(0, scrollY);
-})
+}
+
+let checkboxes = document.querySelectorAll('.level__checkbox');
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('click', (e) => {
+        checkbox.classList.toggle('selected')
+        var divElement = document.createElement("div");
+        var childElements = checkbox.getElementsByClassName("level__checkbox--center");
+        if (childElements.length > 0) {
+            checkbox.removeChild(checkbox.lastElementChild)
+        } else {
+            divElement.classList.add("level__checkbox--center");
+            checkbox.appendChild(divElement);
+        }
+    })
+});
