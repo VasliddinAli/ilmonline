@@ -4382,7 +4382,9 @@ input {
     flex-direction: column;
     background-color: var(--color-white);
     padding: 40px;
+    min-height: auto;
     height: 100%;
+    margin-bottom: 70px;
 }
 
 @media only screen and (max-width: 1024px) {
