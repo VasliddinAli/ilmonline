@@ -11,7 +11,7 @@ lessons_btn.addEventListener('click', () => {
         document.querySelector('.mainMenu').style.display = 'none'
         document.querySelector('.header__wrapper').classList.add('active')
         document.querySelector('.header__inner').classList.add('burger_categories')
-        document.querySelector('.user_cabinet').classList.remove('hover')
+        // document.querySelector('.user_cabinet').classList.remove('hover')
     } else {
         document.querySelector('.lessonsMenu').style.display = 'none'
         document.querySelector('.lessons_btn img').style.transform = 'rotate(0)'
@@ -20,26 +20,8 @@ lessons_btn.addEventListener('click', () => {
     }
 })
 
-nav_burger__wrapper.addEventListener('click', () => {
-    if (document.querySelector('.mainMenu').style.display != 'grid') {
-        document.querySelector('.mainMenu').style.display = 'grid'
-        document.querySelector('.lessonsMenu').style.display = 'none'
-        document.querySelector('.user_cabinet').classList.remove('hover')
-        document.querySelector('.lessons_btn img').style.transform = 'rotate(0)'
-        document.querySelector('.header__wrapper').classList.add('active')
-        document.querySelector('.nav_burger').classList.add('active')
-        document.querySelector('.header__inner').classList.add('burger_categories')
-    } else {
-        document.querySelector('.mainMenu').style.display = 'none'
-        document.querySelector('.header__wrapper').classList.remove('active')
-        document.querySelector('.nav_burger').classList.remove('active')
-        document.querySelector('.header__inner').classList.remove('burger_categories')
-    }
-})
-
-
-const cards = document.querySelectorAll('.select-mode__item');
-const in_btn = document.querySelector('#otishBtn');
+let cards = document.querySelectorAll('.select-mode__item');
+let in_btn = document.querySelector('#otishBtn');
 let basicMenu = document.querySelector('#basicMenu');
 let professionalCourse = document.querySelector('#professionalCourse');
 let selectMode = document.querySelector('.select-mode');
@@ -53,12 +35,39 @@ cards.forEach(card => {
     });
 });
 in_btn.addEventListener('click', () => {
-    if(professionalCourse.classList.contains('active')){
+    if (professionalCourse.classList.contains('active')) {
         window.location.href = "./views/professionalCourse.html";
-    }else{
+    } else {
         basicMenu.style.display = 'block'
         selectMode.style.display = 'none'
     }
+})
+nav_burger__wrapper.addEventListener('click', () => {
+    if (document.querySelector('.mainMenu').style.display != 'grid') {
+        document.querySelector('.mainMenu').style.display = 'grid'
+        document.querySelector('.lessonsMenu').style.display = 'none'
+        // document.querySelector('.user_cabinet').classList.remove('hover')
+        document.querySelector('.lessons_btn img').style.transform = 'rotate(0)'
+        document.querySelector('.header__wrapper').classList.add('active')
+        document.querySelector('.nav_burger').classList.add('active')
+        document.querySelector('.header__inner').classList.add('burger_categories')
+    } else {
+        document.querySelector('.mainMenu').style.display = 'none'
+        document.querySelector('.header__wrapper').classList.remove('active')
+        document.querySelector('.nav_burger').classList.remove('active')
+        document.querySelector('.header__inner').classList.remove('burger_categories')
+    }
+})
+
+let showResetModal = document.querySelector('.auth_form__forgot_pass');
+let hideResetModal = document.querySelector('.modal__container_wrapper-cross');
+let resetModal = document.querySelector('#resetModal');
+
+showResetModal.addEventListener('click', () => {
+    resetModal.style.display = 'block'
+})
+hideResetModal.addEventListener('click', () => {
+    resetModal.style.display = 'none'
 })
 
 
@@ -70,13 +79,13 @@ document.querySelector('.language').addEventListener('click', () => {
     document.querySelector('.language').classList.toggle('active');
 })
 
-user_cabinet.addEventListener('click', () => {
-    document.querySelector('.user_cabinet').classList.toggle('hover')
-    document.querySelector('.header__wrapper').classList.remove('active')
-    document.querySelector('.header__inner').classList.remove('burger_categories')
-    document.querySelector('.mainMenu').style.display = 'none'
-    document.querySelector('.lessonsMenu').style.display = 'none'
-})
+// user_cabinet.addEventListener('click', () => {
+//     document.querySelector('.user_cabinet').classList.toggle('hover')
+//     document.querySelector('.header__wrapper').classList.remove('active')
+//     document.querySelector('.header__inner').classList.remove('burger_categories')
+//     document.querySelector('.mainMenu').style.display = 'none'
+//     document.querySelector('.lessonsMenu').style.display = 'none'
+// })
 
 window.addEventListener('scroll', function () {
     if (window.scrollY >= 10) {
@@ -87,7 +96,7 @@ window.addEventListener('scroll', function () {
 });
 
 function scrollBottom() {
-    const scrollY = window.innerHeight;
+    let scrollY = window.innerHeight;
     window.scrollTo(0, scrollY);
 }
 
@@ -122,13 +131,17 @@ polisyTitle.forEach(item => {
     })
 });
 
+
+sortTitle = document.querySelectorAll('.sorting_select__title');
+sortTitle.forEach((item) => {
+    item.addEventListener('click', () => {
+        sortTitle.classList.toggle('hover')
+    })
+})
+
+
+
+
 document.querySelector('.current_lesson__note_close').addEventListener('click', () => {
     document.querySelector('.current_lesson__note').style.display = 'none'
 })
-
-sortTitle = document.querySelector('.sorting_select__title');
-sortTitle.addEventListener('click', () => {
-    sortTitle.classList.toggle('hover')
-})
-
-

@@ -32,7 +32,9 @@
                                 <div class="user_cabinet not_touch_device"><span class="user_cabinet__text"
                                         style="font-weight: bold;"> Shaxsiy kabinet</span>
                                     <div class="nav_right__link user_profile active">
-                                        <img src="../assets/icons/icon_profile.svg" alt="">
+                                        <a href="./signIn.html">
+                                            <img src="./assets/icons/icon_profile.svg" alt="">
+                                        </a>
                                         <div class="user_profile__list_wrapper">
                                             <div class="user_profile__list">
                                                 <a href="profile.html" class="user_profile__link">
@@ -550,6 +552,37 @@
                     </div>
                 </footer>
             </main>
+        </div>
+        <div class="modal modal__container" id="resetModal">
+            <div class="modal__container_content">
+                <div class="modal__container_wrapper-cross">
+                    <img src="../assets/icons/cross.svg" alt="">
+                </div>
+                <div class="modal__content">
+                    <img src="../assets/icons/lock.svg" alt="">
+                    <h2 class="modal__content_title"> Parolni tiklash </h2>
+                    <div class="modal__content_text"> Shaxsiy kabinetingiz bilan bogʻlangan
+                        telefon raqamizni kiriting. Biz sizga parolingizni tiklash boʻyicha koʻrsatmalarni
+                        elektron pochtangizga yuboramiz </div>
+                    <div class="v-text-field  v-text-field--single-line v-text-field--filled  v-text-field--enclosed">
+                        <div class="v-input__control">
+                            <div style="border: 1px solid #aaa; border-radius: 0; margin-bottom: 25px;"
+                                class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                    <div class="v-text-field__prefix">+998</div>
+                                    <input maxlength="9" id="resetNumber" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__btn">
+                        <div class="button_wrapper popular disable">
+                            <button type="button" icon-name=""
+                                class="primary-btn primary-btn--orange primary-btn--popular"><span>Yuborish</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
