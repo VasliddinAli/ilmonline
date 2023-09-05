@@ -30446,6 +30446,14 @@ html.overflow-y-hidden {
     transition-property: transform;
     box-sizing: content-box
 }
+@media(max-width: 600px){
+    .swiper-wrapper {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+}
 
 .swiper-container-android .swiper-slide,
 .swiper-wrapper {
