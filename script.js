@@ -34,14 +34,16 @@ cards.forEach(card => {
         in_btn.classList.remove("disabled");
     });
 });
-in_btn.addEventListener('click', () => {
-    if (professionalCourse.classList.contains('active')) {
-        window.location.href = "./views/professionalCourse.html";
-    } else {
-        basicMenu.style.display = 'block'
-        selectMode.style.display = 'none'
-    }
-})
+if (in_btn != null) {
+    in_btn.addEventListener('click', () => {
+        if (professionalCourse.classList.contains('active')) {
+            window.location.href = "./views/professionalCourse.html";
+        } else {
+            basicMenu.style.display = 'block'
+            selectMode.style.display = 'none'
+        }
+    })
+}
 nav_burger__wrapper.addEventListener('click', () => {
     if (document.querySelector('.mainMenu').style.display != 'grid') {
         document.querySelector('.mainMenu').style.display = 'grid'
@@ -63,12 +65,14 @@ let showResetModal = document.querySelector('.auth_form__forgot_pass');
 let hideResetModal = document.querySelector('.modal__container_wrapper-cross');
 let resetModal = document.querySelector('#resetModal');
 
-showResetModal.addEventListener('click', () => {
-    resetModal.style.display = 'block'
-})
-hideResetModal.addEventListener('click', () => {
-    resetModal.style.display = 'none'
-})
+if (showResetModal != null) {
+    showResetModal.addEventListener('click', () => {
+        resetModal.style.display = 'block'
+    })
+    hideResetModal.addEventListener('click', () => {
+        resetModal.style.display = 'none'
+    })
+}
 
 
 // document.querySelector('#sorting_select__course_title').addEventListener('click', () => {
@@ -139,9 +143,9 @@ sortTitle.forEach((item) => {
     })
 })
 
-
-
-
-document.querySelector('.current_lesson__note_close').addEventListener('click', () => {
-    document.querySelector('.current_lesson__note').style.display = 'none'
-})
+let lessonClose = document.querySelector('.current_lesson__note_close')
+if (lessonClose != null) {
+    lessonClose.addEventListener('click', () => {
+        document.querySelector('.current_lesson__note').style.display = 'none'
+    })
+}
