@@ -5557,12 +5557,14 @@ p.search__result_item {
         grid-template-rows: 55px;
         gap: 0
     }
+}
 
-    .mainMenu {
+@media(max-width: 760px){
+    .header .mainMenu {
         display: none;
     }
 
-    .mainResMenu {
+    .header .mainResMenu {
         display: block;
     }
 }
@@ -6487,6 +6489,19 @@ p.search__result_item {
 @media only screen and (max-width: 1024px) {
     .page_lessons__cards {
         grid-template-columns: 1fr 1fr
+    }
+}
+
+.page_lessons__cards_carousel{
+    display: none;
+}
+
+@media(max-width: 760px) {
+    .page_lessons__cards {
+        display: none;
+    }
+    .page_lessons__cards_carousel {
+        display: block;
     }
 }
 

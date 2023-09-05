@@ -98,3 +98,5 @@ polisyTitle.forEach(item => {
 document.querySelector('.sorting_select__title').addEventListener('click', () => {
     document.querySelector('.sorting_select__title').classList.toggle('hover')
 })
+
+
