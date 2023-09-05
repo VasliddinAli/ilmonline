@@ -1162,6 +1162,71 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- responsive slider -->
+                                    <div class="news_cards_carousel_wrapper">
+                                        <div class="v-window v-item-group theme--dark v-carousel" style="height: 100%;">
+                                            <div class="v-window__container" style="height: 100%;">
+                                                <div class="v-window-item occurrent_wrapper__background">
+                                                    <div class="v-image v-responsive v-carousel__item theme--light"
+                                                        style="height: 100%;">
+                                                        <div class="v-responsive__content">
+                                                            <div class="v-sheet theme--light rounded-0"
+                                                                item="[object Object]" style="height: 100%;">
+                                                                <div
+                                                                    class="owl-carousel fill-height align-center justify-center">
+                                                                    <div height="425"
+                                                                        class="item occurrent_wrapper__background--touch_device">
+                                                                        <div class="occurrent_wrapper">
+                                                                            <div class="occurrent__img">
+                                                                                <div class="occurrent__major"
+                                                                                    style="background-color: rgb(216, 244, 217);">
+                                                                                    Yangiliklar </div><img
+                                                                                    src="./images/not-found-img.png"
+                                                                                    alt="">
+                                                                            </div>
+                                                                            <div class="occurrent__info">
+                                                                                <div class="occurrent__date">
+                                                                                    <span>Avgust 03, 2022</span>
+                                                                                </div>
+                                                                                <div class="occurent_content_wrapper">
+                                                                                    <h4 class="title title--5">"ШУМ
+                                                                                        БОЛА" асари ҳақида</h4>
+                                                                                    <div class="occurent_content__text">
+                                                                                        📜 "Шум бола" — ўзбек ёзувчиси
+                                                                                        ва шоири Ғафур Ғуло... </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl nav">
+                                                    <div class="v-window__prev news__prev"><button type="button"
+                                                            class="v-btn v-btn--absolute v-btn--is-elevated v-btn--fab v-btn--has-bg v-btn--round theme--dark v-size--default"
+                                                            aria-label="Previous visual"
+                                                            style="height: 110px; width: 124px; background-color: rgb(236, 82, 57); border-color: rgb(236, 82, 57);"><span
+                                                                class="v-btn__content">
+                                                                <img src="./assets/icons/arrow_carousel_left.svg"
+                                                                    alt=""></span></button>
+                                                    </div>
+                                                    <div class="v-window__next news__next">
+                                                        <button type="button"
+                                                            class="v-btn v-btn--absolute v-btn--is-elevated v-btn--fab v-btn--has-bg v-btn--round theme--dark v-size--default"
+                                                            aria-label="Next visual"
+                                                            style="height: 110px; width: 124px; background-color: rgb(236, 82, 57); border-color: rgb(236, 82, 57);"><span
+                                                                class="v-btn__content">
+                                                                <img src="./assets/icons/arrow_carousel_right.svg"
+                                                                    alt=""></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="button_wrapper more_news_btn big">
                                         <a href="./views/news.html" type="button" icon-name=""
                                             class="primary-btn primary-btn--orange primary-btn--big">Yanada
@@ -1209,8 +1274,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
 
                 <footer class="footer">
@@ -1322,6 +1385,13 @@
             owl.trigger('next.owl.carousel');
         })
         $('.v-window__prev').click(function () {
+            owl.trigger('prev.owl.carousel', [300]);
+        })
+
+        $('.v-window__next').click(function () {
+            owl.trigger('next.owl.carousel');
+        })
+        $('.news__prev').click(function () {
             owl.trigger('prev.owl.carousel', [300]);
         })
     </script>
