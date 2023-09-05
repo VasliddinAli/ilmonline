@@ -5499,7 +5499,8 @@ p.search__result_item {
     display: flex;
     justify-content: center;
     align-self: center;
-    grid-column: 1/-1
+    grid-column: 1/-1;
+    margin-top: 50px;
 }
 
 @media only screen and (max-width: 1250px) {
