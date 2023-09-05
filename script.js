@@ -38,6 +38,25 @@ nav_burger__wrapper.addEventListener('click', () => {
 })
 
 
+const cards = document.querySelectorAll('.select-mode__item');
+const in_btn = document.querySelector('#otishBtn');
+let basicMenu = document.querySelector('#basicMenu');
+let selectMode = document.querySelector('.select-mode');
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        cards.forEach(c => c.classList.remove("active")); // Barcha kardlardan aktiv klassni olib tashlaymiz
+        card.classList.add("active"); // Bosilgan kartni aktiv holatga o'tkazamiz
+        in_btn.removeAttribute("disabled")
+        in_btn.classList.remove("disabled");
+    });
+});
+in_btn.addEventListener('click', () => {
+    basicMenu.style.display = 'block'
+    selectMode.style.display = 'none'
+})
+
+
 // document.querySelector('#sorting_select__course_title').addEventListener('click', () => {
 //     document.querySelector('.sorting_select__title').classList.toggle('active');
 // })

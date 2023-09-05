@@ -19,7 +19,34 @@
 <body>
 
     <div id="app" class="school-courses">
-        <div>
+        <div class="select-mode">
+            <div class="select-lang">
+                <div class="select-lang__item"> РУС </div>
+                <div class="select-lang__item active"> UZB </div>
+                <div class="select-lang__item"> УЗБ </div>
+            </div>
+            <div class="select-mode__inner">
+                <h2 class="select-mode__title"> Salom! ILM online ga xush kelibsiz. </h2>
+                <div class="select-mode__text"> Qaysi yo'nalishda o‘qishni xohlaysiz? </div>
+                <div class="select-mode__items">
+                    <div class="select-mode__item school">
+                        <img src="./assets/icons/school_courses.svg" alt="">
+                        <div class="select-mode__item-title">Maktab o'quvchilari uchun darslar</div>
+                    </div>
+                    <div class="select-mode__item pro">
+                        <img src="./assets/icons/pro_courses.svg" alt="">
+                        <div class="select-mode__item-title">Professional kurslar <br> <span
+                                style="font-size: 12px; font-weight: bold">(talabalar va oliy o'quv yurti bitiruvchilari
+                                uchun)</span></div>
+                    </div>
+                </div>
+                <div class="button_wrapper select-mode__btn disabled popular">
+                    <button type="button" disabled="disabled" icon-name="" id="otishBtn"
+                        class="primary-btn primary-btn--violet primary-btn--popular"> О'tish </button>
+                </div>
+            </div>
+        </div>
+        <div id="basicMenu" style="display: none;">
             <div role="dialog" class="v-dialog__container"></div>
             <main class="main">
                 <header id="header" class="header"> <!-- -->
@@ -34,8 +61,8 @@
                                 </div>
                                 <a href="./views/tests.html" class="tests_btn"> Testlar </a>
                                 <div class="header__center_input"></div>
-                                <div class="user_cabinet not_touch_device"><a href="../profile/signIn.html" class="user_cabinet__text"
-                                        style="font-weight: bold;"> Shaxsiy kabinet</a>
+                                <div class="user_cabinet not_touch_device"><a href="../profile/signIn.html"
+                                        class="user_cabinet__text" style="font-weight: bold;"> Shaxsiy kabinet</a>
                                     <div class="nav_right__link user_profile active">
                                         <img src="./assets/icons/icon_profile.svg" alt="">
                                         <div class="user_profile__list_wrapper">
@@ -462,7 +489,8 @@
                                     </div>
                                     <!-- desktop -->
                                     <div class="page_lessons__cards">
-                                        <a href="./views/courseDetail.html" height="440" class="card_lesson_background start item">
+                                        <a href="./views/courseDetail.html" height="440"
+                                            class="card_lesson_background start item">
                                             <div class="card_lesson_wrapper start">
                                                 <div class="card_lesson__img">
                                                     <div class="card_lesson__major business"
@@ -523,7 +551,8 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="./views/courseDetail.html" height="440" class="card_lesson_background start">
+                                        <a href="./views/courseDetail.html" height="440"
+                                            class="card_lesson_background start">
                                             <div class="card_lesson_wrapper start">
                                                 <div class="card_lesson__img">
                                                     <div class="card_lesson__major business"
@@ -581,7 +610,8 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="./views/courseDetail.html" height="440" class="card_lesson_background start">
+                                        <a href="./views/courseDetail.html" height="440"
+                                            class="card_lesson_background start">
                                             <div class="card_lesson_wrapper start">
                                                 <div class="card_lesson__img">
                                                     <div class="card_lesson__major business"
@@ -639,7 +669,8 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="./views/courseDetail.html" height="440" class="card_lesson_background start">
+                                        <a href="./views/courseDetail.html" height="440"
+                                            class="card_lesson_background start">
                                             <div class="card_lesson_wrapper start">
                                                 <div class="card_lesson__img">
                                                     <div class="card_lesson__major business"
@@ -697,7 +728,8 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="./views/courseDetail.html" height="440" class="card_lesson_background start">
+                                        <a href="./views/courseDetail.html" height="440"
+                                            class="card_lesson_background start">
                                             <div class="card_lesson_wrapper start">
                                                 <div class="card_lesson__img">
                                                     <div class="card_lesson__major business"
@@ -754,7 +786,8 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="./views/courseDetail.html" height="440" class="card_lesson_background start">
+                                        <a href="./views/courseDetail.html" height="440"
+                                            class="card_lesson_background start">
                                             <div class="card_lesson_wrapper start">
                                                 <div class="card_lesson__img">
                                                     <div class="card_lesson__major business"
