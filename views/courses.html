@@ -411,7 +411,7 @@
                         </div>
                     </div>
                     <div class="lessons_main">
-                        <div class="filter_sidebar_wrapper lessons_filter__drop_menu">
+                        <!-- <div class="filter_sidebar_wrapper lessons_filter__drop_menu">
                             <div class="filter_sidebar">
                                 <div class="lessons_filter__drop_menu_cross"></div>
                                 <div class="filter_sidebar__list">
@@ -493,15 +493,16 @@
                                 </div>
                                 <div class="filters_sidebar__btns"></div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="container">
                             <h4 class="title title--2">Barcha yo‘nalishlar mavjud <br> <span
                                     style="color: #EC5239">o‘zingiznikini toping.</span></h4>
                             <div class="lessons_filter__head head_filtration">
                                 <div class="head_filtration__left">
-                                    <div class="button_wrapper head_filtration__row primary-btn--transparent low">
-                                        <button type="button" icon-name="filter"
-                                            class="primary-btn primary-btn--transparent primary-btn--low primary-btn--non_border">
+                                    <div
+                                        class="button_wrapper medium head_filtration__row primary-btn--transparent low">
+                                        <button type="button" icon-name="filter_white"
+                                            class="clasFilterBtn primary-btn primary-btn--orange primary-btn--medium">
                                             <img src="../assets/icons/icon_filter.svg" alt=""> Filtrlash </button>
                                     </div>
                                     <div class="head_filtration__row">
@@ -511,9 +512,10 @@
                                 </div>
                                 <div class="head_filtration__right">
                                     <div class="sorting_select">
-                                        <div class="sorting_select__title" id="sorting_select__course_title"><span
-                                                class="order__title">Saralash
-                                                turi</span>
+                                        <div class="sorting_select__title" id="sorting_select__course_title">
+                                            <span class="order__title">
+                                                Saralash turi
+                                            </span>
                                             <img src="../assets/icons/icon_filter_arrow.svg" alt="">
                                             <div class="sorting_select__wrapper">
                                                 <div class="sorting_select__sort">
@@ -534,7 +536,7 @@
                                 </div>
                             </div>
                             <div class="lessons_wrapper">
-                                <div class="filter_sidebar_wrapper lessons_filter">
+                                <div class="filter_sidebar_wrapper lessons_filter" id="lessonFilter">
                                     <div class="filter_sidebar">
                                         <div class="lessons_filter__drop_menu_cross"></div>
                                         <div class="filter_sidebar__list">
@@ -626,6 +628,106 @@
                                             </div>
                                         </div>
                                         <div class="filters_sidebar__btns"></div>
+                                    </div>
+                                </div>
+                                <div class="filter_sidebar_wrapper lessons_filter" id="lessonFilterRes">
+                                    <div class="filter_sidebar">
+                                        <div class="lessons_filter__drop_menu_cross active" id="filterCloseBtn"></div>
+                                        <div class="filter_sidebar_text__small">
+                                            <img src="../assets/icons/icon_filter.svg" alt=""><span> Filtrlash </span></div>
+                                        <div class="filter_sidebar__list">
+                                            <div>
+                                                <div class="list_title"> Daraja 
+                                                    <img src="../assets/icons/icon_cross_orange_school.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Boshlangʻich daraja </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>O'rta daraja </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Yuqori daraja </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="list_title"> Narxi 
+                                                    <img src="../assets/icons/icon_cross_orange_school.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Bepul </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Pullik </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="list_title"> Yo'nalish 
+                                                    <img src="../assets/icons/icon_cross_orange_school.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Dasturlash kurslari </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Chet tillari </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Abituriyentlar uchun </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Bonus darslar </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="list_title"> Tillar 
+                                                    <img src="../assets/icons/icon_cross_orange_school.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Rus </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>O'zbek </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filters_sidebar__btns">
+                                            <div class="head_filtration__clear_btn">
+                                                <img src="../assets/icons/icon_cross.svg" alt=""><span> Hammasini tozalamoq </span></div>
+                                            <div class="close_btn"> Qo'llash </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="./courseDetail.html" height="440" class="card_lesson_background start">

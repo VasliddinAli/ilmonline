@@ -137,11 +137,9 @@ polisyTitle.forEach(item => {
 });
 
 
-sortTitle = document.querySelectorAll('.sorting_select__title');
-sortTitle.forEach((item) => {
-    item.addEventListener('click', () => {
-        sortTitle.classList.toggle('hover')
-    })
+sortTitle = document.querySelector('.sorting_select__title');
+sortTitle.addEventListener('click', () => {
+    sortTitle.classList.toggle('hover')
 })
 
 let lessonClose = document.querySelector('.current_lesson__note_close')
@@ -152,3 +150,18 @@ if (lessonClose != null) {
 }
 
 let lessons_wrapper = document.querySelector('.lessons_wrapper');
+let filter_sidebar_wrapper = document.querySelector('#lessonFilter');
+if(window.innerWidth <= 1040){
+    document.querySelector('.clasFilterBtn').classList.add('primary-btn--orange')
+}
+
+
+let filterCourse = document.querySelector('#lessonFilterRes');
+let filterBtn = document.querySelector('.clasFilterBtn');
+let filterCloseBtn = document.querySelector('#filterCloseBtn');
+filterBtn.addEventListener('click', () => {
+    filterCourse.style.display = 'block'
+})
+filterCloseBtn.addEventListener('click', () => {
+    filterCourse.style.display = 'none'
+})
