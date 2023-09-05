@@ -31344,6 +31344,7 @@ button.swiper-pagination-bullet {
     left: 0;
     z-index: 999;
 }
+
 #vacansyFilterRes {
     display: none;
     position: fixed;
@@ -46024,4 +46025,17 @@ li {
         max-width: 16px;
         max-height: 16px
     }
+}
+
+.breadcrumbs {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
