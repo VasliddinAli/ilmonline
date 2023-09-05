@@ -8711,6 +8711,13 @@ p.search__result_item {
     .news_wraper .news_cards_carousel_wrapper {
         display: block;
     }
+
+    .lessonsMenu{
+        background-color: #fff;
+        z-index: 999;
+        position: absolute;
+        top: 80px;
+    }
 }
 
 .more_news_btn {
