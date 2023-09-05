@@ -41,6 +41,7 @@ nav_burger__wrapper.addEventListener('click', () => {
 const cards = document.querySelectorAll('.select-mode__item');
 const in_btn = document.querySelector('#otishBtn');
 let basicMenu = document.querySelector('#basicMenu');
+let professionalCourse = document.querySelector('#professionalCourse');
 let selectMode = document.querySelector('.select-mode');
 
 cards.forEach(card => {
@@ -52,8 +53,12 @@ cards.forEach(card => {
     });
 });
 in_btn.addEventListener('click', () => {
-    basicMenu.style.display = 'block'
-    selectMode.style.display = 'none'
+    if(professionalCourse.classList.contains('active')){
+        window.location.href = "./views/professionalCourse.html";
+    }else{
+        basicMenu.style.display = 'block'
+        selectMode.style.display = 'none'
+    }
 })
 
 
