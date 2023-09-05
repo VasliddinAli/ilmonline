@@ -149,19 +149,34 @@ if (lessonClose != null) {
     })
 }
 
-let lessons_wrapper = document.querySelector('.lessons_wrapper');
-let filter_sidebar_wrapper = document.querySelector('#lessonFilter');
-if(window.innerWidth <= 1040){
-    document.querySelector('.clasFilterBtn').classList.add('primary-btn--orange')
-}
+// let lessons_wrapper = document.querySelector('.lessons_wrapper');
+// let filter_sidebar_wrapper = document.querySelector('#lessonFilter');
+// if(window.innerWidth <= 1040){
+//     document.querySelector('.clasFilterBtn').classList.add('primary-btn--orange')
+// }
 
+
+let vacansyFilter = document.querySelector('#vacansyFilterRes');
+let filterBtnVacansy = document.querySelector('#vacancyFilterBtn');
+let filterCloseBtnVacansy = document.querySelector('#filterCloseBtnVacansy');
+if (filterBtnVacansy != null) {
+    filterBtnVacansy.addEventListener('click', () => {
+        vacansyFilter.style.display = 'block';
+        console.log(12);
+    })
+    filterCloseBtnVacansy.addEventListener('click', () => {
+        vacansyFilter.style.display = 'none'
+    })
+}
 
 let filterCourse = document.querySelector('#lessonFilterRes');
 let filterBtn = document.querySelector('.clasFilterBtn');
 let filterCloseBtn = document.querySelector('#filterCloseBtn');
-filterBtn.addEventListener('click', () => {
-    filterCourse.style.display = 'block'
-})
-filterCloseBtn.addEventListener('click', () => {
-    filterCourse.style.display = 'none'
-})
+if (filterBtn != null) {
+    filterBtn.addEventListener('click', () => {
+        filterCourse.style.display = 'block'
+    })
+    filterCloseBtn.addEventListener('click', () => {
+        filterCourse.style.display = 'none'
+    })
+}

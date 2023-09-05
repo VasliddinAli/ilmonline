@@ -17,7 +17,7 @@
         <div>
             <div role="dialog" class="v-dialog__container"></div>
             <main class="main">
-                <header id="header" class="header">
+                <header id="header" class="header white_bg">
                     <div class="header__wrapper">
                         <div class="container">
                             <nav class="header__inner">
@@ -411,7 +411,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main_vacancy">
+                    <div class="main_vacancy" style="background: #faf2ee;">
                         <div class="lessons_filter__drop_menu_cross"></div>
                         <div class="container"><img src="../images/school/vacancy_main.png" alt=""
                                 class="vacancy__first_block_img"></div>
@@ -430,7 +430,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="filter_sidebar_wrapper lessons_filter__drop_menu">
+                        <!-- <div class="filter_sidebar_wrapper lessons_filter__drop_menu">
                             <div class="filter_sidebar">
                                 <div class="filter_sidebar__list">
                                     <div>
@@ -522,13 +522,14 @@
                                 </div>
                                 <div class="filters_sidebar__btns"></div>
                             </div>
-                        </div>
+                        </div> -->
                         <div id="vacancy_list" class="vacancy__content container">
                             <div class="head_filtration">
                                 <div class="head_filtration__left">
-                                    <div class="button_wrapper head_filtration__row primary-btn--transparent low">
-                                        <button type="button" icon-name="filter"
-                                            class="primary-btn primary-btn--transparent primary-btn--low primary-btn--non_border">
+                                    <div
+                                        class="button_wrapper medium head_filtration__row primary-btn--transparent low">
+                                        <button type="button" icon-name="filter_white"
+                                            class="primary-btn primary-btn--orange primary-btn--medium" id="vacancyFilterBtn">
                                             <img src="../assets/icons/icon_filter.svg" alt=""> Filtrlash </button>
                                     </div>
                                     <div class="head_filtration__row">
@@ -558,7 +559,7 @@
                                 </div>
                             </div>
                             <div class="vacancy_wrapper">
-                                <div class="filter_sidebar_wrapper vacancy_filter desk">
+                                <div class="filter_sidebar_wrapper vacancy_filter desk" id="vacansyFilter">
                                     <div class="filter_sidebar">
                                         <div class="filter_sidebar__list">
                                             <div>
@@ -663,6 +664,120 @@
                                         <div class="filters_sidebar__btns"></div>
                                     </div>
                                 </div>
+                                <div class="filter_sidebar_wrapper lessons_filter__drop_menu active" id="vacansyFilterRes">
+                                    <div class="lessons_filter__drop_menu_cross active" id="filterCloseBtnVacansy"></div>
+                                    <div class="filter_sidebar">
+                                        <div class="filter_sidebar_text__small">
+                                            <img src="../assets/icons/icon_filter.svg" alt=""><span> Filtrlash </span></div>
+                                        <div class="filter_sidebar__list">
+                                            <div>
+                                                <div class="list_title"> Shahar 
+                                                    <img src="../assets/icons/icon_cross_orange_school.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Andijon </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Buxoro </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Samarqand </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Toshkent </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="list_title"> Yo'nalishlar 
+                                                    <img src="../assets/icons/icon_cross_orange_school.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Qo'llab-quvvatlash </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select hover">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Sotish </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Dizayn </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Marketing </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="list_title"> Daraja 
+                                                    <img src="../assets/icons/icon_cross_orange_school.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Junior </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Middle </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Senior </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="list_title"> Shartlar 
+                                                    <img src="../assets/icons/icon_cross_orange_school.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Idora </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="level__select">
+                                                        <div class="level__checkbox"></div>
+                                                        <span>Masofadan </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filters_sidebar__btns">
+                                            <div class="head_filtration__clear_btn">
+                                                <img src="../assets/icons/icon_cross.svg" alt=""><span> Hammasini tozalamoq </span></div>
+                                            <div class="close_btn"> Qo'llash </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                                 <div class="vacancy_card_list_wrapper">
                                     <div class="vacancy_card__container">
                                         <div class="vacancy_card">
