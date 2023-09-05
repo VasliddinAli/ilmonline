@@ -8712,7 +8712,7 @@ p.search__result_item {
         display: block;
     }
 
-    .lessonsMenu{
+    .lessonsMenu {
         background-color: #fff;
         z-index: 999;
         position: absolute;
@@ -8724,6 +8724,9 @@ p.search__result_item {
     display: flex;
     justify-content: center
 }
+
+
+
 
 .news_cards_carousel_wrapper {
     margin: 0 -14px 40px

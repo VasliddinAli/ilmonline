@@ -150,3 +150,5 @@ if (lessonClose != null) {
         document.querySelector('.current_lesson__note').style.display = 'none'
     })
 }
+
+let lessons_wrapper = document.querySelector('.lessons_wrapper');
