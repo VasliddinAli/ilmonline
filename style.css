@@ -6342,7 +6342,7 @@ p.search__result_item {
     }
 }
 
-.card_lesson__timing svg {
+.card_lesson__timing img {
     max-width: 16px
 }
 
@@ -6392,7 +6392,7 @@ p.search__result_item {
     font-size: 14px
 }
 
-.card_rest_time svg {
+.card_rest_time img {
     max-width: 15px
 }
 
@@ -7019,7 +7019,7 @@ p.search__result_item {
     align-items: center
 }
 
-.v-progress-circular>svg {
+.v-progress-circular>img {
     width: 100%;
     height: 100%;
     margin: auto;
@@ -7031,7 +7031,7 @@ p.search__result_item {
     z-index: 0
 }
 
-.v-progress-circular--indeterminate>svg {
+.v-progress-circular--indeterminate>img {
     -webkit-animation: progress-circular-rotate 1.4s linear infinite;
     animation: progress-circular-rotate 1.4s linear infinite;
     transform-origin: center center;
@@ -7047,7 +7047,7 @@ p.search__result_item {
 }
 
 .v-progress-circular--indeterminate:not(.v-progress-circular--visible) .v-progress-circular__overlay,
-.v-progress-circular--indeterminate:not(.v-progress-circular--visible)>svg {
+.v-progress-circular--indeterminate:not(.v-progress-circular--visible)>img {
     -webkit-animation-play-state: paused !important;
     animation-play-state: paused !important
 }
@@ -8835,9 +8835,9 @@ p.search__result_item {
     }
 }
 
-.free_test__icons_left svg,
-.free_test__icons_right_bottom svg,
-.free_test__icons_right_top svg {
+.free_test__icons_left img,
+.free_test__icons_right_bottom img,
+.free_test__icons_right_top img {
     max-height: 100%;
     max-width: 100%;
     height: 100%;
@@ -9018,13 +9018,13 @@ p.search__result_item {
 }
 
 @media only screen and (max-width: 1024px) {
-    .scroll_arrow_down.first_page svg {
+    .scroll_arrow_down.first_page img {
         max-width: 40px
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .scroll_arrow_down.first_page svg {
+    .scroll_arrow_down.first_page img {
         max-width: 30px
     }
 }
@@ -9221,13 +9221,13 @@ p.search__result_item {
     }
 }
 
-.why_ilm__item_title svg {
+.why_ilm__item_title img {
     max-width: 80px;
     max-height: 80px
 }
 
 @media screen and (max-width: 1300px) {
-    .why_ilm__item_title svg {
+    .why_ilm__item_title img {
         max-width: 60px;
         max-height: 60px
     }
@@ -31049,7 +31049,7 @@ button.swiper-pagination-bullet {
     border: 1px solid var(--color-main)
 }
 
-.sorting_select__title.active svg {
+.sorting_select__title.active img {
     transform: rotate(180deg)
 }
 
@@ -31166,7 +31166,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.vacancy_card__date svg {
+.vacancy_card__date img {
     position: relative;
     top: -1px;
     max-width: 17px
@@ -31202,7 +31202,7 @@ button.swiper-pagination-bullet {
     background-color: #f3f2ff
 }
 
-.vacancy_card__info_item svg {
+.vacancy_card__info_item img {
     max-width: 18px;
     max-height: 18px
 }
@@ -31401,7 +31401,7 @@ button.swiper-pagination-bullet {
 }
 
 @media only screen and (max-width: 722px) {
-    .scroll_arrow_down.vacancy__scroll svg {
+    .scroll_arrow_down.vacancy__scroll img {
         max-width: 25px;
         max-height: 25px
     }
@@ -31604,7 +31604,7 @@ button.swiper-pagination-bullet {
     border-bottom: 1px solid var(--border-color)
 }
 
-.side_bar__mobile svg {
+.side_bar__mobile img {
     margin-right: 8px
 }
 
@@ -32073,7 +32073,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.card_lesson__timing svg {
+.card_lesson__timing img {
     max-width: 16px
 }
 
@@ -32123,7 +32123,7 @@ button.swiper-pagination-bullet {
     font-size: 14px
 }
 
-.card_rest_time svg {
+.card_rest_time img {
     max-width: 15px
 }
 
@@ -32187,7 +32187,7 @@ button.swiper-pagination-bullet {
     white-space: nowrap
 }
 
-.sorting_select svg {
+.sorting_select img {
     position: relative;
     top: 2px;
     width: 8px
@@ -32221,7 +32221,7 @@ button.swiper-pagination-bullet {
     border: 1px solid var(--color-main)
 }
 
-.sorting_select__title.active svg {
+.sorting_select__title.active img {
     transform: rotate(180deg)
 }
 
@@ -32606,7 +32606,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.card_lesson__timing svg {
+.card_lesson__timing img {
     max-width: 16px
 }
 
@@ -32656,7 +32656,7 @@ button.swiper-pagination-bullet {
     font-size: 14px
 }
 
-.card_rest_time svg {
+.card_rest_time img {
     max-width: 15px
 }
 
@@ -33288,13 +33288,13 @@ button.swiper-pagination-bullet {
     object-fit: cover
 }
 
-.feedback__rating-photo-box svg {
+.feedback__rating-photo-box img {
     max-width: 48px;
     max-height: 48px
 }
 
 @media only screen and (max-width: 540px) {
-    .feedback__rating-photo-box svg {
+    .feedback__rating-photo-box img {
         max-width: 32px;
         max-height: 32px
     }
@@ -33844,7 +33844,7 @@ button.swiper-pagination-bullet {
 }
 
 @media only screen and (max-width: 540px) {
-    .feedback__rating_inner-box .card_lesson__star svg.vue-star-rating-star {
+    .feedback__rating_inner-box .card_lesson__star img.vue-star-rating-star {
         width: 16px;
         height: 16px
     }
@@ -33954,7 +33954,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 8px
 }
 
-.info_bock__item svg {
+.info_bock__item img {
     max-width: 15px;
     max-height: 15px;
     position: relative;
@@ -34245,7 +34245,7 @@ button.swiper-pagination-bullet {
     white-space: nowrap
 }
 
-.sorting_select svg {
+.sorting_select img {
     position: relative;
     top: 2px;
     width: 8px
@@ -34279,7 +34279,7 @@ button.swiper-pagination-bullet {
     border: 1px solid var(--color-main)
 }
 
-.sorting_select__title.active svg {
+.sorting_select__title.active img {
     transform: rotate(180deg)
 }
 
@@ -34663,7 +34663,7 @@ button.swiper-pagination-bullet {
     white-space: nowrap
 }
 
-.head_filtration__right svg {
+.head_filtration__right img {
     position: relative;
     top: 2px;
     width: 8px
@@ -34695,7 +34695,7 @@ button.swiper-pagination-bullet {
     border: 1px solid var(--color-main)
 }
 
-.head_filtration__sorting_title:hover svg {
+.head_filtration__sorting_title:hover img {
     transform: rotate(180deg)
 }
 
@@ -35335,7 +35335,7 @@ button.swiper-pagination-bullet {
     gap: 20px
 }
 
-.modal_socials_block svg {
+.modal_socials_block img {
     max-width: 40px;
     max-height: 40px
 }
@@ -35762,7 +35762,7 @@ li::after {
     white-space: nowrap;
 }
 
-.sorting_select svg {
+.sorting_select img {
     position: relative;
     top: 2px;
     width: 8px;
@@ -35796,7 +35796,7 @@ li::after {
     border: 1px solid var(--color-head-title);
 }
 
-.sorting_select__title.hover svg {
+.sorting_select__title.hover img {
     transform: rotate(180deg);
 }
 
@@ -36046,7 +36046,7 @@ li::after {
     color: var(--color-font-light-dark);
 }
 
-.test_info__item svg {
+.test_info__item img {
     max-width: 15px;
     max-height: 15px;
 }
@@ -36069,7 +36069,7 @@ li::after {
     white-space: nowrap;
 }
 
-.sorting_select svg {
+.sorting_select img {
     position: relative;
     top: 2px;
     width: 8px;
@@ -36102,7 +36102,7 @@ li::after {
     border: 1px solid var(--color-main);
 }
 
-.sorting_select__title.hover svg {
+.sorting_select__title.hover img {
     transform: rotate(180deg);
 }
 
@@ -36261,7 +36261,7 @@ li::after {
     align-items: center;
 }
 
-.like_container svg {
+.like_container img {
     margin-right: 6px;
     max-width: 16px;
 }
@@ -36644,7 +36644,7 @@ li::after {
     flex-wrap: wrap;
 }
 
-.like_container svg {
+.like_container img {
     margin-right: 6px;
 }
 
@@ -37121,7 +37121,7 @@ p.search__result_item {
     }
 }
 
-.profile_sidebar__link svg {
+.profile_sidebar__link img {
     max-width: 20px;
     max-height: 20px
 }
@@ -37346,13 +37346,13 @@ p.search__result_item {
     margin-bottom: 32px
 }
 
-.user_profile>svg {
+.user_profile>img {
     fill: none;
     stroke-width: 2;
     stroke: var(--color-main)
 }
 
-.user_profile svg {
+.user_profile img {
     max-height: 20px;
     max-width: 20px
 }
@@ -37383,7 +37383,7 @@ p.search__result_item {
     color: var(--color-main)
 }
 
-.menu_btn svg {
+.menu_btn img {
     max-width: 10px;
     max-height: 5px;
     position: relative;
@@ -37761,7 +37761,7 @@ p.search__result_item {
     }
 }
 
-.card_lesson__timing svg {
+.card_lesson__timing img {
     max-width: 16px
 }
 
@@ -37811,7 +37811,7 @@ p.search__result_item {
     font-size: 14px
 }
 
-.card_rest_time svg {
+.card_rest_time img {
     max-width: 15px
 }
 
@@ -37875,7 +37875,7 @@ p.search__result_item {
     white-space: nowrap
 }
 
-.sorting_select svg {
+.sorting_select img {
     position: relative;
     top: 2px;
     width: 8px
@@ -37909,7 +37909,7 @@ p.search__result_item {
     border: 1px solid var(--color-main)
 }
 
-.sorting_select__title.active svg {
+.sorting_select__title.active img {
     transform: rotate(180deg)
 }
 
@@ -38121,7 +38121,7 @@ p.search__result_item {
     max-height: 16px;
 }
 
-.input-search__wrapper svg {
+.input-search__wrapper img {
     position: absolute;
     bottom: 15px;
 }
@@ -38524,7 +38524,7 @@ p.search__result_item {
     justify-content: center;
 }
 
-.chat_dialog__current svg {
+.chat_dialog__current img {
     max-width: 32px;
     max-height: 32px;
 }
@@ -38736,7 +38736,7 @@ p.search__result_item {
     align-items: center;
 }
 
-.eye_wrapper svg {
+.eye_wrapper img {
     max-width: 12px;
 }
 
@@ -39101,7 +39101,7 @@ p.search__result_item {
     z-index: 2
 }
 
-.header__icons svg {
+.header__icons img {
     cursor: pointer
 }
 
@@ -39114,7 +39114,7 @@ p.search__result_item {
     font-size: 26px
 }
 
-.value_star svg {
+.value_star img {
     max-width: 44px
 }
 
@@ -39144,7 +39144,7 @@ p.search__result_item {
     letter-spacing: 2px
 }
 
-.left__star svg {
+.left__star img {
     max-height: 14px
 }
 
@@ -39152,7 +39152,7 @@ p.search__result_item {
     align-self: flex-end
 }
 
-.card_type svg {
+.card_type img {
     max-width: 40px
 }
 
@@ -39221,7 +39221,7 @@ p.search__result_item {
     border-radius: 12px
 }
 
-.card_notification svg {
+.card_notification img {
     position: absolute;
     left: 40px;
     bottom: 0;
@@ -39788,20 +39788,20 @@ p.search__result_item {
     }
 }
 
-.main-item svg {
+.main-item img {
     max-width: 40px;
     max-height: 40px
 }
 
 @media only screen and (max-width: 1024px) {
-    .main-item svg {
+    .main-item img {
         max-width: 32px;
         max-height: 32px
     }
 }
 
 @media only screen and (max-width: 1024px)and (max-width:540px) {
-    .main-item svg {
+    .main-item img {
         max-width: 24px;
         max-height: 24px
     }
@@ -39852,7 +39852,7 @@ p.search__result_item {
     }
 }
 
-.card_notification svg {
+.card_notification img {
     position: absolute;
     left: 40px;
     bottom: 0;
@@ -39861,13 +39861,13 @@ p.search__result_item {
 }
 
 @media only screen and (max-width: 767px) {
-    .card_notification svg {
+    .card_notification img {
         max-width: 60px
     }
 }
 
 @media only screen and (max-width: 540px) {
-    .card_notification svg {
+    .card_notification img {
         max-width: 45px;
         max-height: 75px;
         left: 25px
@@ -40064,7 +40064,7 @@ p.search__result_item {
     z-index: 2
 }
 
-.header__icons svg {
+.header__icons img {
     cursor: pointer
 }
 
@@ -40077,7 +40077,7 @@ p.search__result_item {
     font-size: 26px
 }
 
-.value_star svg {
+.value_star img {
     max-width: 44px
 }
 
@@ -40107,7 +40107,7 @@ p.search__result_item {
     letter-spacing: 2px
 }
 
-.left__star svg {
+.left__star img {
     max-height: 14px
 }
 
@@ -40115,7 +40115,7 @@ p.search__result_item {
     align-self: flex-end
 }
 
-.card_type svg {
+.card_type img {
     max-width: 40px
 }
 
@@ -40184,7 +40184,7 @@ p.search__result_item {
     border-radius: 12px
 }
 
-.card_notification svg {
+.card_notification img {
     position: absolute;
     left: 40px;
     bottom: 0;
@@ -40295,7 +40295,7 @@ p.search__result_item {
     }
 }
 
-.detail_card__images svg {
+.detail_card__images img {
     max-height: 135px;
     max-width: 220px;
 }
@@ -40894,7 +40894,7 @@ p.search__result_item {
     background-image: url(/images/arrow_link_copy_after.svg)
 }
 
-.copy_block__notifiction svg {
+.copy_block__notifiction img {
     position: relative;
     top: 12px;
     left: 0
@@ -41256,7 +41256,7 @@ p.search__result_item {
     transition: none
 }
 
-.primary-btn--arrow_icon svg {
+.primary-btn--arrow_icon img {
     position: absolute;
     right: 16px
 }
@@ -41355,7 +41355,7 @@ p.search__result_item {
     color: var(--color-white)
 }
 
-.button_wrapper:hover .primary-btn--transparent .loader svg g rect {
+.button_wrapper:hover .primary-btn--transparent .loader img g rect {
     fill: var(--color-white)
 }
 
@@ -41948,23 +41948,23 @@ input[disabled] {
     opacity: .5
 }
 
-.loader.loader--red svg g rect {
+.loader.loader--red img g rect {
     fill: var(--primary-color-error)
 }
 
-.loader.loader--green svg g rect {
+.loader.loader--green img g rect {
     fill: var(--primary-color-success)
 }
 
-.loader.loader--white svg g rect {
+.loader.loader--white img g rect {
     fill: var(--color-white)
 }
 
-.loader.loader--orange svg g rect {
+.loader.loader--orange img g rect {
     fill: var(--color-main)
 }
 
-.loader svg {
+.loader img {
     height: 85px;
     width: 85px;
     margin: auto;
@@ -41972,12 +41972,12 @@ input[disabled] {
     shape-rendering: auto
 }
 
-.loader--small svg {
+.loader--small img {
     height: 40px;
     width: 40px
 }
 
-.loader.loader--blue svg g rect {
+.loader.loader--blue img g rect {
     fill: var(--secondary-color-dark-blue)
 }
 
