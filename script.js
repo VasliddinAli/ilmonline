@@ -1,5 +1,5 @@
 let lessons_btn = document.querySelector('.lessons_btn');
-let user_cabinet = document.querySelector('.user_cabinet');
+// let user_cabinet = document.querySelector('.user_cabinet');
 let nav_burger__wrapper = document.querySelector('.nav_burger__wrapper');
 let mainResMenu = document.querySelector('.mainResMenu');
 let mainMenu = document.querySelector('.mainMenu');

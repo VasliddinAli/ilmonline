@@ -5788,7 +5788,7 @@ p.search__result_item {
 .user_cabinet {
     display: flex;
     align-items: center;
-    position: relative
+    position: relative;
 }
 
 .user_cabinet:hover .user_cabinet__text {
