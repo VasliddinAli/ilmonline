@@ -121,7 +121,7 @@ checkboxes.forEach(checkbox => {
 });
 
 
-let polisyTitle = document.querySelectorAll('.agreement_policy__content_title');
+let polisyTitle = document.querySelectorAll('.agreement_policy__content_content');
 let polisyText = document.querySelectorAll('.agreement_policy__content_text');
 
 polisyTitle.forEach((item, index) => {
