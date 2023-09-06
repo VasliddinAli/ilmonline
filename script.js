@@ -120,27 +120,34 @@ checkboxes.forEach(checkbox => {
     })
 });
 
-let polisyTitle = document.querySelectorAll('.agreement_policy__content_title');
 
-polisyTitle.forEach(item => {
+let polisyTitle = document.querySelectorAll('.agreement_policy__content_title');
+let polisyText = document.querySelectorAll('.agreement_policy__content_text');
+
+polisyTitle.forEach((item, index) => {
     item.addEventListener('click', () => {
         item.classList.toggle('opened')
-        let element = document.querySelector('item .agreement_policy__content_text');
-        let haveElement = window.getComputedStyle(element).display
 
-        if (haveElement === 'none') {
-            element.style.display = 'block';
-        } else {
-            element.style.display = 'none';
-        }
+        polisyText.forEach((element, ind) => {
+            if (index == ind) {
+                let haveElement = window.getComputedStyle(element).display
+                if (haveElement === 'none') {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            }
+        })
     })
 });
 
 
 sortTitle = document.querySelector('.sorting_select__title');
-sortTitle.addEventListener('click', () => {
-    sortTitle.classList.toggle('hover')
-})
+if (sortTitle != null) {
+    sortTitle.addEventListener('click', () => {
+        sortTitle.classList.toggle('hover')
+    })
+}
 
 let lessonClose = document.querySelector('.current_lesson__note_close')
 if (lessonClose != null) {

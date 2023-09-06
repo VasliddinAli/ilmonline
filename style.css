@@ -36888,6 +36888,7 @@ li::after {
 .categories__list_item .title {
     text-overflow: ellipsis;
     overflow: hidden;
+    width: 100%;
     white-space: nowrap;
 }
 
@@ -36897,10 +36898,12 @@ li::after {
 
 .categories__list {
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .categories__list_item {
     flex-direction: column;
+    width: 100%;
 }
 
 .sub-content {
@@ -36946,7 +36949,7 @@ li::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 .categories__list_item {
@@ -37276,7 +37279,7 @@ li::after {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(373px, 1fr));
     margin: 50px 0px 120px;
-    gap: 60px 6%;
+    gap: 20px 6%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -37294,8 +37297,8 @@ li::after {
 }
 
 .categories__list .categories__list_item img {
-    max-width: calc(100% + 2px);
-    width: calc(100% + 2px);
+    max-width: 100%;
+    width: 100%;
     position: relative;
     left: -1px;
     right: -1px;
@@ -37304,6 +37307,7 @@ li::after {
 
 .categories__list .categories__list_item {
     max-width: 373px;
+    width: 100%;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(216, 216, 216);
     cursor: pointer;
