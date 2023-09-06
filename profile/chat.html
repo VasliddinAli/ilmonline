@@ -29,8 +29,8 @@
                                 </div>
                                 <div class="tests_btn"> Testlar </div>
                                 <div class="header__center_input"></div>
-                                <div class="user_cabinet not_touch_device"><a href="./signIn.html" class="user_cabinet__text"
-                                        style="font-weight: bold;"> Shaxsiy kabinet</a>
+                                <div class="user_cabinet not_touch_device"><a href="./signIn.html"
+                                        class="user_cabinet__text" style="font-weight: bold;"> Shaxsiy kabinet</a>
                                     <div class="nav_right__link user_profile active">
                                         <a href="./signIn.html">
                                             <img src="../assets/icons/icon_profile.svg" alt="">
@@ -452,26 +452,72 @@
                                                     </label>
                                                 </div>
                                                 <div class="chat_users__scroll">
-                                                    <div class="chat_users_block"> Dialog topilmadi </div>
+                                                    <div class="chat_users_block">
+                                                        <div class="chat_users_main__wrapper">
+                                                            <div class="chat_users__main_title">Ingliz tili: Bonus dars
+                                                            </div>
+                                                            <div class="chat_users__main selected">
+                                                                <img class="chat_users__foto svg-icon icon-non_user_avatar_school" src="../assets/icons/non_user_avatar_school.svg"
+                                                                    alt="">
+                                                                <div class="chat_users__content">
+                                                                    <h4 class="title chat_users__name"> Sardorbek
+                                                                        Maxmudov </h4>
+                                                                </div>
+                                                                <div class="chat_users__unread"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="chat_dialog__wrapper">
-
-                                            <div class="chat_dialog__message">
-                                                <div class="text_field text_field__container">
-                                                    <input id="message" autocomplete="off" maxlength="" type="text"
-                                                        class="text_field__input">
-                                                    <label for="message" class="text_field__label">
-                                                        <span class="text_field__placeholder"></span>
-                                                        <span class="text__label"> Сообщение...</span>
-                                                    </label>
+                                            <div class="chat_dialog__current"><button type="button"
+                                                    class="chat_dialog__back_btn">
+                                                    <img src="../assets/icons/arrow_back.svg" alt=""> Orqaga </button>
+                                                <div class="chat_dialog__current_inner">
+                                                    <img class="chat_users__foto svg-icon icon-non_user_avatar_school" src="../assets/icons/non_user_avatar_school.svg" alt="">
+                                                    <div class="chat_dialog__current_user">
+                                                        <h4 class="title">
+                                                            Sardorbek Maxmudov</h4><span
+                                                            class="chat_dialog__title">Ingliz tili: Bonus dars</span>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <div id="chat_container" class="chat_dialog__scroll">
+                                                <div id="" class="chat_dialog my_mess">
+                                                    <img class="chat_users__foto svg-icon icon-non_user_avatar_school" src="../assets/icons/non_user_avatar_school.svg" alt="">
+                                                    <div class="chat_dialog__time_content">
+                                                        <p class="chat_dialog__text">Assalomu alaykum
+                                                        </p>
+                                                        <div class="chat_dialog__time_wrapper">
+                                                            <div class="eye_wrapper">
+                                                                <img src="../assets/icons/eye_cross_school.svg" alt="">
+                                                            </div><span class="chat_dialog__time">10:35</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="last_item" class="chat_dialog my_mess">
+                                                    <img class="chat_users__foto svg-icon icon-non_user_avatar_school" src="../assets/icons/non_user_avatar_school.svg" alt="">
+                                                    <div class="chat_dialog__time_content">
+                                                        <p class="chat_dialog__text">Hello
+                                                        </p>
+                                                        <div class="chat_dialog__time_wrapper">
+                                                            <div class="eye_wrapper">
+                                                                <img src="../assets/icons/eye_cross_school.svg" alt="">
+                                                            </div><span class="chat_dialog__time">10:35</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chat_dialog__message">
+                                                <div class="text_field text_field__container"><input id="message"
+                                                        autocomplete="off" maxlength="" type="text"
+                                                        class="text_field__input" placeholder="Сообщение..."></div>
                                                 <div class="chat_dialog__foto"><label for="sent"
                                                         class="profile__download_photo">
                                                         <img src="../assets/icons/camera.svg" alt=""><input id="sent"
                                                             type="file" class="input"></label><button
-                                                        disabled="disabled" class="mail-send_wrapper">
+                                                        class="mail-send_wrapper" disabled="disabled">
                                                         <img src="../assets/icons/mail-send.svg" alt=""></button></div>
                                             </div>
                                         </div>

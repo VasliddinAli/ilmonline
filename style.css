@@ -42369,7 +42369,8 @@ input:-webkit-autofill:hover {
     height: 100%;
     font-size: 16px;
     font-weight: 700;
-    padding: 0 12px
+    padding: 0 12px;
+    border: none !important;
 }
 
 .text_field__input.optional {
