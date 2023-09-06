@@ -187,3 +187,31 @@ if (filterBtn != null) {
         filterCourse.style.display = 'none'
     })
 }
+
+
+let chatMenuBtn = document.querySelector('.menu_btn__wrapper');
+chatMenuBtn.addEventListener('click', () => {
+    let element = document.querySelector('.profile_sidebar_wrapper');
+
+    let haveElement = window.getComputedStyle(element).display
+
+    if (haveElement === 'none') {
+        element.style.display = 'block';
+    } else {
+        element.style.display = 'none';
+    }
+
+})
+
+
+let chatDialogWrapper = document.querySelector('.chat_dialog__wrapper');
+let chatUsersMain = document.querySelector('.chat_users__main');
+let chatDialogBackBtn = document.querySelector('.chat_dialog__back_btn');
+if(chatUsersMain != null){
+    chatUsersMain.addEventListener('click', () => {
+        chatDialogWrapper.classList.add('active')
+    })
+    chatDialogBackBtn.addEventListener('click', () => {
+        chatDialogWrapper.classList.remove('active')
+    })
+}
