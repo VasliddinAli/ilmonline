@@ -34420,6 +34420,10 @@ button.swiper-pagination-bullet {
     display: flex;
 }
 
+.registerModal{
+    display: none;
+}
+
 .info_bock__item {
     display: flex;
     align-items: center;

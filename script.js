@@ -190,24 +190,23 @@ if (filterBtn != null) {
 
 
 let chatMenuBtn = document.querySelector('.menu_btn__wrapper');
-chatMenuBtn.addEventListener('click', () => {
-    let element = document.querySelector('.profile_sidebar_wrapper');
-
-    let haveElement = window.getComputedStyle(element).display
-
-    if (haveElement === 'none') {
-        element.style.display = 'block';
-    } else {
-        element.style.display = 'none';
-    }
-
-})
+if (chatMenuBtn != null) {
+    chatMenuBtn.addEventListener('click', () => {
+        let element = document.querySelector('.profile_sidebar_wrapper');
+        let haveElement = window.getComputedStyle(element).display
+        if (haveElement === 'none') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    })
+}
 
 
 let chatDialogWrapper = document.querySelector('.chat_dialog__wrapper');
 let chatUsersMain = document.querySelector('.chat_users__main');
 let chatDialogBackBtn = document.querySelector('.chat_dialog__back_btn');
-if(chatUsersMain != null){
+if (chatUsersMain != null) {
     chatUsersMain.addEventListener('click', () => {
         chatDialogWrapper.classList.add('active')
     })
@@ -215,3 +214,41 @@ if(chatUsersMain != null){
         chatDialogWrapper.classList.remove('active')
     })
 }
+
+let registerBtn = document.querySelector('#registerBtn');
+let confirmationNumber = document.querySelector('#confirmation-number');
+let registerModal = document.querySelector('.registerModal');
+
+if (registerBtn != null) {
+    registerBtn.addEventListener('click', () => {
+        registerModal.style.display = 'block'
+        confirmationNumber.addEventListener('input', () => {
+            if (confirmationNumber.value.length == 5) {
+                registerBtn.removeAttribute('disabled')
+            } else {
+                registerBtn.setAttribute('disabled', "")
+            }
+        })
+
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                // minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+        var fiveMinutes = 60 * 5,
+            display = document.querySelector('#time');
+        startTimer(fiveMinutes, display);
+    })
+}
+

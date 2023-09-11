@@ -388,6 +388,29 @@
                     </div>
                 </header>
 
+                <div class="registerModal modal">
+                    <div class="modal__content">
+                        <img src="../assets/icons/mobile_confirm.svg" alt="">
+                        <h4 class="title test_finish__title title--4">Telefon
+                            raqamni tasdiqlang</h4>
+                        <h4 class="confirm_text__mess"> Telefon raqam egasi ekanligingizni tasdiqlash
+                            uchun SMS-xabarnomadagi kodni kiriting. </h4>
+                        <div class="text_field text_field__container confirm__text-field">
+                            <input id="confirmation-number" autocomplete="off" maxlength="5" type="text"
+                                class="text_field__input" placeholder="_ _ _ _ _">
+                            <label for="confirmation-number" class="text_field__label">
+                                <span class="text_field__placeholder"></span>
+                                <span class="text__label"></span>
+                            </label>
+                        </div>
+                        <span class="time" style="margin-top: -30px;"><span id="time"></span> soniya</span>
+                        <div class="button_wrapper modal__btn disabled popular">
+                            <button type="button" id="register"
+                                class="primary-btn primary-btn--orange primary-btn--popular" disabled>Tasdiqlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
 
                 <div class="content">
@@ -395,7 +418,7 @@
                             class="auth_form__left_icons"><img src="/img/group_right_auth.82dbc66b.svg"
                             class="auth_form__right_icons">
                         <div class="">
-                            <form class="auth_form">
+                            <form class="auth_form" >
                                 <h4 class="title auth_form__title title--3">
                                     Ro'yxatdan o'tish </h4>
                                 <div class="auth_form__handler">
@@ -435,7 +458,7 @@
                                             <div class="v-input__control">
                                                 <div class="v-input__slot">
                                                     <div class="v-text-field__slot">
-                                                        <input type="text" placeholder="Ism va familiya">
+                                                        <input type="text" placeholder="Ism va familiya" id="registerName" required>
                                                     </div>
                                                 </div>
                                                 <div class="v-text-field__details">
@@ -450,8 +473,8 @@
                                             <div class="v-input__control">
                                                 <div class="v-input__slot">
                                                     <div class="v-text-field__slot">
-                                                        <div class="v-text-field__prefix">+998</div><input maxlength="9"
-                                                            type="text">
+                                                        <div class="v-text-field__prefix">+998</div>
+                                                        <input maxlength="9" type="text" id="registerPhone" required>
                                                     </div>
                                                 </div>
                                                 <div class="v-text-field__details">
@@ -466,7 +489,7 @@
                                             <div class="v-input__control">
                                                 <div class="v-input__slot">
                                                     <div class="v-text-field__slot">
-                                                        <input type="password" id="password" placeholder="Parol">
+                                                        <input type="password" id="registerPassword" placeholder="Parol" required>
                                                     </div>
                                                 </div>
                                                 <div class="v-text-field__details">
@@ -481,8 +504,8 @@
                                             <div class="v-input__control">
                                                 <div class="v-input__slot">
                                                     <div class="v-text-field__slot">
-                                                        <input type="password" id="password"
-                                                            placeholder="Parolni qaytadan kiriting">
+                                                        <input type="password" id="registerRePassword"
+                                                            placeholder="Parolni qaytadan kiriting" required>
                                                     </div>
                                                 </div>
                                                 <div class="v-text-field__details">
@@ -492,10 +515,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="button_wrapper auth_form__sign_in_btn max disable"><button
-                                                type="button" icon-name=""
-                                                class="primary-btn primary-btn--orange primary-btn--max"><span>
-                                                    Ro'yhatdan o'tish </span></button>
+                                        <div class="button_wrapper auth_form__sign_in_btn max">
+                                            <button type="submit" id="registerBtn"
+                                                class="primary-btn primary-btn--orange primary-btn--max">
+                                                <span>Ro'yhatdan o'tish </span>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="forms w-100">
@@ -508,10 +532,11 @@
                         </form>
                     </div>
                 </div>
+
+
+
+
         </div>
-
-
-
         <footer class="footer">
             <div class="container">
                 <div class="footer__container">
