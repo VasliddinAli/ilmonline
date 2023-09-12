@@ -36,7 +36,7 @@ lessons_btn.addEventListener('click', () => {
         mainMenu.style.display = 'none'
         document.querySelector('.header__wrapper').classList.add('active')
         document.querySelector('.header__inner').classList.add('burger_categories')
-        // document.querySelector('.user_cabinet').classList.remove('hover')
+            // document.querySelector('.user_cabinet').classList.remove('hover')
     } else {
         document.querySelector('.lessonsMenu').style.display = 'none'
         document.querySelector('.lessons_btn img').style.transform = 'rotate(0)'
@@ -49,7 +49,7 @@ nav_burger__wrapper.addEventListener('click', () => {
     if (document.querySelector('.mainMenu').style.display != 'grid') {
         document.querySelector('.mainMenu').style.display = 'grid'
         document.querySelector('.lessonsMenu').style.display = 'none'
-        // document.querySelector('.user_cabinet').classList.remove('hover')
+            // document.querySelector('.user_cabinet').classList.remove('hover')
         document.querySelector('.lessons_btn img').style.transform = 'rotate(0)'
         document.querySelector('.header__wrapper').classList.add('active')
         document.querySelector('.nav_burger').classList.add('active')
@@ -92,7 +92,7 @@ document.querySelector('.language').addEventListener('click', () => {
 //     document.querySelector('.lessonsMenu').style.display = 'none'
 // })
 
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', function() {
     if (window.scrollY >= 10) {
         document.querySelector('.header').classList.add('shadow')
     } else {
@@ -231,8 +231,9 @@ if (registerBtn != null) {
         })
 
         function startTimer(duration, display) {
-            var timer = duration, minutes, seconds;
-            setInterval(function () {
+            var timer = duration,
+                minutes, seconds;
+            setInterval(function() {
                 minutes = parseInt(timer / 60, 10);
                 seconds = parseInt(timer % 60, 10);
 
@@ -251,4 +252,17 @@ if (registerBtn != null) {
         startTimer(fiveMinutes, display);
     })
 }
-
+let videoOverlay = document.querySelector('.video_list__overlay');
+let videoList = document.querySelector('.video_list');
+let lessonDetails = document.querySelector('#lessonDetails');
+let videoListClose = document.querySelector('.video_list__close');
+if (lessonDetails != null) {
+    lessonDetails.addEventListener('click', () => {
+        videoOverlay.classList.add('opened');
+        videoList.classList.add('active');
+    })
+    videoListClose.addEventListener('click', () => {
+        videoOverlay.classList.remove('opened');
+        videoList.classList.remove('active');
+    })
+}

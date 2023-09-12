@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- <link rel="stylesheet" href="../assets/owl/owl.carousel.css"> -->
+    <link rel="stylesheet" href="../assets/owl/owl.carousel.min.css">
+    <title>Dars haqida ma'lumot | ILM Online</title>
+</head>
+
+<body>
+    <div id="app" class="school-courses">
+        <div>
+            <div role="dialog" class="v-dialog__container"></div>
+            <main class="main">
+                <header id="header" class="header">
+                    <div class="header__wrapper">
+                        <div class="container">
+                            <nav class="header__inner">
+                                <div class="header__nav">
+                                    <a href="../index.html">
+                                        <img src="../images/imgs/logo/logo_header.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="lessons_btn">
+                                    <span class="lessons_btn__text">Darslar</span>
+                                    <img src="../assets/icons/icon_filter_arrow.svg" alt="">
+                                </div>
+                                <div class="tests_btn"> Testlar</div>
+                                <div class="header__center_input"></div>
+                                <div class="user_cabinet not_touch_device">
+                                    <a href="../profile/signIn.html" class="user_cabinet__text" style="font-weight: bold;"> Shaxsiy kabinet</a>
+                                    <div class="nav_right__link user_profile active">
+                                        <a href="../profile/signIn.html">
+                                            <img src="../assets/icons/icon_profile.svg" alt="">
+                                        </a>
+                                        <div class="user_profile__list_wrapper">
+                                            <div class="user_profile__list">
+                                                <a href="../profile/profile.html" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_link_profile_school.svg" alt="">
+                                                    <span>Profil</span>
+                                                </a>
+                                                <a href="../profile/myLessons.html" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_my_lessons_school.svg" alt="">
+                                                    <span>Mening darslarim</span>
+                                                </a>
+                                                <a href="../profile/tests.html" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_tests_school.svg" alt="">
+                                                    <span>Mening testlarim</span>
+                                                </a>
+                                                <a href="../profile/chat.html" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_chat_with_mentor_school.svg" alt="">
+                                                    <span>O'qituvchilar bilan suhbat</span>
+                                                </a>
+                                                <a href="../profile/payment.html" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_payment_school.svg" alt="">
+                                                    <span>To'lov tafsilotlari</span>
+                                                </a>
+                                                <a href="../profile/smartSubscribe.html" class="user_profile__link">
+                                                    <img src="../assets/icons/smart_subscribe_school.svg" alt="">
+                                                    <span>Smart obuna</span>
+                                                </a>
+                                                <a href="../profile/referal.html" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_referal_school.svg">
+                                                    <span>Referal tizimi</span>
+                                                </a>
+                                                <a href="../profile/parentControl.html" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_parent_control.svg">
+                                                    <span>Ota-ona nazorati</span>
+                                                </a>
+                                                <a href="#" class="user_profile__link">
+                                                    <img src="../assets/icons/icon_logout_school.svg" alt="">
+                                                    <span>Сhiqish</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_right__link language">
+                                    <span>UZB</span>
+                                    <div class="language__list_wrapper">
+                                        <div class="language__list">
+                                            <span class="language__link"> РУС</span>
+                                            <span class="language__link selected"></span> UZB
+                                            </span>
+                                            <span class="language__link">
+                                                УЗБ
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <img src="../assets/icons/icon_filter_arrow.svg" alt="">
+                                </div>
+                                <div class="nav_burger__wrapper">
+                                    <div class="nav_burger"></div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="drop_header">
+                            <div class="container mainMenu" style="display: none;">
+                                <div class="drop_header_main small_screen">
+                                    <div class="drop_header__wrapper active">
+                                        <div class="drop__item navigation">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: block;">
+                                                    <span>Navigatsiya</span>
+                                                </div>
+                                                <a href="../index.html" class="drop__link">
+                                                    <span>Uy</span>
+                                                </a>
+                                                <a href="./about.html" class="drop__link">
+                                                    <span>Biz haqimizda</span>
+                                                </a>
+                                                <a href="./vacancies.html" class="drop__link">
+                                                    <span>
+                                                        Bo'sh ish
+                                                        o'rinlari
+                                                    </span>
+                                                </a>
+                                                <a href="./news.html" class="drop__link">
+                                                    <span>Yangiliklar</span>
+                                                </a>
+                                                <a href="./courses.html" class="drop__link">
+                                                    <span>Darslar</span>
+                                                </a>
+                                                <a href="./tests.html" class="drop__link">
+                                                    <span>Testlar</span>
+                                                </a>
+                                                <a href="./education.html" class="drop__link">
+                                                    <span>Ta'lim</span>
+                                                </a>
+                                                <div class="mode_switcher">
+                                                    <span class="mode_switcher__title">
+                                                        Maktab o'quvchilari uchun
+                                                        darslar
+                                                    </span>
+                                                    <div class="mode_switcher__box">
+                                                        <input id="mode-switcher" type="checkbox" class="mode_switcher__input">
+                                                        <label for="mode-switcher" class="mode_switcher__label"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item categories burger_categories">
+                                            <div class="drop__content">
+                                                <a href="./courses.html" class="drop__title burger_title" style="display: block;">
+                                                    <span>Yo'nalish</span>
+                                                </a>
+                                                <a href="./courses.html" class="drop__link">
+                                                    <span> Dasturlash kurslari</span>
+                                                </a>
+                                                <a href="./courses.html" class="drop__link">
+                                                    <span> Chet tillari</span>
+                                                </a>
+                                                <a href="./courses.html" class="drop__link">
+                                                    <span> Abituriyentlar uchun</span>
+                                                </a>
+                                                <a href="./courses.html" class="drop__link">
+                                                    <span> Bonus darslar</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item ilm">
+                                            <div class="drop__content">
+                                                <a href="#" class="drop__title burger_title" style="display: block;">
+                                                    <span>ILM</span>
+                                                </a>
+                                                <a href="./policy.html" class="drop__link">
+                                                    <span>Maxfiylik siyosati</span>
+                                                </a>
+                                                <a href="./agreement.html" class="drop__link">
+                                                    <span>Shartnoma taklifi</span>
+                                                </a>
+                                                <a href="../index.html#feedback" class="drop__link">
+                                                    <span>Qayta aloqa</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item cabinet_login">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title">
+                                                    <span>Shaxsiy kabinet</span>
+                                                </div>
+                                                <a href="../profile/profile.html" class="drop__link"> Profil</a>
+                                                <a href="../profile/myLessons.html" class="drop__link">
+                                                    Mening darslarim
+                                                </a>
+                                                <a href="../profile/tests.html" class="drop__link">
+                                                    Mening testlarim
+                                                </a>
+                                                <a href="../profile/chat.html" class="drop__link">
+                                                    O'qituvchilar bilan
+                                                    suhbat
+                                                </a>
+                                                <a href="../profile/payment.html" class="drop__link">
+                                                    To'lov
+                                                    tafsilotlari
+                                                </a>
+                                                <a href="../profile/smartSubscribe.html" class="drop__link">
+                                                    Smart obuna
+                                                </a>
+                                                <a href="../profile/referal.html" class="drop__link">
+                                                    Referal tizimi
+                                                </a>
+                                                <a href="../profile/parentControl.html" class="drop__link">
+                                                    Ota-ona
+                                                    nazorati
+                                                </a>
+                                                <a href="#" class="drop__link log_line">
+                                                    <img src="../assets/icons/icon_logout_school.svg" alt=""> Сhiqish
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main responsive -->
+                            <div class="container mainResMenu" style="display: none;">
+                                <div class="drop_header_main small_screen">
+                                    <div class="drop_header__wrapper active">
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_link_profile_school.svg" alt="">
+                                                    <span>Profil</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_my_lessons_school.svg" alt="">
+                                                    <span>
+                                                        Mening
+                                                        darslarim
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_tests_school.svg" alt="">
+                                                    <span>
+                                                        Mening
+                                                        testlarim
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_chat_with_mentor_school.svg" alt="">
+                                                    <span>O'qituvchilar bilan suhbat</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_payment_school.svg" alt="">
+                                                    <span>
+                                                        To'lov
+                                                        tafsilotlari
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/smart_subscribe_school.svg" alt="">
+                                                    <span>
+                                                        Smart
+                                                        obuna
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_referal_school.svg" alt="">
+                                                    <span>
+                                                        Referal
+                                                        tizimi
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_parent_control.svg" alt="">
+                                                    <span>
+                                                        Ota-ona
+                                                        nazorati
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item opened_user_list last_drop_item">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title" style="display: none;">
+                                                    <span>header.undefined.school</span>
+                                                </div>
+                                                <div class="drop__link">
+                                                    <img src="../assets/icons/icon_logout_school.svg" alt="">
+                                                    <span>Сhiqish</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item cabinet_login" style="display: none;">
+                                            <div class="drop__content">
+                                                <div class="drop__title burger_title">
+                                                    <span>Shaxsiy kabinet</span>
+                                                </div>
+                                                <a href="../profile/profile.html" class="drop__link"> Profil</a>
+                                                <a href="../profile/myLessons.html" class="drop__link">
+                                                    Mening
+                                                    darslarim
+                                                </a>
+                                                <a href="../profile/tests.html" class="drop__link"> Mening testlarim</a>
+                                                <a href="../profile/chat.html" class="drop__link">
+                                                    O'qituvchilar bilan
+                                                    suhbat
+                                                </a>
+                                                <a href="../profile/payment.html" class="drop__link">
+                                                    To'lov
+                                                    tafsilotlari
+                                                </a>
+                                                <a href="../profile/smartSubscribe.html" class="drop__link">
+                                                    Smart obuna
+                                                </a>
+                                                <a href="../profile/referal.html" class="drop__link">
+                                                    Referal tizimi
+                                                </a>
+                                                <a href="../profile/parentControl.html" class="drop__link">
+                                                    Ota-ona
+                                                    nazorati
+                                                </a>
+                                                <a href="#" class="drop__link log_line">
+                                                    <img src="../assets/icons/icon_logout_school.svg" alt=""> Сhiqish
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- darslar -->
+                            <div class="container lessonsMenu" style="display: none;">
+                                <div class="drop_header_main small_screen">
+                                    <div class="drop_header__wrapper active opened_сourses">
+                                        <div class="drop__item levels">
+                                            <div class="drop__content">
+                                                <div class="drop__title level" style="display: block;">
+                                                    <span>Daraja</span>
+                                                </div>
+                                                <a href="#" class="drop__link">
+                                                    <span>Boshlangʻich daraja</span>
+                                                </a>
+                                                <a href="#" class="drop__link">
+                                                    <span>O'rta daraja</span>
+                                                </a>
+                                                <a href="#" class="drop__link">
+                                                    <span>Yuqori daraja</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item categories courses_categories">
+                                            <div class="drop__content">
+                                                <div class="drop__title categories" style="display: block;">
+                                                    <span>Yo'nalish</span>
+                                                </div>
+                                                <a href="#" class="drop__link">
+                                                    <span> Dasturlash kurslari</span>
+                                                </a>
+                                                <a href="#" class="drop__link">
+                                                    <span> Chet tillari</span>
+                                                </a>
+                                                <a href="#" class="drop__link">
+                                                    <span> Abituriyentlar uchun</span>
+                                                </a>
+                                                <a href="#" class="drop__link">
+                                                    <span> Bonus darslar</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item prices">
+                                            <div class="drop__content">
+                                                <div class="drop__title price" style="display: block;">
+                                                    <span>Narxi</span>
+                                                </div>
+                                                <a href="#" class="drop__link">
+                                                    <span>Bepul</span>
+                                                </a>
+                                                <a href="#" class="drop__link">
+                                                    <span>Pullik</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="drop__item languages">
+                                            <div class="drop__content">
+                                                <div class="drop__title lang" style="display: block;">
+                                                    <span>Tillar</span>
+                                                </div>
+                                                <a href="#" class="drop__link">
+                                                    <span>Rus</span>
+                                                </a>
+                                                <a href="#" class="drop__link">
+                                                    <span>O'zbek</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="drop_btn__wrapper">
+                                            <div class="button_wrapper popular">
+                                                <a href="./courses.html" type="button" icon-name="" class="primary-btn primary-btn--orange primary-btn--popular">
+                                                    Hamma darslar
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+                <div class="content" style="background: #faf2ee;">
+                    <div class="breadcrumbs_color">
+                        <div class="container">
+                            <div id="bread" class="breadcrumbs">
+                                <div class="breadcrmubs_link">
+                                    <div class="item"> Uyga</div>
+                                    <img src="../assets/icons/next_arrow_bread.svg" alt="">
+                                </div>
+                                <div class="breadcrmubs_link">
+                                    <div class="item"> Darslar</div>
+                                    <img src="../assets/icons/next_arrow_bread.svg" alt="">
+                                </div>
+                                <div class="breadcrmubs_link">
+                                    <div class="item"> Ingliz tili: Bonus dars</div>
+                                    <img src="../assets/icons/next_arrow_bread.svg" alt="">
+                                </div>
+                                <div class="breadcrmubs_link">
+                                    <div class="item"> Tomosha qilish</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_page">
+                        <div class="video_page__container">
+                            <div class="video_page__left">
+                                <div class="video_info__top">
+                                    <div class="container">
+                                        <div class="video_info__top_inner">
+                                            <h4 class="title video_info__title title--4">
+                                                Ingliz tili: Bonus dars
+                                            </h4>
+                                            <div class="button_wrapper medium">
+                                                <button type="button" id="lessonDetails" icon-name="" class="primary-btn primary-btn--orange primary-btn--medium">
+                                                    Dars materiallari
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="videoWrapper">
+                                    <video id="videoPlayer" controlslist="nodownload" controls="controls" preload="auto" src="https://api.ilmonline.uz/api/profile/courses/lesson/752/video?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5pbG1vbmxpbmUudXovYXV0aC9zb2NpYWwvc2lnbi1pbi9nb29nbGUvY2FsbGJhY2siLCJpYXQiOjE2OTQ1Mjc0ODksImV4cCI6MjA1NDUyNzQ4OSwibmJmIjoxNjk0NTI3NDg5LCJqdGkiOiJKQ0lOZjJsVzNONzJzMXc0Iiwic3ViIjoiODk3IiwicHJ2IjoiZWNhYTQzY2FhYzVlMGI5ODMxZDZmNTZhNzkzZTFkNzZiNTQyM2E0OSJ9.dR2Zu3oy-C7Zjv3a59Hzehz2Y1Q2bg_cGvKSVxsEygk"
+                                        class="video-js"></video>
+                                </div>
+                                <div class="video_info">
+                                    <div class="video_info__row">
+                                        <h4 class="title video_info__title title--4">Ingliz tili: Bonus dars</h4>
+                                        <div class="video_info__star">
+                                            <img src="../assets/icons/video_star.svg" alt=""> Baholang
+                                        </div>
+                                        <div class="video_info__author">
+                                            <div class="author_info">
+                                                <div class="author_info__name">
+                                                    Sardorbek Maxmudov
+                                                </div>
+                                                <div class="author_info__date">
+                                                    Опубликовано 18 апр. 2023 г.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="video_info__progress">
+                                            <div class="ep-container" style="width: 20px; height: 20px;">
+                                                <div class="ep-content">
+                                                    <div class="ep-svg-container">
+                                                        <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg" class="ep-svg">
+                                                            <g class="ep-circle--container">
+                                                                <defs></defs>
+                                                                <g class="ep-circle"
+                                                                    style="transition-timing-function: ease-in-out; transform: rotate(-90deg);">
+                                                                    <circle r="9.5" cx="10" cy="10" stroke="#EC5239"
+                                                                        stroke-dasharray="" fill="transparent"
+                                                                        stroke-width="1" class="ep-circle--empty"
+                                                                        style="transition-duration: 1000ms; transition-timing-function: ease-in-out;">
+                                                                    </circle>
+                                                                    <circle r="2.8499999999999996" cx="10" cy="10"
+                                                                        fill="transparent" stroke="#EC5239"
+                                                                        stroke-width="6.3" stroke-linecap="butt"
+                                                                        stroke-dasharray="17.90707812546182"
+                                                                        class="ep-circle--progress animation__default"
+                                                                        style="transition: all 1000ms ease-in-out 0s, opacity 0.3s 0s; stroke-dashoffset: 17.4071; transform-origin: 50% 50%; opacity: 1; --ep-circumference: 17.90707812546182; --ep-negative-circumference: -17.90707812546182; --ep-double-circumference: 35.81415625092364; --ep-stroke-offset: 17.40707812546182; --ep-loop-stroke-offset: -18.40707812546182; --ep-bounce-out-stroke-offset: 0; --ep-bounce-in-stroke-offset: 17.40707812546182; --ep-reverse-stroke-offset: 53.22123437638545; --ep-loading-stroke-offset: 3.581415625092364; animation-duration: 1000ms;">
+                                                                    </circle>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="ep-legend--container" style="max-width: 20px;"></div>
+                                                </div>
+                                            </div>
+                                            O'tdi 0%
+                                        </div>
+                                    </div>
+                                    <div class="video_description">
+                                        <h4 class="title description__title title--4"> Ingliz tili: Bonus dars-2</h4>
+                                        <div class="video_description__info">
+                                            Ingliz tili: Bonus dars. Kurs DTM imtihoniga 89% o'qishga kirgan abituriyentlarning statistikasiga ega o'qituvchining tayyorgarlik ko'rish bo'yicha innovatsion onlayn metodiga asoslanadi.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video_list__overlay">
+                                <div class="video_list">
+                                    <div class="video_list__top">
+                                        <div class="video_list__title"> Dars materiallari</div>
+                                        <div class="video_list__close">
+                                            <img src="../assets/icons/filter_cross.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="video_list_item">
+                                        <div class="video_list_item__title">
+                                            <span>1.</span>
+                                            <div style="width: 80%;">
+                                                <span>Ingliz tili: Bonus dars</span>
+                                            </div>
+                                            <div class="video_list_arrow">
+                                                <img src="../assets/icons/video_list_arrow.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="video_list_item__info">
+                                            <div class="info__item">
+                                                <img src="../assets/icons/video_lesson.svg" alt=""> 3 Mashg‘ulotlar
+                                            </div>
+                                            <div class="info__item">
+                                                <img src="../assets/icons/video_duration.svg" alt=""> 49 daqiqa 14 soniya
+                                            </div>
+                                        </div>
+                                        <div class="video_list__subitem">
+                                            <div class="subitem__lesson selected">
+                                                <div class="subitem__title">
+                                                    <img src="../assets/icons/video_play.svg" alt=""> Ingliz tili: Bonus dars-2
+                                                </div>
+                                                <div class="subitem__duration"> 12 daqiqa 50 soniya</div>
+                                            </div>
+                                            <!-- <div class="subitem__test">
+                                                <div class="subitem__title">
+                                                    <img src="../assets/icons/video_test.svg" alt="">
+                                                    <span style="width: 65%;">Test</span>
+                                                    <div class="bad_test_text"></div>
+                                                </div>
+                                                <div class="subitem__duration"> 30 Savollar</div>
+                                            </div> -->
+                                        </div>
+                                        <div class="video_list__subitem">
+                                            <div class="subitem__lesson not_access">
+                                                <div class="subitem__title">
+                                                    <img src="../assets/icons/video_play.svg" alt=""> Ingliz tili: Bonus dars-3
+                                                </div>
+                                                <div class="subitem__duration"> 12 daqiqa 8 soniya</div>
+                                            </div>
+                                            <div class="subitem__test not_access">
+                                                <div class="subitem__title">
+                                                    <img src="../assets/icons/video_test.svg" alt="">
+                                                    <span style="width: 65%;">Test</span>
+                                                    <div class="bad_test_text"></div>
+                                                </div>
+                                                <div class="subitem__duration"> 30 Savollar</div>
+                                            </div>
+                                        </div>
+                                        <div class="video_list__subitem">
+                                            <div class="subitem__lesson not_access">
+                                                <div class="subitem__title">
+                                                    <img src="../assets/icons/video_play.svg" alt=""> Ingliz tili: Bonus dars-1
+                                                </div>
+                                                <div class="subitem__duration"> 24 daqiqa 16 soniya</div>
+                                            </div>
+                                            <div class="subitem__test not_access">
+                                                <div class="subitem__title">
+                                                    <img src="../assets/icons/video_test.svg" alt="">
+                                                    <span style="width: 65%;">Test</span>
+                                                    <div class="bad_test_text"></div>
+                                                </div>
+                                                <div class="subitem__duration"> 30 Savollar</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer__container">
+                            <div class="footer__content">
+                                <div class="footer__item">
+                                    <img src="../images/imgs/logo/logo_footer.png" alt="">
+                                </div>
+                                <div class="footer__item">
+                                    <div class="item__col">
+                                        <div class="item__title">
+                                            <span>Foydalanuvchi maqomi</span>
+                                        </div>
+                                        <div class="item__link">
+                                            <span>
+                                                Boshlangʻich
+                                                daraja
+                                            </span>
+                                        </div>
+                                        <div class="item__link">
+                                            <span>
+                                                O'rta
+                                                daraja
+                                            </span>
+                                        </div>
+                                        <div class="item__link">
+                                            <span>
+                                                Yuqori
+                                                daraja
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer__item">
+                                    <div class="item__col">
+                                        <div class="item__title">
+                                            <span>ILM</span>
+                                        </div>
+                                        <div class="item__link">
+                                            <span>
+                                                Biz
+                                                haqimizda
+                                            </span>
+                                        </div>
+                                        <div class="item__link">
+                                            <span>Testlar</span>
+                                        </div>
+                                        <div class="item__link">
+                                            <span>
+                                                Bo'sh ish
+                                                o'rinlari
+                                            </span>
+                                        </div>
+                                        <div class="item__link">
+                                            <span>Yangiliklar</span>
+                                        </div>
+                                        <div class="item__link">
+                                            <span>Ta'lim</span>
+                                        </div>
+                                        <div class="mode_switcher">
+                                            <span class="mode_switcher__title">
+                                                Maktab
+                                                o'quvchilari
+                                                uchun darslar
+                                            </span>
+                                            <div class="mode_switcher__box">
+                                                <input id="mode-switcher" type="checkbox" class="mode_switcher__input">
+                                                <label for="mode-switcher" class="mode_switcher__label"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer__item">
+                                    <div class="item__col">
+                                        <div class="item__title">
+                                            Navigatsiya
+                                        </div>
+                                        <div class="item__link">
+                                            Maxfiylik siyosati
+                                        </div>
+                                        <div class="item__link">
+                                            Shartnoma taklifi
+                                        </div>
+                                        <div class="item__link">
+                                            Shaxsiy kabinet
+                                        </div>
+                                        <div class="item__link">
+                                            Qayta aloqa
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__company">
+                                <div class="footer__company_logos">
+                                    <a href="#">
+                                        <img src="../assets/icons/icon_telegram.svg" alt="">
+                                    </a>
+                                    <a href="https://www.facebook.com">
+                                        <img src="../assets/icons/facebook.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../assets/icons/icon_insta_footer.svg" alt="">
+                                    </a>
+                                    <a href="https://www.youtube.com">
+                                        <img src="../assets/icons/icon_youtube_footer.svg" alt="">
+                                    </a>
+                                    <a href="tiktok.com">
+                                        <img src="../assets/icons/icon_tiktok_footer.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/owl/owl.carousel.js"></script>
+    <script src="../assets/owl/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+
+        var owl = $('.owl-carousel');
+        owl.owlCarousel();
+
+        $('.swiper__arrow_next').click(function() {
+            owl.trigger('next.owl.carousel');
+        })
+        $('.swiper__arrow_prev').click(function() {
+            owl.trigger('prev.owl.carousel', [300]);
+        })
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
